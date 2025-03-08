@@ -9,7 +9,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: "https://angular6-ngx-cookie-consent-dmrmrk.stackblitz.io" // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
+    domain: "https://loquacious-piroshki-e14b7d.netlify.app" // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
   },
   position: "bottom-right", //  'top', 'bottom', 'top-left', 'top-right', 'bottom-left', 'bottom-right'
   theme: "classic", // or 'block' or 'edgeless'

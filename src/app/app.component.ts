@@ -43,12 +43,15 @@ export class AppComponent implements OnInit, OnDestroy {
                 private router: Router,
                 private meta: MetatagService) {
                   // particlesJS.load('particles-js', '/particlesjs-config.json', null);
-
     }
 
   ngOnInit(): void {
     this.meta.updateMetaTags();
 
+    this.popupCloseSubscription = this.ccService.popupClose$.subscribe( () => {
+
+      this.ccService.destroy();
+     });
 
    }
   ngOnDestroy() {
