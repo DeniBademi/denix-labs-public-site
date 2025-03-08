@@ -1,0 +1,14 @@
+.blanket {
+    position: relative;
+    z-index: 3;
+    bottom: 0;
+    margin-bottom: 350px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+
+  }

@@ -1,0 +1,48 @@
+#toc_container {
+    display: table;
+    font-size: 95%;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    width: auto;
+}
+.toc_title {
+    font-weight: bold;
+}
+
+li:hover {
+    color: #6366F1;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #6365f10f;
+  }
+
+
+* {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.th {
+    overflow: hidden;
+}

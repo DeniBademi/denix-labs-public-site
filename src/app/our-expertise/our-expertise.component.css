@@ -1,0 +1,13 @@
+.icon-box {
+    background-color: white;
+    width: calc(var(--spacing)* 18);
+    height: calc(var(--spacing)* 18);
+    max-width: calc(var(--spacing)* 18);
+    max-height: calc(var(--spacing)* 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: var(--radius-lg);
+
+}

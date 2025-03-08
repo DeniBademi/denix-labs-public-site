@@ -1,0 +1,27 @@
+
+svg {
+    fill: none;
+    stroke: 6366F1;
+}
+
+.link-arrow {
+    /* border: 2px dashed red; */
+    cursor: pointer;
+}
+
+.link-arrow p {
+    display: inline-block;
+    transition: 0.1s ease-in;
+
+  }
+
+  .link-arrow:hover svg {
+    transform: translateX(50%);
+    transition: 0.1s ease-in-out;
+  }
+
+/* Reverse animation off hover */
+.link-arrow:hover p {
+    transform: translateX(-50%);
+    transition: 0.1s ease-in-out;
+  }

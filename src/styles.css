@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+@import "tailwindcss";
+@import 'animate.css';
+
+@font-face {
+    font-family: 'jakarta';
+    src: url("/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'jakarta-i';
+    src: url("/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'jakarta-i-static';
+    src: url("/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-MediumItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url("/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'nunito-i';
+    src: url("/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf") format("opentype");
+}
+
+
+
+h1 {
+    font-family: 'jakarta', 'nunito';
+    font-weight: bold;
+    /* font-size: 1rem; */
+}
+
+h2 {
+    font-family: 'jakarta-i', 'nunito-i';
+    /* font-size: 1.3rem; */
+}
+
+h3 {
+    font-family: 'jakarta', 'nunito';
+    /* font-size: 1.15rem; */
+}
+
+p {
+    font-family: 'jakarta', 'nunito';
+    /* font-size: 1.1rem; */
+}
+
+.link {
+    color: #6366F1;
+    cursor: pointer;
+}
+
+
+.link-arrow {
+    /* border: 2px dashed red; */
+    cursor: pointer;
+}
+
+.link-arrow p {
+    display: inline-block;
+    transition: 0.1s ease-in;
+
+  }
+
+  .link-arrow:hover svg {
+    transform: translateX(50%);
+    transition: 0.1s ease-in-out;
+  }
+
+/* Reverse animation off hover */
+.link-arrow:hover p {
+    transform: translateX(-50%);
+    transition: 0.1s ease-in-out;
+  }
+
+
+
+  /* Parralax footer */
+
+section {
+    background-color: white ;
+}
+
+
+::ng-deep  .cc-revoke {
+    display: none !important;
+}
