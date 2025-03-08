@@ -15,6 +15,7 @@ import { PredictiveMaintenanceComponent } from './pages/solutions/predictive-mai
 import { QaAndAnomaliesComponent } from './pages/solutions/qa-and-anomalies/qa-and-anomalies.component';
 import { ReportWritingComponent } from './pages/solutions/report-writing/report-writing.component';
 import { FaceRecognitionComponent } from './pages/solutions/face-recognition/face-recognition.component';
+import { RiskAssessmentComponent } from './pages/solutions/risk-assessment/risk-assessment.component';
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
@@ -26,6 +27,7 @@ export const routes: Routes = [
     { path: 'solutions/inventory-management', component: InventoryManagementComponent},
     { path: 'solutions/predictive-maintenance', component: PredictiveMaintenanceComponent },
     { path: 'solutions/face-recognition', component: FaceRecognitionComponent },
+    { path: 'solutions/risk-assessment', component: RiskAssessmentComponent },
 
     { path: 'solutions', component: SolutionsComponent },
     { path: 'contact', component: ContactComponent },
