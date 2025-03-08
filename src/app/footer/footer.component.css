@@ -2,7 +2,7 @@
     position: relative;
     z-index: 3;
     bottom: 0;
-    margin-bottom: 350px;
+
   }
 
   footer {
@@ -10,5 +10,132 @@
     bottom: 0;
     width: 100%;
     z-index: -1;
+    /* height: 330px; */
 
   }
+
+
+  .desktop-only {
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    .desktop-only{
+        display: none;
+    }
+    .blanket {
+        margin-bottom: 430px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .blanket {
+        margin-bottom: 330px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (prefers-color-scheme: light){
+    .mobile-light{
+        display: none;
+    }
+    .mobile-dark{
+        display: none;
+    }
+    .desktop-dark{
+        display: none;
+    }
+    .desktop-light{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (prefers-color-scheme: dark){
+    .mobile-light{
+        display: none;
+    }
+    .mobile-dark{
+        display: none;
+    }
+    .desktop-dark{
+        display: block;
+    }
+    .desktop-light{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) and (prefers-color-scheme: light){
+    .mobile-light{
+        display: block;
+    }
+    .mobile-dark{
+        display: none;
+    }
+    .desktop-dark{
+        display: none;
+    }
+    .desktop-light{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark){
+    .mobile-light{
+        display: none;
+    }
+    .mobile-dark{
+        display: block;
+    }
+    .desktop-dark{
+        display: none;
+    }
+    .desktop-light{
+        display: none;
+    }
+}
+
+
+.btn {
+    cursor: pointer;
+    margin: 20px;
+  }
+
+  .icon-bar {
+    width: 22px;
+    height: 2px;
+    margin: 3px;
+    margin-top: 6px;
+    position: relative;
+  }
+
+
+
+  /* Container styling */
+.mobile-navbar {
+    position: relative;
+  }
+
+
+/* Mobile menu styling */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.mobile-navbar.open .menu {
+  transform: translateX(0);
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
