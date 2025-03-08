@@ -12,7 +12,15 @@
     </div>
     <div class="lg:w-1/2 md:w-2/4 mx-auto">
       <div class="flex flex-wrap m-2">
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="flex flex-wrap -m-2" name="'contact'" netlify>
+        <form
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit($event)"
+        class="flex flex-wrap -m-2"
+        name="contact"
+        method="POST"
+        netlify>
+        <input type="hidden" name="form-name" value="contact" />
+
           <div class="p-2 w-1/2">
             <div class="relative">
               <label for="name" class="leading-7 text-sm text-gray-600">Име*</label>
@@ -63,13 +71,16 @@
           </div>
 
 
-          <div class="p-2 w-full">
+          <div class="p-2 w-full" *ngIf="!this.isContactFormSubmitted">
             <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg disabled:bg-gray-300 disabled:cursor-not-allowed"
             [disabled]="!contactForm.valid"
             >Изпрати</button>
           </div>
+          <div class="p-2 w-full" *ngIf="this.isContactFormSubmitted">
+            <p class="text-center">Благодарим за съобщението!</p>
+          </div>
         </form>
-        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+        <!-- <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
 
 
           <span class="inline-flex">
@@ -96,7 +107,7 @@
             </a>
           </span>
 
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

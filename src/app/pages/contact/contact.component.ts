@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 
@@ -12,7 +13,9 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 export class ContactComponent {
 
     contactForm: FormGroup;
-    constructor(private fb: FormBuilder) {
+    isContactFormSubmitted = false;
+
+    constructor(private fb: FormBuilder, private http: HttpClient) {
       this.contactForm = this.fb.group({
         name: ['', Validators.required],
         companyName: ['', Validators.required],
@@ -42,12 +45,33 @@ export class ContactComponent {
   }
 
 
-  onSubmit(): void {
-    // console.log('Form Data:', this.contactForm.value);
-    if (this.contactForm.valid) {
-      // console.log('Form Data:', this.contactForm.value);
-    } else {
-      // console.log('Form is invalid.');
+  onSubmit(evt: SubmitEvent): void {
+    console.log('Form Data:', this.contactForm.value);
+    evt.preventDefault();
+
+    const formData = this.contactForm.value;
+    // This is important. We need to add the hidden field to make sure Netlify picks up the form submission.
+    formData['form-name'] = 'contact';
+    const headers = new HttpHeaders({
+      Accept: 'text/html',
+      'Content-Type': 'application/x-www-form-urlencoded',
+    });
+
+    this.http.post('/', new URLSearchParams(formData).toString(), { headers, responseType: 'text' })
+      .subscribe(() => {
+        this.isContactFormSubmitted = true;
+      });
     }
+
+
+  // functions used in the html template
+  get name() {
+    return this.contactForm.get('name');
+  }
+  get email() {
+    return this.contactForm.get('email');
+  }
+  get body() {
+    return this.contactForm.get('body');
   }
 }

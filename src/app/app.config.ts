@@ -5,6 +5,7 @@ import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import {NgcCookieConsentConfig, provideNgcCookieConsent} from 'ngx-cookieconsent';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideHttpClient } from '@angular/common/http';
 
 
 const cookieConfig: NgcCookieConsentConfig = {
@@ -54,6 +55,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
     provideNgcCookieConsent(cookieConfig),
-    provideAnimations()
+    provideAnimations(),
+    provideHttpClient()
   ]
 };
