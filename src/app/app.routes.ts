@@ -33,7 +33,7 @@ export const routes: Routes = [
     { path: 'privacy', component: PrivacyPolicyComponent},
     { path: 'terms', component: TermsOfUseComponent},
     { path: 'not-found', component: NotFoundComponent },
-    { path: '**', redirectTo: 'not-found' }, // Redirect any unmatched route to login
+    // { path: '**', redirectTo: 'not-found' }, // Redirect any unmatched route to login
 
 
 
