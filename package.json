@@ -21,6 +21,7 @@
     "@angular/platform-server": "^19.1.0",
     "@angular/router": "^19.1.0",
     "@angular/ssr": "^19.1.8",
+    "@netlify/angular-runtime": "github:netlify/angular-runtime",
     "@nguniversal/express-engine": "^7.0.2",
     "@tsparticles/angular": "^3.0.0",
     "@tsparticles/engine": "^3.8.1",
