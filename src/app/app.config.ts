@@ -14,7 +14,7 @@ const cookieConfig: NgcCookieConsentConfig = {
   position: "bottom-right", //  'top', 'bottom', 'top-left', 'top-right', 'bottom-left', 'bottom-right'
   theme: "classic", // or 'block' or 'edgeless'
   showLink: true, // false
-  type: "opt-in", // 'info', 'opt-in' or 'opt-out'
+  type: "info", // 'info', 'opt-in' or 'opt-out'
   palette: {
     popup: {
       background: "#111111",

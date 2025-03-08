@@ -47,10 +47,12 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.meta.updateMetaTags();
+    if(localStorage.getItem('cookieconsent_dismissed') === 'yes') {
+      this.ccService.destroy();
+    }
 
     this.popupCloseSubscription = this.ccService.popupClose$.subscribe( () => {
-
-      this.ccService.destroy();
+      localStorage.setItem('cookieconsent_dismissed', 'yes');
      });
 
    }
