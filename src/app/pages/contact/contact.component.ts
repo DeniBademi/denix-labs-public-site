@@ -43,10 +43,11 @@ export class ContactComponent {
 
 
   onSubmit(): void {
+    // console.log('Form Data:', this.contactForm.value);
     if (this.contactForm.valid) {
-      console.log('Form Data:', this.contactForm.value);
+      // console.log('Form Data:', this.contactForm.value);
     } else {
-      console.log('Form is invalid.');
+      // console.log('Form is invalid.');
     }
   }
 }
