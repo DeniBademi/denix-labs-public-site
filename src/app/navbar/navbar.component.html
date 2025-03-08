@@ -1,7 +1,6 @@
-<header class="bg-white dark:bg-gray-900 sticky top-0 z-50">
+<header class="bg-gray-900 sticky top-0 z-50">
     <nav class="relative px-4 py-4 flex justify-between items-center mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-      <a class="text-3xl font-bold leading-none" href="#">
-
+      <a class="text-3xl font-bold leading-none" href="#" aria-label="go to home page">
          <img class="ml-3 w-40 sm:w-40 desktop-dark" src="logos/main.svg" alt="logo" aria-hidden="true" />
          <img class="lg ml-3 w-10 sm:w-10 mobile-dark" src="logos/mini_white_rgb.svg" alt="logo" aria-hidden="true" />
          <img class="ml-3 w-40 sm:w-40 desktop-light" src="logos/denix.svg" alt="logo" aria-hidden="true" />
@@ -9,7 +8,7 @@
 
       </a>
       <div class="lg:hidden">
-        <button class="flex items-center text-blue-600 p-3">
+        <button class="flex items-center text-blue-600 p-3" aria-label="open menu">
           <div (click)="onClick()" class="cursor-pointer w-10 h-5">
             <div class="icon-bar bg-white" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'topX'"></div>
             <div class="icon-bar bg-white" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'hide'"></div>
@@ -18,25 +17,25 @@
         </button>
       </div>
       <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-        <!-- <li><a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="/about">За нас</a></li>
+        <!-- <li><a class="text-gray-500 transition hover:text-gray-500/75 text-white hover:text-white/75" href="/about">За нас</a></li>
         <li class="text-gray-300">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
           </svg>
         </li> -->
-        <li><a class="text-gray-500 px-5 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="/services">Услуги</a></li>
+        <li><a class="text-gray-500 px-5 transition hover:text-gray-500/75 text-white hover:text-white/75" href="/services">Услуги</a></li>
         <li class="text-gray-300">
           <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
           </svg> -->
         </li>
-        <li><a class="text-gray-500 px-5 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="/solutions">Решения</a></li>
+        <li><a class="text-gray-500 px-5 transition hover:text-gray-500/75 text-white hover:text-white/75" href="/solutions">Решения</a></li>
         <li class="text-gray-300">
           <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
           </svg> -->
         </li>
-        <li><a class="ttext-gray-500 px-5 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="/contact">Контакти</a></li>
+        <li><a class="ttext-gray-500 px-5 transition hover:text-gray-500/75 text-white hover:text-white/75" href="/contact">Контакти</a></li>
       </ul>
       <a
         class="rounded-md bg-indigo-500 px-5 py-2.5 text-sm font-medium text-white shadow-sm desktop-only hover:shadow-xl hover:bg-indigo-600 transition duration-300"
@@ -47,9 +46,9 @@
     <nav class="mobile-navbar" [class.open]="isNavbarOpen">
     <div class="menu" [@panelState]="isNavbarOpen ? 'open' : 'closed'">
       <!-- <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div> -->
-      <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white dark:bg-gray-900 border-r overflow-y-auto">
+      <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white bg-gray-900 border-r overflow-y-auto">
         <div class="flex items-center mb-8">
-          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#" aria-label="go to home page">
                 <img class="ml-3 w-40 sm:w-40 mobile-dark" src="logos/main.svg" alt="logo" aria-hidden="true" />
                 <img class="ml-3 w-40 sm:w-40 mobile-light" src="logos/denix.svg" alt="logo" aria-hidden="true" />
           </a>
@@ -61,17 +60,17 @@
         </div>
         <div>
           <ul>
+            <!-- <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" (click)="redirectAndClose('/about')">За нас</a>
+            </li> -->
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-500 dark:text-white hover:text-indigo-500 rounded" (click)="redirectAndClose('/about')">За нас</a>
+              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" href="/services" (click)="redirectAndClose('/services')">Услуги</a>
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-500 dark:text-white hover:text-indigo-500 rounded" (click)="redirectAndClose('/services')">Услуги</a>
+              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" (click)="redirectAndClose('/solutions')">Решения</a>
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-500 dark:text-white hover:text-indigo-500 rounded" (click)="redirectAndClose('/solutions')">Решения</a>
-            </li>
-            <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-500 dark:text-white hover:text-indigo-500 rounded" (click)="redirectAndClose('/contact')">Контакти</a>
+              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" (click)="redirectAndClose('/contact')">Контакти</a>
             </li>
           </ul>
         </div>
