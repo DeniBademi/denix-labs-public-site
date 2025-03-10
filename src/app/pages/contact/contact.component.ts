@@ -57,7 +57,7 @@ export class ContactComponent {
       'Content-Type': 'application/x-www-form-urlencoded',
     });
 
-    this.http.post('/', new URLSearchParams(formData).toString(), { headers, responseType: 'text' })
+    this.http.post('https://hook.eu2.make.com/pshhfa3femr7buiulrgxtac0a0ytegnu', new URLSearchParams(formData).toString(), { headers, responseType: 'text' })
       .subscribe(() => {
         this.isContactFormSubmitted = true;
       });
