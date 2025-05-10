@@ -144,7 +144,7 @@
 
 .control-button.loading .button-content {
   background: #2d2d2d;
-  margin: 4px;
+  /* margin: 4px; */
 }
 
 @keyframes rotate {
