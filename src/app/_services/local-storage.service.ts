@@ -7,7 +7,11 @@ import { User } from '../_models/User';
 })
 export class LocalStorageService {
 
-  constructor() { }
+  constructor() {
+    if (typeof localStorage === 'undefined') {
+      const localStorage = document.defaultView?.localStorage;
+    }
+  }
 
   public removeAuthData() {
     localStorage.removeItem('user');

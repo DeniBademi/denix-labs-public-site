@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, PLATFORM_ID } from '@angular/core';
 import { Router, RouterOutlet, Event, NavigationEnd, ActivatedRoute } from '@angular/router';
 import {FooterComponent} from './footer/footer.component';
 import { NavbarComponent } from "./navbar/navbar.component";
@@ -11,6 +11,7 @@ declare var particlesJS: any;
 import { IStaticMethods } from 'flyonui/flyonui';
 import { Meta, Title } from '@angular/platform-browser';
 import { MetatagService } from './_services/metatag.service';
+import { isPlatformBrowser } from '@angular/common';
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
@@ -38,22 +39,29 @@ export class AppComponent implements OnInit, OnDestroy {
     private statusChangeSubscription!: Subscription;
     private revokeChoiceSubscription!: Subscription;
     private noCookieLawSubscription!: Subscription;
+    private readonly platform_id = inject(PLATFORM_ID);
 
     constructor(private ccService: NgcCookieConsentService,
                 private router: Router,
                 private meta: MetatagService) {
                   // particlesJS.load('particles-js', '/particlesjs-config.json', null);
+
+
     }
 
   ngOnInit(): void {
-    this.meta.updateMetaTags();
-    if(localStorage.getItem('cookieconsent_dismissed') === 'yes') {
-      this.ccService.destroy();
+
+    if (isPlatformBrowser(this.platform_id)) {
+      this.meta.updateMetaTags();
+      if(localStorage.getItem('cookieconsent_dismissed') === 'yes') {
+        this.ccService.destroy();
+      }
+      this.popupCloseSubscription = this.ccService.popupClose$.subscribe( () => {
+        localStorage.setItem('cookieconsent_dismissed', 'yes');
+       });
     }
 
-    this.popupCloseSubscription = this.ccService.popupClose$.subscribe( () => {
-      localStorage.setItem('cookieconsent_dismissed', 'yes');
-     });
+
 
    }
   ngOnDestroy() {

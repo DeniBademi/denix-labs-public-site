@@ -1,15 +1,19 @@
-import { Injectable } from '@angular/core';
+import { Injectable, PLATFORM_ID, inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { isPlatformBrowser } from '@angular/common';
 @Injectable({
   providedIn: 'root'
 })
 export class MetatagService {
 
+  private readonly platform_id = inject(PLATFORM_ID);
+
   constructor(private meta: Meta, private title: Title) { }
 
   updateMetaTags(page: string | null = null) {
-    if (!page) {
-      page = window.location.pathname.split('/')[1];
+
+    if (!isPlatformBrowser(this.platform_id)) {
+      return;
     }
 
     switch (page) {
