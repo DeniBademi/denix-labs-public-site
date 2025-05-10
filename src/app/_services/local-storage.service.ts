@@ -7,10 +7,9 @@ import { User } from '../_models/User';
 })
 export class LocalStorageService {
 
+
   constructor() {
-    if (typeof localStorage === 'undefined') {
-      const localStorage = document.defaultView?.localStorage;
-    }
+
   }
 
   public removeAuthData() {
