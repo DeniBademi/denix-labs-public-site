@@ -38,6 +38,7 @@
 .button-wrapper.in-call,
 .button-wrapper.loading {
   animation: none !important;
+
 }
 
 @keyframes breathe {
@@ -222,4 +223,29 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.error-message {
+  color: #ff4d4f;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.control-button.loading,
+.button-wrapper.loading {
+  cursor: wait;
 }

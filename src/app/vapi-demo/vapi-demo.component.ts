@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import Vapi from "@vapi-ai/web";
 import { CommonModule } from '@angular/common';
 
@@ -9,13 +9,19 @@ import { CommonModule } from '@angular/common';
   templateUrl: './vapi-demo.component.html',
   styleUrl: './vapi-demo.component.css'
 })
-export class VapiDemoComponent {
+export class VapiDemoComponent implements OnInit, OnDestroy {
   vapi: Vapi | undefined;
   isSpeaking = false;
   isInCall = false;
   volumeLevel = 0;
   pitchLevels = [0, 0, 0, 0, 0];
   isLoading = false;
+  errorMessage: string | null = null;
+  private loadingTimeout: any;
+
+  ngOnInit() {
+    // Initialize component
+  }
 
   // useful methods
   // vapi.on("speech-start", () => {
@@ -30,6 +36,19 @@ export class VapiDemoComponent {
 
   async startVapi() {
     this.isLoading = true;
+    this.errorMessage = null;
+    this.loadingTimeout = setTimeout(() => {
+      if (this.isLoading) {
+        this.isLoading = false;
+        this.errorMessage = 'Нещо се обърка. Опитайте отново.';
+
+        if (this.vapi) {
+          this.vapi.stop();
+          return;
+        }
+      }
+    }, 10000);
+
     this.vapi = new Vapi('823d2036-344d-4d97-a147-f3c85209cbf9');
     this.vapi.start();
 
@@ -72,6 +91,7 @@ export class VapiDemoComponent {
 
     this.isInCall = true;
     this.isLoading = false;
+    this.errorMessage = null;
   }
 
   async stopVapi() {
@@ -80,5 +100,11 @@ export class VapiDemoComponent {
     this.isInCall = false;
     this.volumeLevel = 0;
     this.pitchLevels = [0, 0, 0, 0, 0];
+    this.errorMessage = null;
+    clearTimeout(this.loadingTimeout);
+  }
+
+  ngOnDestroy() {
+    clearTimeout(this.loadingTimeout);
   }
 }
