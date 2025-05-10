@@ -49,8 +49,9 @@ export class VapiDemoComponent implements OnInit, OnDestroy {
       }
     }, 10000);
 
+    // await new Promise(resolve => setTimeout(resolve, 30000));
+
     this.vapi = new Vapi('823d2036-344d-4d97-a147-f3c85209cbf9');
-    this.vapi.start();
 
     this.vapi.on("speech-start", () => {
       this.isSpeaking = true;
@@ -74,7 +75,29 @@ export class VapiDemoComponent implements OnInit, OnDestroy {
       ];
     });
 
+    this.vapi.on("call-end", () => {
+      this.isInCall = false;
+      this.isLoading = false;
+      this.errorMessage = null;
+    });
+
+    this.vapi.on("call-start", () => {
+      this.isInCall = true;
+      this.isLoading = false;
+      this.errorMessage = null;
+    });
+
     const call = await this.vapi.start('f20a0461-4a8e-4f9c-aa7f-abb06ebcdf0c');
+
+    this.vapi.on("error", () => {
+      this.errorMessage = 'Нещо се обърка. Опитайте отново.';
+      this.isLoading = false;
+      this.isInCall = false;
+      this.volumeLevel = 0;
+      this.pitchLevels = [0, 0, 0, 0, 0];
+    });
+
+
 
     // let callDuration = 1; // minutes
     // setTimeout(() => {

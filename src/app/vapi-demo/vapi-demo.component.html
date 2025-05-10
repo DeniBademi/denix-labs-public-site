@@ -16,7 +16,7 @@
           title="Старт/Стоп"
           [class.in-call]="isInCall"
           [class.loading]="isLoading"
-          [style.boxShadow]="isSpeaking ? '0 0 ' + (20 + volumeLevel * 30) + 'px rgba(63, 81, 181, ' + (0.3 + volumeLevel * 2) + ')' : 'none'"
+          [style.boxShadow]="isSpeaking ? '0 0 ' + (20 + volumeLevel * 40) + 'px rgba(63, 81, 181, ' + (0.6 + volumeLevel * 2) + ')' : 'none'"
           (click)="isInCall ? stopVapi() : startVapi()">
           <div class="button-content">
             <svg *ngIf="!isInCall" class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
