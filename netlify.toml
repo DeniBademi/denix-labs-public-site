@@ -1,23 +1,33 @@
 [build]
   command = "npm run build:production"
-  publish = "dist/public-site/browser"
+  publish = "dist/public-site"
 
 [[redirects]]
   from = "/"
-  to = "/bg/"
+  to = "/bg/browser/bg/"
   status = 302
 
 [[redirects]]
   from = "/bg/*"
-  to = "/bg/index.html"
+  to = "/bg/browser/bg/index.csr.html"
   status = 200
 
 [[redirects]]
   from = "/en/*"
-  to = "/en/index.html"
+  to = "/en/browser/en/index.csr.html"
   status = 200
 
 [[redirects]]
-  from = "/*"
+  from = "/bg"
   to = "/bg/"
+  status = 302
+
+[[redirects]]
+  from = "/en"
+  to = "/en/"
+  status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/bg/browser/bg/"
   status = 302
