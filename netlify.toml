@@ -1,20 +1,23 @@
 [build]
   command = "npm run build:production"
-  publish = "dist/public-site"
+  publish = "dist/public-site/browser"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
 
 [[redirects]]
   from = "/"
-  to = "/bg/browser/bg/"
+  to = "/bg/"
   status = 302
 
 [[redirects]]
   from = "/bg/*"
-  to = "/bg/browser/bg/index.csr.html"
+  to = "/bg/index.csr.html"
   status = 200
 
 [[redirects]]
   from = "/en/*"
-  to = "/en/browser/en/index.csr.html"
+  to = "/en/index.html"
   status = 200
 
 [[redirects]]
@@ -29,5 +32,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/bg/browser/bg/"
+  to = "/bg/"
   status = 302
