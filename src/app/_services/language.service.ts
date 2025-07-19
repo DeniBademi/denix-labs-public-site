@@ -17,7 +17,7 @@ export class LanguageService {
     this.initializeLanguage();
   }
 
-  private initializeLanguage(): void {
+  public initializeLanguage(): void {
     // Check if there's a language in the URL path
     const path = this.location.path();
     const pathSegments = path.split('/').filter(segment => segment);
@@ -27,6 +27,10 @@ export class LanguageService {
     } else {
       // Default to Bulgarian if no language specified
       this.currentLanguage = 'bg';
+      // Redirect to Bulgarian path if no language prefix
+      if (path !== '/bg' && path !== '/en') {
+        this.router.navigateByUrl('/bg' + path);
+      }
     }
   }
 

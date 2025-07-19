@@ -5,6 +5,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { NgcCookieConsentService, NgcStatusChangeEvent } from 'ngx-cookieconsent';
 import { OnInit, OnDestroy } from '@angular/core';
 import { Subscription }   from 'rxjs';
+import { LanguageService } from './_services/language.service';
 
 declare var particlesJS: any;
 
@@ -43,7 +44,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
     constructor(private ccService: NgcCookieConsentService,
                 private router: Router,
-                private meta: MetatagService) {
+                private meta: MetatagService,
+                private languageService: LanguageService) {
                   // particlesJS.load('particles-js', '/particlesjs-config.json', null);
 
 
@@ -59,6 +61,16 @@ export class AppComponent implements OnInit, OnDestroy {
       this.popupCloseSubscription = this.ccService.popupClose$.subscribe( () => {
         localStorage.setItem('cookieconsent_dismissed', 'yes');
        });
+
+      // Initialize language service and handle navigation
+      this.router.events.subscribe((event: Event) => {
+        if (event instanceof NavigationEnd) {
+          // Small delay to ensure the route is fully processed
+          setTimeout(() => {
+            this.languageService.initializeLanguage();
+          }, 100);
+        }
+      });
     }
 
 
