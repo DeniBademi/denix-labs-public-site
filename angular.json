@@ -163,18 +163,18 @@
       "i18n": {
         "sourceLocale": {
           "code": "en",
-          "baseHref": "/en/"
+          "subPath": "/en/"
         },
         "locales": {
           "bg": {
             "sourceLocale": "en",
             "translation": "src/locale/messages.bg.xlf",
-            "baseHref": "/bg/"
+            "subPath": "/bg/"
           },
           "en": {
             "sourceLocale": "en",
             "translation": "src/locale/messages.en.xlf",
-            "baseHref": "/en/"
+            "subPath": "/en/"
           }
         }
       }
