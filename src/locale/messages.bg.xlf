@@ -135,7 +135,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="team.description" datatype="html">
-        <source>Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven&apos;t heard of them.</source>
+        <source>Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</source>
         <target>Нашият екип се състои от експерти в областта на изкуствения интелект, машинното обучение и софтуерното разработване.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
@@ -311,7 +311,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="whyAI.personalizationDesc" datatype="html">
-        <source> With AI, you can understand your customers&apos; needs and offer personalized products and services. </source>
+        <source> With AI, you can understand your customers' needs and offer personalized products and services. </source>
         <target>С AI можете да вникнете в нуждите на клиентите си, да предложите персонализирани продукти и услуги.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
