@@ -1,59 +1,135 @@
-# PublicSite
+# DenixLabs Public Site
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+A multilingual Angular website for DenixLabs, supporting both Bulgarian and English languages.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- 🌍 **Multilingual Support**: Full i18n support for Bulgarian (bg) and English (en)
+- 🎨 **Modern UI**: Built with Angular 19 and Tailwind CSS
+- 📱 **Responsive Design**: Mobile-first approach
+- ⚡ **Performance**: Optimized builds for each language
+- 🔧 **AI Solutions**: Showcase of AI-powered business solutions
 
-```bash
-ng serve
-```
+## Language Support
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The website supports two languages:
+- **Bulgarian (bg)**: Default language
+- **English (en)**: International version
 
-## Code scaffolding
+### Language Switching
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Users can switch between languages using the language switcher in the navigation bar. The language preference is maintained in the URL structure:
+- Bulgarian: `/bg/...`
+- English: `/en/...`
 
-```bash
-ng generate component component-name
-```
+## Development
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Prerequisites
 
-```bash
-ng generate --help
-```
+- Node.js (v18 or higher)
+- npm or yarn
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Installation
 
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### Development Server
 
 ```bash
-ng e2e
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+The application will be available at `http://localhost:4200` and will redirect to the Bulgarian version by default.
 
-## Additional Resources
+### Building for Production
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+#### Build for specific language:
+
+```bash
+# Build Bulgarian version
+npm run build:bg
+
+# Build English version
+npm run build:en
+```
+
+#### Build for all languages:
+
+```bash
+npm run build:all
+```
+
+### Internationalization
+
+#### Extract translatable strings:
+
+```bash
+npm run extract-i18n
+```
+
+This command extracts all translatable strings from the templates and updates the source file at `src/locale/messages.xlf`.
+
+#### Translation Files
+
+- `src/locale/messages.xlf` - Source file (English)
+- `src/locale/messages.bg.xlf` - Bulgarian translations
+- `src/locale/messages.en.xlf` - English translations
+
+#### Adding New Translations
+
+1. Add `i18n` attributes to your HTML templates:
+   ```html
+   <h1 i18n="@@page.title">Page Title</h1>
+   ```
+
+2. Extract the strings:
+   ```bash
+   npm run extract-i18n
+   ```
+
+3. Update the translation files with the new strings
+
+4. Rebuild the application
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── _services/
+│   │   └── language.service.ts      # Language switching logic
+│   ├── language-switcher/
+│   │   └── language-switcher.component.ts  # Language switcher UI
+│   ├── hero/
+│   ├── navbar/
+│   ├── footer/
+│   └── ...
+├── locale/
+│   ├── messages.xlf                 # Source translations
+│   ├── messages.bg.xlf              # Bulgarian translations
+│   └── messages.en.xlf              # English translations
+└── ...
+```
+
+## Deployment
+
+The application is configured for deployment on Netlify with SSR support. Each language build creates separate bundles that can be deployed independently.
+
+### Netlify Configuration
+
+The `netlify.toml` file is configured to handle the multilingual routing and SSR.
+
+## Contributing
+
+When adding new content:
+
+1. Always use i18n attributes for translatable text
+2. Test both language versions
+3. Update translation files when adding new strings
+4. Ensure proper URL structure for both languages
+
+## License
+
+Copyright DenixLabs 2025

@@ -16,8 +16,8 @@ import { QaAndAnomaliesComponent } from './pages/solutions/qa-and-anomalies/qa-a
 import { ReportWritingComponent } from './pages/solutions/report-writing/report-writing.component';
 import { FaceRecognitionComponent } from './pages/solutions/face-recognition/face-recognition.component';
 import { RiskAssessmentComponent } from './pages/solutions/risk-assessment/risk-assessment.component';
-export const routes: Routes = [
-    { path: '', component: HomeComponent },
+
+const baseRoutes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'services', component: ServicesComponent },
     { path: 'solutions/automatic-customer-support', component: AutomaticCustomerSupportComponent},
@@ -28,15 +28,36 @@ export const routes: Routes = [
     { path: 'solutions/predictive-maintenance', component: PredictiveMaintenanceComponent },
     { path: 'solutions/face-recognition', component: FaceRecognitionComponent },
     { path: 'solutions/risk-assessment', component: RiskAssessmentComponent },
-
     { path: 'solutions', component: SolutionsComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'cookies', component: CookiePolicyComponent},
     { path: 'privacy', component: PrivacyPolicyComponent},
     { path: 'terms', component: TermsOfUseComponent},
     { path: 'not-found', component: NotFoundComponent },
-    // { path: '**', redirectTo: 'not-found' }, // Redirect any unmatched route to login
+    { path: '', component: HomeComponent },
+    { path: '**', redirectTo: 'not-found' }
+];
 
-
-
+export const routes: Routes = [
+    // Bulgarian routes
+    {
+        path: 'bg',
+        children: baseRoutes
+    },
+    // English routes
+    {
+        path: 'en',
+        children: baseRoutes
+    },
+    // Default route - redirect to Bulgarian
+    {
+        path: '',
+        redirectTo: 'bg',
+        pathMatch: 'full'
+    },
+    // Catch all other routes and redirect to Bulgarian not-found
+    {
+        path: '**',
+        redirectTo: 'bg/not-found'
+    }
 ];

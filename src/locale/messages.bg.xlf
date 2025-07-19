@@ -4,6 +4,7 @@
     <body>
       <trans-unit id="footer.company" datatype="html">
         <source>COMPANY</source>
+        <target>КОМПАНИЯ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">7,8</context>
@@ -11,6 +12,7 @@
       </trans-unit>
       <trans-unit id="nav.services" datatype="html">
         <source>Services</source>
+        <target>Услуги</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">11,13</context>
@@ -26,6 +28,7 @@
       </trans-unit>
       <trans-unit id="nav.solutions" datatype="html">
         <source>Solutions</source>
+        <target>Решения</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">14,16</context>
@@ -41,6 +44,7 @@
       </trans-unit>
       <trans-unit id="footer.legal" datatype="html">
         <source>LEGAL</source>
+        <target>ПРАВНИ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">20,21</context>
@@ -48,6 +52,7 @@
       </trans-unit>
       <trans-unit id="footer.terms" datatype="html">
         <source>Terms of Service</source>
+        <target>Общи условия</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">24,26</context>
@@ -55,6 +60,7 @@
       </trans-unit>
       <trans-unit id="footer.cookies" datatype="html">
         <source>Cookie Policy</source>
+        <target>Политика за бисквитки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">27,29</context>
@@ -62,6 +68,7 @@
       </trans-unit>
       <trans-unit id="footer.privacy" datatype="html">
         <source>Privacy Policy</source>
+        <target>Политика за поверителност</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">30,32</context>
@@ -69,6 +76,7 @@
       </trans-unit>
       <trans-unit id="hero.title" datatype="html">
         <source>Let artificial intelligence work for you</source>
+        <target>Нека изкуственият интелект работи за вас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">20,23</context>
@@ -76,6 +84,7 @@
       </trans-unit>
       <trans-unit id="hero.description" datatype="html">
         <source> DenixLabs is a bridge between science and business. We create modern and intelligent AI systems that help you make informed decisions and automate routine tasks. </source>
+        <target>DenixLabs е мост между науката и бизнеса. Създаваме съвременни и интелигентни системи с изкуствен интелект, които помагат да вземате информирани решения и да автоматизирате рутинни задачи.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">24,27</context>
@@ -83,6 +92,7 @@
       </trans-unit>
       <trans-unit id="hero.contact" datatype="html">
         <source> Contact us </source>
+        <target>Свържи се с нас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">32,35</context>
@@ -98,6 +108,7 @@
       </trans-unit>
       <trans-unit id="hero.learnMore" datatype="html">
         <source>Learn more <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;3&quot; class=&quot;w-4 h-4 ml-2&quot; viewBox=&quot;0 0 24 24&quot;&gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path d=&quot;M5 12h14M12 5l7 7-7 7&quot;&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;/path&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/></source>
+        <target>Научи повече <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;3&quot; class=&quot;w-4 h-4 ml-2&quot; viewBox=&quot;0 0 24 24&quot;&gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path d=&quot;M5 12h14M12 5l7 7-7 7&quot;&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;/path&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">39,44</context>
@@ -105,6 +116,7 @@
       </trans-unit>
       <trans-unit id="nav.contact" datatype="html">
         <source>Contact</source>
+        <target>Контакти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
           <context context-type="linenumber">38,40</context>
@@ -116,6 +128,7 @@
       </trans-unit>
       <trans-unit id="team.title" datatype="html">
         <source>OUR TEAM</source>
+        <target>НАШИЯТ ЕКИП</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
           <context context-type="linenumber">4,5</context>
@@ -123,6 +136,7 @@
       </trans-unit>
       <trans-unit id="team.description" datatype="html">
         <source>Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven&apos;t heard of them.</source>
+        <target>Нашият екип се състои от експерти в областта на изкуствения интелект, машинното обучение и софтуерното разработване.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
           <context context-type="linenumber">5,7</context>
@@ -130,6 +144,7 @@
       </trans-unit>
       <trans-unit id="team.ceo" datatype="html">
         <source>CEO</source>
+        <target>Главен изпълнителен директор</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
           <context context-type="linenumber">14</context>
@@ -137,6 +152,7 @@
       </trans-unit>
       <trans-unit id="team.denis.description" datatype="html">
         <source>Започва професионалната си кариера на ранна възраст и с труд става експерт в областта на изкуственият интелект.</source>
+        <target>Започва професионалната си кариера на ранна възраст и с труд става експерт в областта на изкуственият интелект.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
           <context context-type="linenumber">14,15</context>
@@ -144,6 +160,7 @@
       </trans-unit>
       <trans-unit id="team.uiDeveloper" datatype="html">
         <source>UI Developer</source>
+        <target>UI Разработчик</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
           <context context-type="linenumber">40,41</context>
@@ -159,6 +176,7 @@
       </trans-unit>
       <trans-unit id="team.holden.description" datatype="html">
         <source>DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</source>
+        <target>Експерт в разработката на потребителски интерфейси с фокус върху създаването на интуитивни и естетически приятни приложения.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
           <context context-type="linenumber">41,42</context>
@@ -166,6 +184,7 @@
       </trans-unit>
       <trans-unit id="team.atticus.description" datatype="html">
         <source>DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</source>
+        <target>Специалист в създаването на отзивчиви и достъпни потребителски интерфейси за модерни уеб приложения.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
           <context context-type="linenumber">68,69</context>
@@ -173,6 +192,7 @@
       </trans-unit>
       <trans-unit id="team.henry.description" datatype="html">
         <source>DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</source>
+        <target>Опитен разработчик с дълбоки познания в модерните технологии за създаване на потребителски интерфейси.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/team/team.component.html</context>
           <context context-type="linenumber">95,96</context>
@@ -180,6 +200,7 @@
       </trans-unit>
       <trans-unit id="testimonials.title" datatype="html">
         <source> What our clients say </source>
+        <target>Какво казват клиентите ни</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/testimonials/testimonials.component.html</context>
           <context context-type="linenumber">6,9</context>
@@ -187,6 +208,7 @@
       </trans-unit>
       <trans-unit id="testimonials.description" datatype="html">
         <source> We are proud to have helped clients in various industries with our AI solutions. Here are some of their testimonials. </source>
+        <target>Горди сме, че сме помогнали на клиенти от различни индустрии с нашите AI решения. Ето някои от техните отзиви.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/testimonials/testimonials.component.html</context>
           <context context-type="linenumber">10,13</context>
@@ -194,6 +216,7 @@
       </trans-unit>
       <trans-unit id="testimonials.quote" datatype="html">
         <source>Great work</source>
+        <target>Важи братлето</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/testimonials/testimonials.component.html</context>
           <context context-type="linenumber">81,83</context>
@@ -201,6 +224,7 @@
       </trans-unit>
       <trans-unit id="testimonials.testimonial" datatype="html">
         <source> Denka is very accurate and fast. Top guy and programmer. GIVE IT TO HIM!!! </source>
+        <target>Денката е много точен и бърз. Топ чуек и програмист. ДАЙ МУ БАТЬО!!!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/testimonials/testimonials.component.html</context>
           <context context-type="linenumber">84,85</context>
@@ -208,6 +232,7 @@
       </trans-unit>
       <trans-unit id="vapi.tryFree" datatype="html">
         <source> Try <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> for free </source>
+        <target>Опитай <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> безплатно</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/vapi-demo/vapi-demo.component.html</context>
           <context context-type="linenumber">8,10</context>
@@ -215,6 +240,7 @@
       </trans-unit>
       <trans-unit id="vapi.title" datatype="html">
         <source>Introducing our first voice agent, Philips </source>
+        <target>Представяме първият ни гласов агент, Филипс</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/vapi-section/vapi-section.component.html</context>
           <context context-type="linenumber">4,6</context>
@@ -222,6 +248,7 @@
       </trans-unit>
       <trans-unit id="vapi.description" datatype="html">
         <source>Voice agents can help your staff be more efficient and productive, and help customers be served faster and more effectively.</source>
+        <target>Гласовите агенти могат да помагат на персоналът ви да бъде по-ефективен и продуктивен, а на клиентите - да бъдат обслужени по-бързо и ефективно.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/vapi-section/vapi-section.component.html</context>
           <context context-type="linenumber">6,7</context>
@@ -229,6 +256,7 @@
       </trans-unit>
       <trans-unit id="vapi.requestDemo" datatype="html">
         <source>Request demo</source>
+        <target>Поискай демо</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/vapi-section/vapi-section.component.html</context>
           <context context-type="linenumber">8,10</context>
@@ -236,6 +264,7 @@
       </trans-unit>
       <trans-unit id="whyAI.title" datatype="html">
         <source> Why integrate AI into your business? </source>
+        <target>Защо да интегрирате AI в бизнеса си?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
           <context context-type="linenumber">3,6</context>
@@ -243,6 +272,7 @@
       </trans-unit>
       <trans-unit id="whyAI.informedDecisions" datatype="html">
         <source>Informed decisions</source>
+        <target>Информирани решения</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
           <context context-type="linenumber">15,16</context>
@@ -250,6 +280,7 @@
       </trans-unit>
       <trans-unit id="whyAI.informedDecisionsDesc" datatype="html">
         <source> With AI, you can transform your business and customer data into a foundation for making informed decisions. </source>
+        <target>С AI можете да трансформирате данните от бизнеса и клиентите си в основа за вземане на информирани решения.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
           <context context-type="linenumber">17,20</context>
@@ -257,6 +288,7 @@
       </trans-unit>
       <trans-unit id="whyAI.automation" datatype="html">
         <source>Automation</source>
+        <target>Автоматизация</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
           <context context-type="linenumber">25,26</context>
@@ -264,6 +296,7 @@
       </trans-unit>
       <trans-unit id="whyAI.automationDesc" datatype="html">
         <source> With AI, you can automate routine tasks and business processes. </source>
+        <target>С AI можете да автоматизирате рутинни задачи и бизнес процеси.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
           <context context-type="linenumber">27,29</context>
@@ -271,6 +304,7 @@
       </trans-unit>
       <trans-unit id="whyAI.personalization" datatype="html">
         <source>Personalization</source>
+        <target>Персонализация</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
           <context context-type="linenumber">35,36</context>
@@ -278,6 +312,7 @@
       </trans-unit>
       <trans-unit id="whyAI.personalizationDesc" datatype="html">
         <source> With AI, you can understand your customers&apos; needs and offer personalized products and services. </source>
+        <target>С AI можете да вникнете в нуждите на клиентите си, да предложите персонализирани продукти и услуги.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
           <context context-type="linenumber">37,40</context>
@@ -285,6 +320,7 @@
       </trans-unit>
       <trans-unit id="whyAI.lowerCosts" datatype="html">
         <source>Lower costs</source>
+        <target>По-малко разходи</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
           <context context-type="linenumber">45,46</context>
@@ -292,6 +328,7 @@
       </trans-unit>
       <trans-unit id="whyAI.lowerCostsDesc" datatype="html">
         <source> Direct your resources and staff to more important tasks and reduce costs with the help of AI. </source>
+        <target>Насочете ресурсите и персонала си към по-важни задачи и намалете разходите с помощта на AI.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
           <context context-type="linenumber">47,49</context>

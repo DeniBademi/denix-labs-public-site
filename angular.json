@@ -61,6 +61,50 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "development-bg": {
+              "localize": ["bg"],
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            },
+            "development-en": {
+              "localize": ["en"],
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            },
+            "production-bg": {
+              "localize": ["bg"],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1.3MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "production-en": {
+              "localize": ["en"],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1.3MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
             }
           },
           "defaultConfiguration": "production"
@@ -73,6 +117,18 @@
             },
             "development": {
               "buildTarget": "PublicSite:build:development"
+            },
+            "development-bg": {
+              "buildTarget": "PublicSite:build:development-bg"
+            },
+            "development-en": {
+              "buildTarget": "PublicSite:build:development-en"
+            },
+            "production-bg": {
+              "buildTarget": "PublicSite:build:production-bg"
+            },
+            "production-en": {
+              "buildTarget": "PublicSite:build:production-en"
             }
           },
           "defaultConfiguration": "development"
@@ -95,9 +151,7 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-
-
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -108,6 +162,7 @@
       },
       "i18n": {
         "locales": {
+          "bg": "src/locale/messages.bg.xlf",
           "en": "src/locale/messages.en.xlf"
         }
       }

@@ -4,10 +4,18 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "serve:bg": "ng serve --configuration=development-bg --port=4200",
+    "serve:en": "ng serve --configuration=development-en --port=4201",
+    "serve:both": "concurrently \"npm run serve:bg\" \"npm run serve:en\"",
     "build": "ng build",
+    "build:bg": "ng build --configuration production-bg --output-path=dist/public-site/bg",
+    "build:en": "ng build --configuration production-en --output-path=dist/public-site/en",
+    "build:all": "npm run build:bg && npm run build:en",
+    "build:production": "npm run build:all",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:PublicSite": "node dist/public-site/server/server.mjs"
+    "serve:ssr:PublicSite": "node dist/public-site/server/server.mjs",
+    "extract-i18n": "ng extract-i18n --output-path src/locale"
   },
   "private": true,
   "dependencies": {
@@ -53,6 +61,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.2.0",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

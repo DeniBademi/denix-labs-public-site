@@ -3,8 +3,9 @@
     <div class="text-container" [class.shrink]="isLoading">
       <h1 class="text-2xl whitespace-nowrap font-bold text-white animate__animated" *ngIf="!isInCall"
           [class.animate__fadeOutLeft]="isLoading && !isInCall"
-          [class.animate__fadeInLeft]="isLoading && isInCall">
-        Опитай <br> безплатно
+          [class.animate__fadeInLeft]="isLoading && isInCall"
+          i18n="@@vapi.tryFree">
+        Try <br> for free
       </h1>
     </div>
     <div class="controls">
@@ -13,7 +14,7 @@
            [class.loading]="isLoading">
         <button
           class="control-button animate__animated animate__delay-1s"
-          title="Старт/Стоп"
+          title="Start/Stop"
           [class.in-call]="isInCall"
           [class.loading]="isLoading"
           [style.boxShadow]="isSpeaking ? '0 0 ' + (20 + volumeLevel * 40) + 'px rgba(63, 81, 181, ' + (0.6 + volumeLevel * 2) + ')' : 'none'"

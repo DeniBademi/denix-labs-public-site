@@ -1,4 +1,23 @@
+[build]
+  command = "npm run build:production"
+  publish = "dist/public-site"
+
+[[redirects]]
+  from = "/"
+  to = "/bg/"
+  status = 302
+
+[[redirects]]
+  from = "/bg/*"
+  to = "/bg/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/index.html"
+  status = 200
+
 [[redirects]]
   from = "/*"
-  to = "/"
-  status = 200
+  to = "/bg/"
+  status = 302

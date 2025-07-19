@@ -34,11 +34,11 @@ const cookieConfig: NgcCookieConsentConfig = {
   revokable: true,
 
   content: {
-    message: "Ние използваме “бисквитки”, за да подобрим интеракциите ви с нашия сайт. За повече информация, моля прочетете нашата политика за бисквитките.",
-    dismiss: "Приемам всички бисквитки",
-    allow: "Приемам всички",
-    deny: "Откажи",
-    link: "Политика за бисквитки",
+    message: "We use cookies to improve your interactions with our website. For more information, please read our cookie policy.",
+    dismiss: "Accept all cookies",
+    allow: "Accept all",
+    deny: "Decline",
+    link: "Cookie Policy",
     href: "/cookies",
     policy: "Cookie Policy",
     cookieconsent_dismissed: "yes",
