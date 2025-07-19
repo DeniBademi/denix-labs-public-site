@@ -161,9 +161,21 @@
         }
       },
       "i18n": {
+        "sourceLocale": {
+          "code": "en",
+          "baseHref": "/en/"
+        },
         "locales": {
-          "bg": "src/locale/messages.bg.xlf",
-          "en": "src/locale/messages.en.xlf"
+          "bg": {
+            "sourceLocale": "en",
+            "translation": "src/locale/messages.bg.xlf",
+            "baseHref": "/bg/"
+          },
+          "en": {
+            "sourceLocale": "en",
+            "translation": "src/locale/messages.en.xlf",
+            "baseHref": "/en/"
+          }
         }
       }
     }
