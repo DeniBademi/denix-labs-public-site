@@ -58,7 +58,7 @@ export class LanguageService {
   }
 
   getLanguageName(language: Language): string {
-    return language === 'bg' ? 'Български' : 'English';
+    return language === 'bg' ? 'BG' : 'EN';
   }
 
   isCurrentLanguage(language: Language): boolean {

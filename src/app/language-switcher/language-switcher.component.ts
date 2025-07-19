@@ -21,7 +21,7 @@ import { LanguageService, Language } from '../_services/language.service';
   styles: [`
     .language-switcher {
       display: flex;
-      gap: 0.5rem;
+      gap: 0.25rem;
       align-items: center;
     }
 
@@ -31,9 +31,12 @@ import { LanguageService, Language } from '../_services/language.service';
       background: transparent;
       color: white;
       border-radius: 0.25rem;
-      font-size: 0.875rem;
+      font-size: 0.75rem;
+      font-weight: 500;
       cursor: pointer;
       transition: all 0.2s ease;
+      min-width: 2rem;
+      text-align: center;
     }
 
     .lang-btn:hover {
@@ -51,6 +54,7 @@ import { LanguageService, Language } from '../_services/language.service';
       outline: 2px solid #6366F1;
       outline-offset: 2px;
     }
+
   `]
 })
 export class LanguageSwitcherComponent {
