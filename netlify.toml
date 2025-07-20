@@ -2,23 +2,10 @@
   command = "npm run build:production"
   publish = "dist/public-site/browser"
 
-[[plugins]]
-  package = "@netlify/angular-runtime"
-
 [[redirects]]
   from = "/"
   to = "/bg/"
   status = 302
-
-[[redirects]]
-  from = "/bg/*"
-  to = "/bg/index.csr.html"
-  status = 200
-
-[[redirects]]
-  from = "/en/*"
-  to = "/en/index.html"
-  status = 200
 
 [[redirects]]
   from = "/bg"
@@ -34,3 +21,14 @@
   from = "/*"
   to = "/bg/"
   status = 302
+
+# Handle Angular Universal routing for both locales
+[[redirects]]
+  from = "/bg/*"
+  to = "/bg/index.csr.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/index.csr.html"
+  status = 200

@@ -1,18 +1,26 @@
 import { APP_BASE_HREF } from '@angular/common';
 import { CommonEngine, isMainModule } from '@angular/ssr/node';
 import express from 'express';
-import { dirname, join, resolve } from 'node:path';
+import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import bootstrap from './main.server';
 import { render } from '@netlify/angular-runtime/common-engine'
+import { LOCALE_ID } from '@angular/core';
+import { REQUEST, RESPONSE } from '../src/express.tokens';
 
-const serverDistFolder = dirname(fileURLToPath(import.meta.url));
-const browserDistFolder = resolve(serverDistFolder, '../browser');
-const indexHtml = join(serverDistFolder, 'index.server.html');
 
 const app = express();
+
+const serverDistFolder = dirname(fileURLToPath(import.meta.url));
+const lang = basename(serverDistFolder);
+const langPath = `/${lang}/`;
+const browserDistFolder = resolve(serverDistFolder, `../../browser/${lang}`);
+const indexHtml = join(serverDistFolder, 'index.server.html');
+
 const commonEngine = new CommonEngine();
 
+app.set('view engine', 'html');
+app.set('views', browserDistFolder);
 
 export async function netlifyCommonEngineHandler(request: Request, context: any): Promise<Response> {
   // Example API endpoints can be defined here.
@@ -51,16 +59,23 @@ app.get(
 /**
  * Handle all other requests by rendering the Angular application.
  */
-app.get('**', (req, res, next) => {
-  const { protocol, originalUrl, baseUrl, headers } = req;
-
+app.get('*', (req, res, next) => {
+  /**
+   * Discard baseUrl as we will provide it with langPath
+   */
+  const { protocol, originalUrl, headers } = req;
   commonEngine
     .render({
       bootstrap,
       documentFilePath: indexHtml,
       url: `${protocol}://${headers.host}${originalUrl}`,
-      publicPath: browserDistFolder,
-      providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
+      publicPath: resolve(serverDistFolder, `../../browser/`), // publicPath does not need to concatenate the language.
+      providers: [
+        { provide: APP_BASE_HREF, useValue: langPath },
+        { provide: LOCALE_ID, useValue: lang },
+        { provide: RESPONSE, useValue: res },
+        { provide: REQUEST, useValue: req },
+      ],
     })
     .then((html) => res.send(html))
     .catch((err) => next(err));

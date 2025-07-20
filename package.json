@@ -11,15 +11,18 @@
     "build:dev": "npm run build:bg:dev && npm run build:en:dev",
     "build:bg:dev": "ng build --configuration=development-bg",
     "build:en:dev": "ng build --configuration=development-en",
-    "build:bg": "ng build --configuration production-bg --output-path=dist/public-site/browser/bg",
-    "build:en": "ng build --configuration production-en --output-path=dist/public-site/browser/en",
+    "build:bg": "ng build --configuration=production-bg",
+    "build:en": "ng build --configuration=production-en",
     "build:all": "npm run build:bg && npm run build:en",
-    "build:production": "npm run build:all",
+    "build:production": "node build-netlify.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:PublicSite": "node dist/public-site/server/server.mjs",
-    "extract-i18n": "ng extract-i18n --output-path src/locale"
+    "extract-i18n": "ng extract-i18n --output-path src/locale",
+    "serve:ssr": "node dist/public-site/proxy-server.mjs",
+    "serve:lang": "node dist/public-site/browser/proxy-server.mjs"
   },
+
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.1.0",

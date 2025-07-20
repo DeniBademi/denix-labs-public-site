@@ -9,6 +9,17 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": {
+          "code": "en"
+        },
+        "locales": {
+          "bg": {
+            "translation": "src/locale/messages.bg.xlf",
+            "baseHref": "/bg/"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -57,58 +68,67 @@
               ],
               "outputHashing": "all"
             },
+            "production-en": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1.3MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all",
+              "localize": ["en"],
+              "baseHref": "/en/"
+            },
+            "production-bg": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1.3MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all",
+              "localize": ["bg"],
+              "baseHref": "/bg/"
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
-            },
-            "development-bg": {
-              "localize": ["bg"],
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "localize": [
+                "en"
+              ],
+              "baseHref": "/en/"
             },
             "development-en": {
-              "localize": ["en"],
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
-            },
-            "production-bg": {
-              "localize": ["bg"],
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1.3MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "production-en": {
+              "sourceMap": true,
               "localize": ["en"],
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1.3MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
-                }
-              ],
-              "outputHashing": "all"
+              "baseHref": "/en/"
+            },
+            "development-bg": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "localize": ["bg"],
+              "baseHref": "/bg/"
             }
           },
           "defaultConfiguration": "production"
         },
+
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
@@ -118,23 +138,22 @@
             "development": {
               "buildTarget": "PublicSite:build:development"
             },
-            "development-bg": {
-              "buildTarget": "PublicSite:build:development-bg"
-            },
             "development-en": {
               "buildTarget": "PublicSite:build:development-en"
             },
-            "production-bg": {
-              "buildTarget": "PublicSite:build:production-bg"
-            },
-            "production-en": {
-              "buildTarget": "PublicSite:build:production-en"
+            "development-bg": {
+              "buildTarget": "PublicSite:build:development-bg"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "PublicSite:build",
+            "format": "xlf2",
+            "outputPath": "src/locale"
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -157,24 +176,6 @@
               "src/styles.css"
             ],
             "scripts": []
-          }
-        }
-      },
-      "i18n": {
-        "sourceLocale": {
-          "code": "en",
-          "subPath": "/en/"
-        },
-        "locales": {
-          "bg": {
-            "sourceLocale": "en",
-            "translation": "src/locale/messages.bg.xlf",
-            "subPath": "/bg/"
-          },
-          "en": {
-            "sourceLocale": "en",
-            "translation": "src/locale/messages.en.xlf",
-            "subPath": "/en/"
           }
         }
       }
