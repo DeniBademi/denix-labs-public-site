@@ -1,6 +1,6 @@
 [build]
   command = "npm run build:production"
-  publish = "dist/public-site"
+  publish = "dist/public-site/browser/browser"
 
 [[redirects]]
   from = "/"
