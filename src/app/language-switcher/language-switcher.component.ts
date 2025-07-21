@@ -21,6 +21,7 @@ export class LanguageSwitcherComponent {
   // Change the locale by reloading the page with the new locale path prefix
   const currentUrl = window.location.pathname;
   let newUrl = currentUrl;
+  let currentDomain = window.location.origin;
 
   // Remove existing locale prefix if present
   if (currentUrl.startsWith('/en/')) {
@@ -32,8 +33,13 @@ export class LanguageSwitcherComponent {
 
   // Remove double slashes
   newUrl = newUrl.replace(/\/{2,}/g, '/');
+  console.log(currentDomain + '/' + lang + newUrl);
 
-  this.router.navigate([newUrl]);
+  
+  window.location.href = currentDomain + '/' + lang + newUrl;
+
+
+  // window.location.reload();
   }
 
   getCurrentLocale() {
