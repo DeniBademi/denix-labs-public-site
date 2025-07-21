@@ -732,6 +732,11 @@
         <source>Thank you for your message!</source>
       </segment>
     </unit>
+    <unit id="contact.form.currency">
+      <segment>
+        <source>BGN</source>
+      </segment>
+    </unit>
     
     <!-- Footer -->
     <unit id="footer.company">

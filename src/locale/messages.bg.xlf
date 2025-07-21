@@ -624,6 +624,10 @@
         <source>Thank you for your message!</source>
         <target>Благодарим за съобщението!</target>
       </trans-unit>
+      <trans-unit id="contact.form.currency" datatype="html">
+        <source>BGN</source>
+        <target>лв</target>
+      </trans-unit>
       
       <!-- Footer -->
       <trans-unit id="footer.company" datatype="html">

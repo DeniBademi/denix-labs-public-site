@@ -3,11 +3,11 @@
 <section class="text-gray-600 body-font relative">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" i18n="@@contact.page.title">Контакти</h1>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" i18n="@@contact.page.title">Contact</h1>
       <p class="lg:w-2/5 mx-auto leading-relaxed text-base" i18n="@@contact.page.description">
-        Разкажете ни за своя проект или опишете проблема, който се опитвате да решите.
-        Ще се радваме да обсъдим как DenixLabs може да работи с Вас.
-        Моля, свържете се с нас на <a href="mailto:info@denixlabs.com" class="text-indigo-500">info&#64;denixlabs.com</a> или попълнете формата по-долу.
+        Tell us about your project or describe the problem you're trying to solve.
+        We would be happy to discuss how DenixLabs can work with you.
+        Please contact us at <a href="mailto:info@denixlabs.com" class="text-indigo-500">info&#64;denixlabs.com</a> or fill out the form below.
       </p>
     </div>
     <div class="lg:w-1/2 md:w-2/4 mx-auto">
@@ -23,61 +23,61 @@
 
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.name">Име*</label>
+              <label for="name" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.name">Name*</label>
               <input type="text" id="name" name="name" formControlName="name"
               class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-              <div *ngIf="contactForm.get('name')!.invalid && contactForm.get('name')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Задължително поле</div>
+              <div *ngIf="contactForm.get('name')!.invalid && contactForm.get('name')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Required field</div>
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.company">Компания*</label>
+              <label for="name" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.company">Company*</label>
               <input type="text" id="companyName" name="companyName" formControlName="companyName"
               class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-              <div *ngIf="contactForm.get('companyName')!.invalid && contactForm.get('companyName')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Задължително поле</div>
+              <div *ngIf="contactForm.get('companyName')!.invalid && contactForm.get('companyName')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Required field</div>
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="email" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.email">Имейл*</label>
+              <label for="email" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.email">Email*</label>
               <input type="email" id="email" name="email" formControlName="email"
               class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-              <div *ngIf="contactForm.get('email')!.invalid && contactForm.get('email')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Задължително поле</div>
+              <div *ngIf="contactForm.get('email')!.invalid && contactForm.get('email')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Required field</div>
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="phone" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.phone">Телефон</label>
+              <label for="phone" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.phone">Phone</label>
               <input type="phone" id="phone" name="phone" formControlName="phone"
               class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-              <div *ngIf="contactForm.get('phone')!.invalid && contactForm.get('phone')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Задължително поле</div>
+              <div *ngIf="contactForm.get('phone')!.invalid && contactForm.get('phone')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Required field</div>
             </div>
           </div>
           <div class="p-2 w-full">
             <div class="relative">
-              <label for="message" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.message">Съобщение</label>
+              <label for="message" class="leading-7 text-sm text-gray-600" i18n="@@contact.form.message">Message</label>
               <textarea id="message" name="message" formControlName="message"
                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-              <div *ngIf="contactForm.get('message')!.invalid && contactForm.get('message')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Задължително поле</div>
+              <div *ngIf="contactForm.get('message')!.invalid && contactForm.get('message')!.touched" class="text-red-500 text-sm" i18n="@@contact.form.required">Required field</div>
             </div>
           </div>
           <div class="range_container p-2 w-full my-0">
-            <label for="budgetLow" class="text-sm text-gray-600 my-4" i18n="@@contact.form.budget">Бюджет</label>
+            <label for="budgetLow" class="text-sm text-gray-600 my-4" i18n="@@contact.form.budget">Budget</label>
             <div class="sliders_control" >
               <input id="fromSlider" type="range" min="3000" max="50000" step="500" formControlName="budgetLow"/>
               <input id="toSlider" type="range" min="3000" max="50000" step="500" formControlName="budgetHigh"/>
             </div>
-            <div class="flex flex-col text-center w-full mb-6 my-3">{{contactForm.value.budgetLow}}лв - {{contactForm.value.budgetHigh}}лв</div>
+            <div class="flex flex-col text-center w-full mb-6 my-3">{{contactForm.value.budgetLow}}<span i18n="@@contact.form.currency">BGN</span> - {{contactForm.value.budgetHigh}}<span i18n="@@contact.form.currency">BGN</span></div>
           </div>
 
 
           <div class="p-2 w-full" *ngIf="!this.isContactFormSubmitted">
             <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg disabled:bg-gray-300 disabled:cursor-not-allowed"
             [disabled]="!contactForm.valid" i18n="@@contact.form.submit"
-            >Изпрати</button>
+            >Send</button>
           </div>
           <div class="p-2 w-full" *ngIf="this.isContactFormSubmitted">
-            <p class="text-center" i18n="@@contact.form.thankYou">Благодарим за съобщението!</p>
+            <p class="text-center" i18n="@@contact.form.thankYou">Thank you for your message!</p>
           </div>
         </form>
         <!-- <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
