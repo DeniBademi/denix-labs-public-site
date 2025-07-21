@@ -1,19 +1,19 @@
 {
   "routes": [
     {
-      "route": "/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "route": "/*.{js,xml,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
       "headers": {
         "cache-control": "must-revalidate, max-age=86400"
       }
     },
     {
-      "route": "/en/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "route": "/en/*.{js,xml,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
       "headers": {
         "cache-control": "must-revalidate, max-age=86400"
       }
     },
     {
-      "route": "/bg/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "route": "/bg/*.{js,xml,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
       "headers": {
         "cache-control": "must-revalidate, max-age=86400"
       }
@@ -30,9 +30,9 @@
   "navigationFallback": {
     "rewrite": "/en/index.html",
     "exclude": [
-      "/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
-      "/en/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
-      "/bg/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "/*.{js,xml,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "/en/*.{js,xml,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "/bg/*.{js,xml,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
       "/js/*",
       "/fonts/*",
       "/logos/*",
