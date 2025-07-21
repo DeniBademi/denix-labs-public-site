@@ -4,11 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --localize",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:PublicSite": "node dist/denix-labs-public-site/server/server.mjs",
-    "translate": "ng extract-i18n --format json --output-path src/locale"
+    "serve:ssr:PublicSite": "node dist/denix-labs-public-site/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +24,9 @@
     "@netlify/angular-runtime": "github:netlify/angular-runtime",
     "@nguniversal/express-engine": "^7.0.2",
     "@tailwindcss/postcss": "^4.0.12",
+    "@tsparticles/angular": "^3.0.0",
+    "@tsparticles/engine": "^3.8.1",
+    "@tsparticles/slim": "^3.8.1",
     "@vapi-ai/web": "^2.3.0",
     "animate.css": "^4.1.1",
     "cookieconsent": "^3.1.1",
@@ -38,6 +40,8 @@
     "tailwindcss": "^4.0.9",
     "tailwindcss-motion": "^1.1.0",
     "tslib": "^2.3.0",
+    "tsparticles-engine": "^2.12.0",
+    "tsparticles-slim": "^2.12.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
