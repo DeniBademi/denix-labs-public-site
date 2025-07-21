@@ -52,7 +52,7 @@
               "public/particles.min.js",
               "public/js/burger.js",
               "public/js/slider.js",
-              "public/keen-slider.js"
+              "public/keen_slider.js"
             ],
             "localize": true
           },
