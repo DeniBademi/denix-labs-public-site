@@ -39,7 +39,8 @@ jobs:
         run: | # angular is my folder in the repository root project where I store front-end code
           # cd angular
           cp staticwebapp.config.json dist/denix-labs-public-site/browser
-
+          cp -R public/fonts dist/denix-labs-public-site/browser/fonts
+          cp -R public/js dist/denix-labs-public-site/browser/js
 
       - name: Deploy
         id: deploy
