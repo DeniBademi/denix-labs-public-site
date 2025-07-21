@@ -7,6 +7,18 @@
       }
     },
     {
+      "route": "/en/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=86400"
+      }
+    },
+    {
+      "route": "/bg/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=86400"
+      }
+    },
+    {
       "route": "/",
       "redirect": "/en/index.html"
     },
@@ -19,10 +31,20 @@
     "rewrite": "/en/index.html",
     "exclude": [
       "/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "/en/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "/bg/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
       "/js/*",
       "/fonts/*",
       "/logos/*",
-      "/icons/*"
+      "/icons/*",
+      "/en/js/*",
+      "/en/fonts/*",
+      "/en/logos/*",
+      "/en/icons/*",
+      "/bg/js/*",
+      "/bg/fonts/*",
+      "/bg/logos/*",
+      "/bg/icons/*"
     ]
   }
 }

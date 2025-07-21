@@ -54,7 +54,8 @@
               "public/js/slider.js",
               "public/keen_slider.js"
             ],
-            "localize": true
+            "localize": true,
+            "aot": true
           },
           "configurations": {
             "production": {
