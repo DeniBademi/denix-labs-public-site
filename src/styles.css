@@ -6,13 +6,13 @@
 @font-face {
     font-family: 'jakarta';
     font-display: auto;
-    src: url("/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf") format("opentype");
+    src: url("/en/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf") format("opentype");
 }
 
 @font-face {
     font-family: 'jakarta-i';
     font-display: auto;
-    src: url("/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("opentype");
+    src: url("/en/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("opentype");
 }
 
 @font-face {
@@ -24,7 +24,7 @@
 @font-face {
     font-family: 'nunito';
     font-display: auto;
-    src: url("/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("opentype");
+    src: url("/en/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("opentype");
 }
 
 @font-face {
