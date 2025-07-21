@@ -37,7 +37,12 @@
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/sitemap.xml"
+              "src/sitemap.xml",
+              {
+                "glob": "**/*",
+                "input": "public",
+                "output": "/public"
+              }
             ],
             "styles": [
               "src/styles.css",
@@ -49,7 +54,8 @@
               "public/js/slider.js"
             ],
             "localize": true,
-            "prerender": true
+            "prerender": true,
+            "baseHref": "/"
           },
           "configurations": {
             "production": {
@@ -74,7 +80,8 @@
               "localize": ["en"]
             },
             "bg": {
-              "localize": ["bg"]
+              "localize": ["bg"],
+              "baseHref": "/bg/"
             }
           },
           "defaultConfiguration": "production"

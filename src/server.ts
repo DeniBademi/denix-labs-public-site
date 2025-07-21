@@ -13,46 +13,31 @@ const indexHtml = join(serverDistFolder, 'index.server.html');
 const app = express();
 const commonEngine = new CommonEngine();
 
+// Serve static files from /browser
+app.use(express.static(browserDistFolder, {
+  maxAge: '1y'
+}));
+
+// Serve static files from /public directory at the root
+app.use('/public', express.static(join(browserDistFolder, 'public'), {
+  maxAge: '1y'
+}));
+
+// Serve localized static files
+app.use('/bg/public', express.static(join(browserDistFolder, 'public'), {
+  maxAge: '1y'
+}));
 
 export async function netlifyCommonEngineHandler(request: Request, context: any): Promise<Response> {
-  // Example API endpoints can be defined here.
-  // Uncomment and define endpoints as necessary.
-  // const pathname = new URL(request.url).pathname;
-  // if (pathname === '/api/hello') {
-  //   return Response.json({ message: 'Hello from the API' });
-  // }
-
   return await render(commonEngine)
 }
 
-/**
- * Example Express Rest API endpoints can be defined here.
- * Uncomment and define endpoints as necessary.
- *
- * Example:
- * ```ts
- * app.get('/api/**', (req, res) => {
- *   // Handle API request
- * });
- * ```
- */
-
-/**
- * Serve static files from /browser
- */
-app.get(
-  '**',
-  express.static(browserDistFolder, {
-    maxAge: '1y',
-    index: 'index.html'
-  }),
-);
-
-/**
- * Handle all other requests by rendering the Angular application.
- */
 app.get('**', (req, res, next) => {
   const { protocol, originalUrl, baseUrl, headers } = req;
+
+  // Determine the locale from the URL
+  const locale = originalUrl.startsWith('/bg') ? 'bg' : 'en';
+  const baseHref = locale === 'bg' ? '/bg/' : '/';
 
   commonEngine
     .render({
@@ -60,16 +45,12 @@ app.get('**', (req, res, next) => {
       documentFilePath: indexHtml,
       url: `${protocol}://${headers.host}${originalUrl}`,
       publicPath: browserDistFolder,
-      providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
+      providers: [{ provide: APP_BASE_HREF, useValue: baseHref }],
     })
     .then((html) => res.send(html))
     .catch((err) => next(err));
 });
 
-/**
- * Start the server if this module is the main entry point.
- * The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
- */
 if (isMainModule(import.meta.url)) {
   const port = process.env['PORT'] || 4000;
   app.listen(port, () => {
