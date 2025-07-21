@@ -1,18 +1,20 @@
 {
-  "routes": [
-    {
-      "route": "*.{js,json,css,jpg,png,ico,webmanifest}"
-    },
-    {
-      "route": "/",
-      "redirect": "/en/index.html"
-    },
-    {
-      "route": "/index.html",
-      "rewrite": "/en/index.html"
-    }
-  ],
   "navigationFallback": {
-    "rewrite": "/en/index.html"
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif,ico}", "/*.{css,scss,js,json}"]
+  },
+  "mimeTypes": {
+    ".js": "application/javascript",
+    ".min.js": "application/javascript",
+    ".css": "text/css",
+    ".ttf": "font/ttf",
+    ".woff": "font/woff",
+    ".woff2": "font/woff2",
+    ".json": "application/json"
+  },
+  "globalHeaders": {
+    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'",
+    "Cache-Control": "no-cache",
+    "X-Content-Type-Options": "nosniff"
   }
 }
