@@ -34,9 +34,8 @@ jobs:
           mkdir -p dist/denix-labs-public-site/browser
           mkdir -p dist/denix-labs-public-site/browser/js
           mkdir -p dist/denix-labs-public-site/browser/fonts
-          cp public/fonts dist/denix-labs-public-site/browser
-          cp -a public/fonts/. dist/denix-labs-public-site/browser/fonts
-          cp -a public/js/. dist/denix-labs-public-site/browser/js
+          cp -R public/fonts dist/denix-labs-public-site/browser/fonts
+          cp -R public/js dist/denix-labs-public-site/browser/js
           cd dist/denix-labs-public-site/browser
           echo "<html><body><h1>Hello!</h1></body></html>" > index.html
           
