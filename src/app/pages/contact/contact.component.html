@@ -67,7 +67,9 @@
               <input id="fromSlider" type="range" min="3000" max="50000" step="500" formControlName="budgetLow"/>
               <input id="toSlider" type="range" min="3000" max="50000" step="500" formControlName="budgetHigh"/>
             </div>
-            <div class="flex flex-col text-center w-full mb-6 my-3">{{contactForm.value.budgetLow}}<span i18n="@@contact.form.currency">BGN</span> - {{contactForm.value.budgetHigh}}<span i18n="@@contact.form.currency">BGN</span></div>
+            <div class="flex flex-col text-center w-full mb-6 my-3">
+              <span class="whitespace-nowrap">{{contactForm.value.budgetLow}}<span i18n="@@contact.form.currency">BGN</span> - {{contactForm.value.budgetHigh}}<span i18n="@@contact.form.currency">BGN</span></span>
+            </div>
           </div>
 
 
