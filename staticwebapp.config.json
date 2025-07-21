@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "route": "*.{js,json,css,jpg,png,ico,webmanifest}"
+      "route": "*.{js,json,css,jpg,png,ico,webmanifest,ttf,woff,woff2}"
     },
     {
       "route": "/",
@@ -13,12 +13,12 @@
     }
   ],
   "navigationFallback": {
-    "rewrite": "/index.html",
+    "rewrite": "/en/index.html",
     "exclude": [
-      "/images/*.{png,jpg,gif,ico}",
-      "/*.{css,scss,js,json,map,ico}",
+      "/*.{png,jpg,gif,svg,ico,ttf,woff,woff2}",
+      "/*.{css,scss,js,json,map}",
       "/fonts/*",
-      "/public/*"
+      "/assets/*"
     ]
   },
   "mimeTypes": {
