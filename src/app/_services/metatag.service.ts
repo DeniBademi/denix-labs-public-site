@@ -11,7 +11,7 @@ export class MetatagService {
   constructor(private meta: Meta, private title: Title) { }
 
   updateMetaTags(page: string | null = null) {
-
+    // get current language from the url
     if (!isPlatformBrowser(this.platform_id)) {
       return;
     }
@@ -21,7 +21,7 @@ export class MetatagService {
         this.title.setTitle('DenixLabs');
         break;
       case 'home':
-        this.title.setTitle('DenixLabs');
+        
         break;
       case 'about':
         this.title.setTitle('DenixLabs - За нас');
