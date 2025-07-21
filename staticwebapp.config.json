@@ -15,10 +15,13 @@
   "navigationFallback": {
     "rewrite": "/en/index.html",
     "exclude": [
-      "/*.{png,jpg,gif,svg,ico,ttf,woff,woff2}",
-      "/*.{css,scss,js,json,map}",
+      "/images/*.{png,jpg,gif,ico}",
+      "/*.{css,scss,js,json,map,ico}",
       "/fonts/*",
-      "/assets/*"
+      "/public/*",
+      "/*.ttf",
+      "/*.woff",
+      "/*.woff2"
     ]
   },
   "mimeTypes": {

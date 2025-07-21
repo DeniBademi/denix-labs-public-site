@@ -39,10 +39,16 @@
                 "input": "public",
                 "output": "/"
               },
+              {
+                "glob": "**/*",
+                "input": "public/fonts",
+                "output": "/fonts"
+              },
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/sitemap.xml"
+              "src/sitemap.xml",
+              "staticwebapp.config.json"
             ],
             "styles": [
               "src/styles.css",
@@ -54,7 +60,7 @@
               "public/js/slider.js"
             ],
             "localize": true,
-            "prerender": true,
+            "prerender": false,
             "baseHref": "/"
           },
           "configurations": {
@@ -120,6 +126,11 @@
                 "glob": "**/*",
                 "input": "public",
                 "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "public/fonts",
+                "output": "/fonts"
               },
               "src/favicon.ico",
               "src/assets"
