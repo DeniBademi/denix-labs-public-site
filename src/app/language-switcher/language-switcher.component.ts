@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-language-switcher',
@@ -11,35 +10,25 @@ import { Router } from '@angular/router';
 export class LanguageSwitcherComponent {
   locale: string = this.getCurrentLocale();
 
-  constructor(private router: Router) {}
-  ngOnInit() {
-    this.locale = this.getCurrentLocale();
-  }
   switchLanguage(lang: 'en' | 'bg') {
   if (this.locale === lang) return;
   this.locale = lang;
   // Change the locale by reloading the page with the new locale path prefix
   const currentUrl = window.location.pathname;
   let newUrl = currentUrl;
-  let currentDomain = window.location.origin;
 
   // Remove existing locale prefix if present
   if (currentUrl.startsWith('/en/')) {
-    newUrl = currentUrl.replace(/^\/en/, '/bg/');
+    newUrl = currentUrl.replace(/^\/en/, '');
   } else if (currentUrl.startsWith('/bg/')) {
-    newUrl = currentUrl.replace(/^\/bg/, '/en/');
+    newUrl = currentUrl.replace(/^\/bg/, '');
   }
 
 
   // Remove double slashes
   newUrl = newUrl.replace(/\/{2,}/g, '/');
-  console.log(currentDomain + '/' + lang + newUrl);
 
-  
-  window.location.href = currentDomain + '/' + lang + newUrl;
-
-
-  // window.location.reload();
+  window.location.pathname = newUrl;
   }
 
   getCurrentLocale() {
