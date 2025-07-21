@@ -32,8 +32,12 @@ jobs:
       - name: Ensure index.html exists in /browser
         run: | # You can put any content inside the index.html, but without this file Deployment to Azure won't succeed
           mkdir -p dist/denix-labs-public-site/browser
+          cp public/fonts dist/denix-labs-public-site/browser
+          cp -R public/fonts dist/denix-labs-public-site/browser/fonts
+          cp -R public/js dist/denix-labs-public-site/browser/js
           cd dist/denix-labs-public-site/browser
           echo "<html><body><h1>Hello!</h1></body></html>" > index.html
+          
       - name: Copy staticwebapp.config.json to /browser folder
         run: | # angular is my folder in the repository root project where I store front-end code
           # cd angular
