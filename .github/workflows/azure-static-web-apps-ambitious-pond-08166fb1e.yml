@@ -37,7 +37,7 @@ jobs:
       - name: Copy staticwebapp.config.json to /browser folder
         run: | # angular is my folder in the repository root project where I store front-end code
           # cd angular
-          cp staticwebapp.config.json dist/denixlabs-public-site/browser
+          cp staticwebapp.config.json angular/dist/denixlabs-public-site/browser
 
       - name: Deploy
         id: deploy
