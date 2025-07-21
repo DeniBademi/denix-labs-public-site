@@ -2,7 +2,10 @@
   "routes": [
     {
       "route": "/",
-      "redirect": "/en/index.html"
+      "redirect": "/en/index.html",
+      "exclude": [
+        "*.{js,json,css,jpg,png,ico,webmanifest,ttf,woff,woff2}"
+      ]
     },
     {
       "route": "/index.html",
