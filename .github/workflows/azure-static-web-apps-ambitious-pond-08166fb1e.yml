@@ -33,8 +33,8 @@ jobs:
         run: | # You can put any content inside the index.html, but without this file Deployment to Azure won't succeed
           mkdir -p dist/denix-labs-public-site/browser
           cp public/fonts dist/denix-labs-public-site/browser
-          cp -R public/fonts dist/denix-labs-public-site/browser/fonts
-          cp -R public/js dist/denix-labs-public-site/browser/js
+          cp -r public/fonts dist/denix-labs-public-site/browser/fonts
+          cp -r public/js dist/denix-labs-public-site/browser/js
           cd dist/denix-labs-public-site/browser
           echo "<html><body><h1>Hello!</h1></body></html>" > index.html
           
