@@ -31,13 +31,13 @@ jobs:
           npm run build
       - name: Ensure index.html exists in /browser
         run: | # You can put any content inside the index.html, but without this file Deployment to Azure won't succeed
-          mkdir -p dist/denixlabs-public-site/browser
-          cd dist/denixlabs-public-site/browser
+          mkdir -p dist/denix-labs-public-site/browser
+          cd dist/denix-labs-public-site/browser
           echo "<html><body><h1>Hello!</h1></body></html>" > index.html
       - name: Copy staticwebapp.config.json to /browser folder
         run: | # angular is my folder in the repository root project where I store front-end code
           # cd angular
-          cp staticwebapp.config.json dist/denixlabs-public-site/browser
+          cp staticwebapp.config.json dist/denix-labs-public-site/browser
 
       - name: Deploy
         id: deploy
@@ -48,7 +48,7 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "./dist/denixlabs-public-site/browser" # App source code path
+          app_location: "./dist/denix-labs-public-site/browser" # App source code path
           github_id_token: ${{ steps.idtoken.outputs.result }}
           skip_app_build: true  # tell the azure not to build the app for us, we have already done this manually using Node
           ###### End of Repository/Build Configurations ######
