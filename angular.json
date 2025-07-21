@@ -48,7 +48,8 @@
               "public/js/burger.js",
               "public/js/slider.js"
             ],
-            "localize": true
+            "localize": true,
+            "prerender": true
           },
           "configurations": {
             "production": {
