@@ -1,6 +1,12 @@
 {
   "routes": [
     {
+      "route": "/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=86400"
+      }
+    },
+    {
       "route": "/",
       "redirect": "/en/index.html"
     },
@@ -10,6 +16,13 @@
     }
   ],
   "navigationFallback": {
-    "rewrite": "/en/index.html"
+    "rewrite": "/en/index.html",
+    "exclude": [
+      "/*.{js,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
+      "/js/*",
+      "/fonts/*",
+      "/logos/*",
+      "/icons/*"
+    ]
   }
 }
