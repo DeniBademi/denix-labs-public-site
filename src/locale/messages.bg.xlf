@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
+  <file source-language="en" target-language="bg" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="heroTitle" datatype="html">
         <source>Let AI work for you</source>
+        <target>Нека изкуственият интелект работи за вас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">20,23</context>
@@ -11,6 +12,7 @@
       </trans-unit>
       <trans-unit id="heroDescription" datatype="html">
         <source> DenixLabs is a bridge between science and business. We create modern and intelligent AI systems that help you make informed decisions and automate routine tasks. </source>
+        <target>DenixLabs е мост между науката и бизнеса. Създаваме съвременни и интелигентни системи с изкуствен интелект, които помагат да вземате информирани решения и да автоматизирате рутинни задачи.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">24,27</context>
@@ -18,6 +20,7 @@
       </trans-unit>
       <trans-unit id="heroContactButton" datatype="html">
         <source> Contact Us </source>
+        <target>Свържи се с нас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">31,34</context>
@@ -25,6 +28,7 @@
       </trans-unit>
       <trans-unit id="heroLearnMoreButton" datatype="html">
         <source>Learn More <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;3&quot; class=&quot;w-4 h-4 ml-2&quot; viewBox=&quot;0 0 24 24&quot;&gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path d=&quot;M5 12h14M12 5l7 7-7 7&quot;&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;/path&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/></source>
+        <target>Научи повече<x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;3&quot; class=&quot;w-4 h-4 ml-2&quot; viewBox=&quot;0 0 24 24&quot;&gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path d=&quot;M5 12h14M12 5l7 7-7 7&quot;&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;/path&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">38,43</context>

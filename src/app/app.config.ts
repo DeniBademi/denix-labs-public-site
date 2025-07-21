@@ -1,12 +1,10 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
-import {NgcCookieConsentConfig, provideNgcCookieConsent} from 'ngx-cookieconsent';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { NgcCookieConsentConfig, provideNgcCookieConsent } from 'ngx-cookieconsent';
 import { provideHttpClient } from '@angular/common/http';
-
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
@@ -34,7 +32,7 @@ const cookieConfig: NgcCookieConsentConfig = {
   revokable: true,
 
   content: {
-    message: "Ние използваме “бисквитки”, за да подобрим интеракциите ви с нашия сайт. За повече информация, моля прочетете нашата политика за бисквитките.",
+    message: 'Ние използваме "бисквитки", за да подобрим интеракциите ви с нашия сайт. За повече информация, моля прочетете нашата политика за бисквитките.',
     dismiss: "Приемам всички бисквитки",
     allow: "Приемам всички",
     deny: "Откажи",
@@ -42,12 +40,9 @@ const cookieConfig: NgcCookieConsentConfig = {
     href: "/cookies",
     policy: "Cookie Policy",
     cookieconsent_dismissed: "yes",
-    close : '&#x274c;'
+    close: '&#x274c;'
   }
 };
-
-
-
 
 export const appConfig: ApplicationConfig = {
   providers: [

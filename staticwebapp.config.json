@@ -1,0 +1,24 @@
+{
+    "routes": [
+      {
+        "route": "*.{js,json,css,jpg,png,ico,webmanifest}",
+        "localized": false
+      },
+      {
+        "route": "/index.html",
+        "rewrite": "/en/index.html"
+      },
+      {
+        "route": "/en/*",
+        "rewrite": "/en/index.html"
+      },
+      {
+        "route": "/bg/*",
+        "rewrite": "/bg/index.html"
+      }
+      
+    ],
+    "navigationFallback": {
+      "rewrite": "/en/index.html"
+    }
+  }
