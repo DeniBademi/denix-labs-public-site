@@ -2,6 +2,7 @@ import { CommonModule, NgIf } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { MetatagService } from '../../_services/metatag.service';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class ContactComponent {
     contactForm: FormGroup;
     isContactFormSubmitted = false;
 
-    constructor(private fb: FormBuilder, private http: HttpClient) {
+    constructor(private fb: FormBuilder, private http: HttpClient, private metatag: MetatagService) {
       this.contactForm = this.fb.group({
         name: ['', Validators.required],
         companyName: ['', Validators.required],
@@ -41,7 +42,7 @@ export class ContactComponent {
     }
 
   ngOnInit(): void {
-
+    this.metatag.updateMetaTags('contact');
   }
 
 
