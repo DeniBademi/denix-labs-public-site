@@ -6,34 +6,32 @@
 @font-face {
     font-family: 'jakarta';
     font-display: auto;
-    src: url("/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf") format("opentype");
+    src: url("/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf") format("opentype");
 }
 
 @font-face {
     font-family: 'jakarta-i';
     font-display: auto;
-    src: url("/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("opentype");
+    src: url("/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("opentype");
 }
 
 @font-face {
     font-family: 'jakarta-i-static';
     font-display: auto;
-    src: url("/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-MediumItalic.ttf") format("opentype");
+    src: url("/assets/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-MediumItalic.ttf") format("opentype");
 }
 
 @font-face {
     font-family: 'nunito';
     font-display: auto;
-    src: url("/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("opentype");
+    src: url("/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("opentype");
 }
 
 @font-face {
     font-family: 'nunito-i';
     font-display: auto;
-    src: url("/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf") format("opentype");
+    src: url("/assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf") format("opentype");
 }
-
-
 
 h1 {
     font-family: 'jakarta', 'nunito';
@@ -61,7 +59,6 @@ p {
     cursor: pointer;
 }
 
-
 .link-arrow {
     /* border: 2px dashed red; */
     cursor: pointer;
@@ -70,29 +67,24 @@ p {
 .link-arrow p {
     display: inline-block;
     transition: 0.1s ease-in;
+}
 
-  }
-
-  .link-arrow:hover svg {
+.link-arrow:hover svg {
     transform: translateX(50%);
     transition: 0.1s ease-in-out;
-  }
+}
 
 /* Reverse animation off hover */
 .link-arrow:hover p {
     transform: translateX(-50%);
     transition: 0.1s ease-in-out;
-  }
-
-
-
-  /* Parralax footer */
-
-section {
-    background-color: white ;
 }
 
+/* Parralax footer */
+section {
+    background-color: white;
+}
 
-::ng-deep  .cc-revoke {
+::ng-deep .cc-revoke {
     display: none !important;
 }

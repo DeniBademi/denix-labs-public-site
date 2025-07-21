@@ -37,24 +37,24 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "output": "/"
-              },
-              {
-                "glob": "**/*",
-                "input": "public/fonts",
-                "output": "/fonts"
+                "output": "/assets"
               },
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/sitemap.xml"
+              "src/sitemap.xml",
+              "staticwebapp.config.json"
             ],
             "styles": [
               "src/styles.css",
               "node_modules/animate.css/animate.min.css"
             ],
             "scripts": [
-              "public/particles.js",
+              {
+                "input": "public/js/particles.min.js",
+                "bundleName": "particles",
+                "inject": true
+              },
               "public/js/burger.js",
               "public/js/slider.js"
             ],
@@ -124,12 +124,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "output": "/"
-              },
-              {
-                "glob": "**/*",
-                "input": "public/fonts",
-                "output": "/fonts"
+                "output": "/assets"
               },
               "src/favicon.ico",
               "src/assets"

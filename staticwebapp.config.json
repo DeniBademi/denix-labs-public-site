@@ -1,11 +1,14 @@
 {
   "routes": [
     {
+      "route": "/assets/*",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=86400"
+      }
+    },
+    {
       "route": "/",
-      "redirect": "/en/index.html",
-      "exclude": [
-        "*.{js,json,css,jpg,png,ico,webmanifest,ttf,woff,woff2}"
-      ]
+      "redirect": "/en/index.html"
     },
     {
       "route": "/index.html",
@@ -13,6 +16,24 @@
     }
   ],
   "navigationFallback": {
-    "rewrite": "/en/index.html"
+    "rewrite": "/en/index.html",
+    "exclude": [
+      "/assets/*",
+      "/*.{js,css,map,ico,jpg,png,svg,ttf,woff,woff2}"
+    ]
+  },
+  "mimeTypes": {
+    ".js": "application/javascript",
+    ".css": "text/css",
+    ".html": "text/html",
+    ".json": "application/json",
+    ".ico": "image/x-icon",
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".gif": "image/gif",
+    ".svg": "image/svg+xml",
+    ".ttf": "font/ttf",
+    ".woff": "font/woff",
+    ".woff2": "font/woff2"
   }
 }
