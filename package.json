@@ -1,5 +1,5 @@
 {
-  "name": "public-site",
+  "name": "denix-labs-public-site",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build --localize",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:PublicSite": "node dist/public-site/server/server.mjs",
+    "serve:ssr:PublicSite": "node dist/denix-labs-public-site/server/server.mjs",
     "translate": "ng extract-i18n --format json --output-path src/locale"
   },
   "private": true,
