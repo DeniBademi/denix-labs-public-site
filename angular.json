@@ -42,8 +42,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/sitemap.xml",
-              "staticwebapp.config.json"
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/styles.css",
