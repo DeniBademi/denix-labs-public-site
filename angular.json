@@ -49,9 +49,10 @@
               "node_modules/animate.css/animate.min.css"
             ],
             "scripts": [
-              "public/particles.js",
+              "public/particles.min.js",
               "public/js/burger.js",
-              "public/js/slider.js"
+              "public/js/slider.js",
+              "public/keen-slider.js"
             ],
             "localize": true
           },
