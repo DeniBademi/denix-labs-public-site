@@ -50,7 +50,7 @@ export class AppComponent implements OnInit, OnDestroy {
     }
 
   ngOnInit(): void {
-
+    console.log(window.navigator.language)
     if (isPlatformBrowser(this.platform_id)) {
       this.meta.updateMetaTags();
       if(localStorage.getItem('cookieconsent_dismissed') === 'yes') {

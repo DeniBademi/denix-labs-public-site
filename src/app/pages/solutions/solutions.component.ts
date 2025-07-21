@@ -8,5 +8,5 @@ import { ContactInviteComponent } from '../../contact-invite/contact-invite.comp
   styleUrl: './solutions.component.css'
 })
 export class SolutionsComponent {
-
+  contactInviteText = $localize`:@@solutions.contactInvite:And many more... let's discuss your AI model`;
 }

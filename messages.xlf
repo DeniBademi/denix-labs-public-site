@@ -1,5 +1,736 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
   <file id="ngi18n" original="ng.template">
+    <unit id="navbar.services">
+      <segment>
+        <source>Services</source>
+      </segment>
+    </unit>
+    <unit id="navbar.solutions">
+      <segment>
+        <source>Solutions</source>
+      </segment>
+    </unit>
+    <unit id="navbar.contact">
+      <segment>
+        <source>Contact</source>
+      </segment>
+    </unit>
+    <unit id="navbar.contactUs">
+      <segment>
+        <source>Contact Us</source>
+      </segment>
+    </unit>
+    <unit id="navbar.copyright">
+      <segment>
+        <source>Copyright DenixLabs 2025</source>
+      </segment>
+    </unit>
+    
+    <!-- VAPI Demo -->
+    <unit id="vapi.demo.tryFree">
+      <segment>
+        <source>Try <x id="PH" equiv-text="&lt;br/&gt;"/> for free</source>
+      </segment>
+    </unit>
+    <unit id="vapi.demo.buttonTitle">
+      <segment>
+        <source>Start/Stop</source>
+      </segment>
+    </unit>
+    
+    <!-- VAPI Section -->
+    <unit id="vapi.section.title">
+      <segment>
+        <source>Introducing our first voice agent, Phillips</source>
+      </segment>
+    </unit>
+    <unit id="vapi.section.description">
+      <segment>
+        <source>Voice agents can help your staff be more efficient and productive, and your customers to be served faster and more efficiently.</source>
+      </segment>
+    </unit>
+    <unit id="vapi.section.requestDemo">
+      <segment>
+        <source>Request Demo</source>
+      </segment>
+    </unit>
+    
+    <!-- Why Use AI -->
+    <unit id="whyUseAi.title">
+      <segment>
+        <source>Why integrate AI into your business?</source>
+      </segment>
+    </unit>
+    <unit id="whyUseAi.informedDecisions.title">
+      <segment>
+        <source>Informed decisions</source>
+      </segment>
+    </unit>
+    <unit id="whyUseAi.informedDecisions.description">
+      <segment>
+        <source>With AI you can transform data from your business and customers into a foundation for making informed decisions.</source>
+      </segment>
+    </unit>
+    <unit id="whyUseAi.automation.title">
+      <segment>
+        <source>Automation</source>
+      </segment>
+    </unit>
+    <unit id="whyUseAi.automation.description">
+      <segment>
+        <source>With AI you can automate routine tasks and business processes.</source>
+      </segment>
+    </unit>
+    <unit id="whyUseAi.personalization.title">
+      <segment>
+        <source>Personalization</source>
+      </segment>
+    </unit>
+    <unit id="whyUseAi.personalization.description">
+      <segment>
+        <source>With AI you can understand your customers' needs and offer personalized products and services.</source>
+      </segment>
+    </unit>
+    <unit id="whyUseAi.reduceCosts.title">
+      <segment>
+        <source>Lower costs</source>
+      </segment>
+    </unit>
+    <unit id="whyUseAi.reduceCosts.description">
+      <segment>
+        <source>Direct your resources and personnel to more important tasks and reduce costs with the help of AI.</source>
+      </segment>
+    </unit>
+    
+    <!-- Solutions Page -->
+    <unit id="solutions.page.title">
+      <segment>
+        <source>Solutions</source>
+      </segment>
+    </unit>
+    <unit id="solutions.page.subtitle">
+      <segment>
+        <source>The applications of artificial intelligence in business are many and highly customizable for your needs. Here we show you a number of proven AI applications that actively <x id="PH" equiv-text="&lt;br&gt;"/>contribute to organizations from various fields.</source>
+      </segment>
+    </unit>
+    <unit id="solutions.naturalLanguage.title">
+      <segment>
+        <source>Natural Language Processing</source>
+      </segment>
+    </unit>
+    <unit id="solutions.naturalLanguage.customerSupport.title">
+      <segment>
+        <source>Automatic Customer Support</source>
+      </segment>
+    </unit>
+    <unit id="solutions.naturalLanguage.customerSupport.description">
+      <segment>
+        <source>Chatbots and virtual assistants can answer inquiries, offer help, schedule meetings more efficiently and quickly.</source>
+      </segment>
+    </unit>
+    <unit id="solutions.naturalLanguage.documentAnalysis.title">
+      <segment>
+        <source>Document Analysis</source>
+      </segment>
+    </unit>
+    <unit id="solutions.naturalLanguage.documentAnalysis.description">
+      <segment>
+        <source>Artificial intelligence can search and extract key information from contracts, invoices, group them, summarize and connect them by different criteria.</source>
+      </segment>
+    </unit>
+    <unit id="solutions.naturalLanguage.reportWriting.title">
+      <segment>
+        <source>Automatic Report Generation</source>
+      </segment>
+    </unit>
+    <unit id="solutions.naturalLanguage.reportWriting.description">
+      <segment>
+        <source>Artificial intelligence can automate the creation of contracts, agreements and other legal documents using pre-defined templates.</source>
+      </segment>
+    </unit>
+    <unit id="solutions.imageAnalysis.title">
+      <segment>
+        <source>Image Analysis</source>
+      </segment>
+    </unit>
+    <unit id="solutions.imageAnalysis.qaAndAnomalies.title">
+      <segment>
+        <source>Quality Control and Defect Detection</source>
+      </segment>
+    </unit>
+    <unit id="solutions.imageAnalysis.qaAndAnomalies.description">
+      <segment>
+        <source>Artificial intelligence can detect defects in production (e.g. on the production line), notify about problems and provide statistics.</source>
+      </segment>
+    </unit>
+    <unit id="solutions.imageAnalysis.inventoryManagement.title">
+      <segment>
+        <source>Automatic Inventory Management</source>
+      </segment>
+    </unit>
+    <unit id="solutions.imageAnalysis.inventoryManagement.description">
+      <segment>
+        <source>Smart cameras can monitor inventory levels and detect shortages of goods in warehouses and stores.</source>
+      </segment>
+    </unit>
+    <unit id="solutions.imageAnalysis.faceRecognition.title">
+      <segment>
+        <source>Face Recognition</source>
+      </segment>
+    </unit>
+    <unit id="solutions.imageAnalysis.faceRecognition.description">
+      <segment>
+        <source>Artificial intelligence can identify you and your customers, providing a new level of security and access to CRM profile right from the door.</source>
+      </segment>
+    </unit>
+    <unit id="solutions.decisionSupport.title">
+      <segment>
+        <source>Decision Support</source>
+      </segment>
+    </unit>
+    <unit id="solutions.decisionSupport.riskAssessment.title">
+      <segment>
+        <source>Risk Assessment</source>
+      </segment>
+    </unit>
+    <unit id="solutions.decisionSupport.riskAssessment.description">
+      <segment>
+        <source>AI can analyze various risk factors and provide comprehensive risk assessments to help make informed business decisions.</source>
+      </segment>
+    </unit>
+    <unit id="solutions.decisionSupport.predictiveMaintenance.title">
+      <segment>
+        <source>Predictive Maintenance</source>
+      </segment>
+    </unit>
+    <unit id="solutions.decisionSupport.predictiveMaintenance.description">
+      <segment>
+        <source>AI predicts equipment failures before they happen, reducing downtime and repair costs.</source>
+      </segment>
+    </unit>
+    <unit id="solutions.learnMore">
+      <segment>
+        <source>Learn More</source>
+      </segment>
+    </unit>
+    <unit id="solutions.contactInvite">
+      <segment>
+        <source>And many more... let's discuss your AI model</source>
+      </segment>
+    </unit>
+    
+    <!-- Terms of Use -->
+    <unit id="legal.termsOfUse.title">
+      <segment>
+        <source>Terms of Use</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.intro">
+      <segment>
+        <source>These terms of use ("Terms") will apply when you access or use our website. Please read these Terms carefully. By accessing or using the website, or by expressing your consent in another way, you are deemed to have accepted these Terms. We may change these Terms periodically, so please check them regularly. These Terms were last updated on March 3, 2025.</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.definitions.title">
+      <segment>
+        <source>Definitions</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.definitions.content">
+      <segment>
+        <source>In these Terms, references to "we", "us" or "our" mean the company Denix Labs Ltd., with UIC <x id="PH" equiv-text="&lt;b&gt;"/>AAAAAA<x id="PH_1" equiv-text="&lt;/b&gt;"/> and registered office at address <x id="PH_2" equiv-text="&lt;b&gt;"/>BBBBB<x id="PH_3" equiv-text="&lt;/b&gt;"/>. Any mention of "you" means the person who accesses or uses the website. "Content" means any information, data, text, software, photos, graphics, videos or other materials available on the website. "Website" means https://denixlabs.com/ and all related web pages.</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.access.title">
+      <segment>
+        <source>Access to the website</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.access.content">
+      <segment>
+        <source>Please ensure that your computer system meets all necessary technical requirements for accessing and using the website and is compatible with it. While we strive to maintain the website accurate, current and error-free, we cannot guarantee this. We do not guarantee that the website will be accessible at all times, nor that your use of it will be uninterrupted. We may prevent or stop your access to the website if you do not comply with any part of these Terms.</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.contentUse.title">
+      <segment>
+        <source>Use of content</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.contentUse.intro">
+      <segment>
+        <source>The Content is provided solely for your personal information to inform you about us, our products, news, features, services and other websites that may interest you. It does not constitute technical or other type of advice and you should not rely on it for any purposes. You may view, download, print and make copies of the Content on a computer to which only you have access. <x id="PH" equiv-text="&lt;br&gt;"/><x id="PH_1" equiv-text="&lt;b&gt;"/>When copying the Content, you must ensure that<x id="PH_2" equiv-text="&lt;/b&gt;"/>:</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.contentUse.rule1">
+      <segment>
+        <source>Denix Labs Ltd. is acknowledged as the source of the Content</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.contentUse.rule2">
+      <segment>
+        <source>The Content is copied without editing or modification</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.contentUse.rule3">
+      <segment>
+        <source>All copyright or intellectual property rights are not altered or removed</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.contentUse.rule4">
+      <segment>
+        <source>The person who will receive the copy is informed that these provisions also apply to them.</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.prohibited.intro">
+      <segment>
+        <source><x id="PH" equiv-text="&lt;b&gt;"/>You are not allowed to:<x id="PH_1" equiv-text="&lt;/b&gt;"/></source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.prohibited.commercial">
+      <segment>
+        <source>use the website or Content for commercial benefit or other advantage</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.prohibited.modify">
+      <segment>
+        <source>modify or interfere with the website in any way, including through the use of malicious code</source>
+      </segment>
+    </unit>
+    <unit id="legal.termsOfUse.prohibited.abuse">
+      <segment>
+        <source>use the website for defamation, abuse or to violate the rights of others, including their intellectual property rights.</source>
+      </segment>
+    </unit>
+    
+    <!-- Privacy Policy -->
+    <unit id="legal.privacyPolicy.title">
+      <segment>
+        <source>Privacy Policy</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.whoWeAre.title">
+      <segment>
+        <source>Who are we?</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.whoWeAre.companyName">
+      <segment>
+        <source>Company name</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.whoWeAre.managementAddress">
+      <segment>
+        <source>Management address</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.whoWeAre.uic">
+      <segment>
+        <source>UIC:</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.whoWeAre.contactPhone">
+      <segment>
+        <source>Contact phone</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.whoWeAre.email">
+      <segment>
+        <source>Email</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.whoWeAre.intro">
+      <segment>
+        <source>We know that when we collect and process information about an individual, we must do so responsibly, with due care for personal privacy, complying with data protection laws and privacy principles. This privacy policy ("Policy") describes the main types of personal information we collect within the company, how this information is processed and disclosed, as well as our obligations to the persons whose data we process. The Policy explains in principle how we strive to comply with privacy and data protection laws and regulations, including but not limited to Regulation (EU) 2016/679 (General Data Protection Regulation/GDPR). <x id="PH" equiv-text="&lt;br&gt;"/> The sole proprietorship company in its capacity as a personal data controller has introduced internal policies (instructions) and programs designed to ensure compliance with these laws.</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.disclosure.title">
+      <segment>
+        <source>Personal data disclosure</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.disclosure.intro">
+      <segment>
+        <source>Personal data of our customers may be disclosed by the sole proprietorship company:</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.disclosure.accounting">
+      <segment>
+        <source>to a company performing accounting activities</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.disclosure.bank">
+      <segment>
+        <source>to the bank servicing the Company (for the purposes of successful payment of the service under the contract)</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.disclosure.authorities">
+      <segment>
+        <source>to investigating and other authorities, based on a legal text that obliges the Company to disclose information about the customer</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.disclosure.internal">
+      <segment>
+        <source>Within the company, only authorized persons, properly prepared for working with personal data, have access to personal data. The sole proprietorship company does not trade or sell databases, including anonymized or pseudonymized data, for any reason and for any purposes, including statistical ones. Transfer of personal data (disclosure to persons outside the country) The sole proprietorship company does not transfer personal data outside the borders of the country.</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.notification.title">
+      <segment>
+        <source>Notification and Consent</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.notification.content">
+      <segment>
+        <source>At the time of data collection, the sole proprietorship company notifies persons in a clear and consistent manner exactly how their information will be processed, disclosed, stored and deleted; what rights they have regarding personal data protection or according to this Policy, as well as what are the ways to exercise these rights. This notification is fully compliant with the requirements of the Regulation and aims to comply with it to the maximum extent, including but not limited to the principle of transparency and lawfulness in the processing of personal data of persons. Regarding their personal data, every user has the following rights:</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.rights.access">
+      <segment>
+        <source>right of access to them</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.rights.update">
+      <segment>
+        <source>right to request updating and/or correction</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.rights.deletion">
+      <segment>
+        <source>right to request deletion</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.rights.restriction">
+      <segment>
+        <source>right to request restriction of processing</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.rights.portability">
+      <segment>
+        <source>right to data portability</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.rights.object">
+      <segment>
+        <source>right to object to processing in a certain way and for certain purposes, including automated processing (profiling)</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.rightsExercise">
+      <segment>
+        <source>With the exception of the last right, the others are exercised with a written request to the seat of my Company at <x id="PH" equiv-text="&lt;b&gt;"/>ADDRESS<x id="PH_1" equiv-text="&lt;/b&gt;"/>. The sole proprietorship company guarantees that individuals can exercise all their rights regarding personal data processed by the sole proprietorship company, including but not limited to the right of access, updating and correction, right to data portability, right to temporary suspension of processing and data deletion and in general everything provided by law. The sole proprietorship company will make maximum efforts to consider and approve the person's request. Any refusal by the sole proprietorship company would be possible only on a legal basis (when a legal text prohibits this). In cases where required by law, as well as as an expression of good practice, the sole proprietorship company may request the consent of the individual to collect, use and disclose their data for specifically defined purposes.</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.dataActuality.title">
+      <segment>
+        <source>Data relevance and retention periods</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.dataActuality.content">
+      <segment>
+        <source>Our privacy policy provides that every person whose data we have collected has full possibilities to request correction and updating of the data. The right to be forgotten is also among those provided in our privacy policy and every person can request deletion of their data. The Company deletes personal data immediately after the grounds for processing and storage cease, after consideration of special legal requirements.</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.security.title">
+      <segment>
+        <source>Data security and protection</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.security.content">
+      <segment>
+        <source>DENIX LABS Ltd. maintains a comprehensive information security policy with maximum emphasis on technical and organizational security measures that protect personal information from unauthorized access or loss. In accordance with regulatory requirements, the sole proprietorship company also maintains a practice for dealing with security breaches related to the protection of personal data, including making all necessary notifications to persons or the supervisory authority.</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.inquiries.title">
+      <segment>
+        <source>Inquiries, reports, complaints and requests for exercising rights</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.inquiries.content">
+      <segment>
+        <source>Any communication, inquiries, reports, complaints and requests for exercising rights regarding personal data should be addressed to the seat of DENIX LABS Ltd.</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.legalStatus.title">
+      <segment>
+        <source>Legal status of this Policy, mentions and effect</source>
+      </segment>
+    </unit>
+    <unit id="legal.privacyPolicy.legalStatus.content">
+      <segment>
+        <source>This Privacy Policy is not a contract and has no binding effect. DENIX LABS Ltd. reserves the right to update the Policy (for example - in case of a change in legislation regarding personal data).</source>
+      </segment>
+    </unit>
+    
+    <!-- Cookie Policy -->
+    <unit id="legal.cookiePolicy.title">
+      <segment>
+        <source>Cookie Policy</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.intro">
+      <segment>
+        <source>This cookie policy will inform you how we use cookies when you visit our website, and will tell you about the purposes for which we use them. We provide it in a structured format, so you can navigate to specific sections below.</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.toc.title">
+      <segment>
+        <source>Contents</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.toc.whatIsACookie">
+      <segment>
+        <source>1. What is a cookie?</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.toc.ourCookies">
+      <segment>
+        <source>2. What specific cookies do we use on denixlabs.com?</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.toc.howToTurnOff">
+      <segment>
+        <source>3. How to turn off cookies?</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.toc.contact">
+      <segment>
+        <source>4. How to contact us?</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.toc.changes">
+      <segment>
+        <source>5. Changes to this policy</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.whatIsACookie.title">
+      <segment>
+        <source>1. What is a cookie?</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.whatIsACookie.definition">
+      <segment>
+        <source>A cookie is a small text file that is placed on your computer or other electronic device when you visit our website.</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.whatIsACookie.typesTitle">
+      <segment>
+        <source>Cookie Types</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.whatIsACookie.typesContent">
+      <segment>
+        <source>There are different types of cookies: <x id="PH" equiv-text="&lt;br&gt;"/><x id="PH_1" equiv-text="&lt;br&gt;"/> <x id="PH_2" equiv-text="&lt;b&gt;"/>First and third party cookies<x id="PH_3" equiv-text="&lt;/b&gt;"/> – whether a cookie is "first" or "third" party depends on the domain that places it. First party cookies are those set by us on the website you visit (for example cookies placed by www.denixlabs.com). <x id="PH_4" equiv-text="&lt;br&gt;"/> <x id="PH_5" equiv-text="&lt;b&gt;"/>Session cookies<x id="PH_6" equiv-text="&lt;/b&gt;"/> – they allow our website to link your actions during a specific browser session. These cookies expire every time you close your browser and do not remain on your device; <x id="PH_7" equiv-text="&lt;br&gt;"/> <x id="PH_8" equiv-text="&lt;b&gt;"/>Persistent cookies<x id="PH_9" equiv-text="&lt;/b&gt;"/> – they are stored on your device between browser sessions. They allow your preferences or actions on our website to be remembered. They remain on your device until they expire or until you delete them from your cache. <x id="PH_10" equiv-text="&lt;br&gt;"/> <x id="PH_11" equiv-text="&lt;b&gt;"/>Strictly necessary cookies<x id="PH_12" equiv-text="&lt;/b&gt;"/> – these cookies are essential for you to be able to navigate our website and use its features. Without them we cannot provide the services you have requested; <x id="PH_13" equiv-text="&lt;br&gt;"/> <x id="PH_14" equiv-text="&lt;b&gt;"/>Performance cookies<x id="PH_15" equiv-text="&lt;/b&gt;"/> – these cookies collect information about how you use our website, such as which pages you visit most often. They do not collect personal information about you. All information collected by these cookies is aggregated and anonymous and is used only to improve the performance of our website; <x id="PH_16" equiv-text="&lt;br&gt;"/> <x id="PH_17" equiv-text="&lt;b&gt;"/>Functional cookies<x id="PH_18" equiv-text="&lt;/b&gt;"/> – these cookies allow our website to remember your choices (such as username, language, last action, and search preferences) and provide better, personalized features. The information collected by these cookies is anonymous and cannot track your activity on other websites.</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.ourCookies.title">
+      <segment>
+        <source>2. What specific cookies do we use on denixlabs.com?</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.ourCookies.intro">
+      <segment>
+        <source>You can find more information about the individual cookies we use and the purposes for which we use them in the tables below:</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics.title">
+      <segment>
+        <source>Google Analytics</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics.description">
+      <segment>
+        <source>Google Analytics is a web analytics service provided by Google, Inc. It sets a cookie to evaluate your use of our website and compile reports on activity.</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics.tableCaption">
+      <segment>
+        <source>Table 1: Cookies used by Google Analytics</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.table.cookieName">
+      <segment>
+        <source>Cookie Name</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.table.purpose">
+      <segment>
+        <source>Purpose</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.table.validity">
+      <segment>
+        <source>Validity</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics._ga">
+      <segment>
+        <source>Used to distinguish users</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics._ga.validity">
+      <segment>
+        <source>14 months</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics._gid">
+      <segment>
+        <source>Used to distinguish users</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics._gid.validity">
+      <segment>
+        <source>24 hours</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics._gat">
+      <segment>
+        <source>Used to limit the request rate</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics._gat.validity">
+      <segment>
+        <source>1 minute</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics.__utma">
+      <segment>
+        <source>Distinguishes users and sessions</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics.__utma.validity">
+      <segment>
+        <source>14 months</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics.__utmz">
+      <segment>
+        <source>Stores the traffic source or campaign</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.googleAnalytics.__utmz.validity">
+      <segment>
+        <source>6 months</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.facebook.title">
+      <segment>
+        <source>Facebook</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.facebook.description">
+      <segment>
+        <source>Facebook uses cookies for advertising purposes. More information can be found <x id="PH" equiv-text="&lt;a href=&quot;https://www.facebook.com/privacy/policies/cookies/&quot; class=&quot;link&quot;&gt;"/>here<x id="PH_1" equiv-text="&lt;/a&gt;"/>.</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.facebook.tableCaption">
+      <segment>
+        <source>Table 2: Cookies used by Facebook</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.facebook.tr">
+      <segment>
+        <source>Used to track user actions</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.facebook.tr.validity">
+      <segment>
+        <source>Session</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.facebook.fr">
+      <segment>
+        <source>Used for advertising purposes</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.facebook.fr.validity">
+      <segment>
+        <source>3 months</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.howToTurnOff.title">
+      <segment>
+        <source>3. How to turn off cookies?</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.howToTurnOff.content">
+      <segment>
+        <source>If you don't want to accept cookies, you can change your browser settings so that cookies are not accepted. These settings are usually found in the "options" or "preferences" menu of your browser.</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.contact.title">
+      <segment>
+        <source>4. How to contact us?</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.contact.content">
+      <segment>
+        <source><x id="PH" equiv-text="&lt;p&gt;"/>Please contact us if you have questions about this policy.<x id="PH_1" equiv-text="&lt;/p&gt;"/> <x id="PH_2" equiv-text="&lt;br&gt;"/> <x id="PH_3" equiv-text="&lt;p&gt;"/><x id="PH_4" equiv-text="&lt;b&gt;"/>Company name<x id="PH_5" equiv-text="&lt;/b&gt;"/>: Denix Labs Ltd.<x id="PH_6" equiv-text="&lt;/p&gt;"/> <x id="PH_7" equiv-text="&lt;p&gt;"/><x id="PH_8" equiv-text="&lt;b&gt;"/>Email<x id="PH_9" equiv-text="&lt;/b&gt;"/>: info&#64;denixlabs.com<x id="PH_10" equiv-text="&lt;/p&gt;"/></source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.changes.title">
+      <segment>
+        <source>5. Changes to this policy</source>
+      </segment>
+    </unit>
+    <unit id="legal.cookiePolicy.changes.content">
+      <segment>
+        <source>This version was last updated on March 3, 2025 and previous versions may be obtained upon request.</source>
+      </segment>
+    </unit>
+    
+    <!-- Contact Page -->
+    <unit id="contact.page.title">
+      <segment>
+        <source>Contact</source>
+      </segment>
+    </unit>
+    <unit id="contact.page.description">
+      <segment>
+        <source>Tell us about your project or describe the problem you're trying to solve. We would be happy to discuss how DenixLabs can work with you. Please contact us at <x id="PH" equiv-text="&lt;a href=&quot;mailto:info@denixlabs.com&quot; class=&quot;text-indigo-500&quot;&gt;"/>info&#64;denixlabs.com<x id="PH_1" equiv-text="&lt;/a&gt;"/> or fill out the form below.</source>
+      </segment>
+    </unit>
+    <unit id="contact.form.name">
+      <segment>
+        <source>Name*</source>
+      </segment>
+    </unit>
+    <unit id="contact.form.company">
+      <segment>
+        <source>Company*</source>
+      </segment>
+    </unit>
+    <unit id="contact.form.email">
+      <segment>
+        <source>Email*</source>
+      </segment>
+    </unit>
+    <unit id="contact.form.phone">
+      <segment>
+        <source>Phone</source>
+      </segment>
+    </unit>
+    <unit id="contact.form.message">
+      <segment>
+        <source>Message</source>
+      </segment>
+    </unit>
+    <unit id="contact.form.budget">
+      <segment>
+        <source>Budget</source>
+      </segment>
+    </unit>
+    <unit id="contact.form.required">
+      <segment>
+        <source>Required field</source>
+      </segment>
+    </unit>
+    <unit id="contact.form.submit">
+      <segment>
+        <source>Send</source>
+      </segment>
+    </unit>
+    <unit id="contact.form.thankYou">
+      <segment>
+        <source>Thank you for your message!</source>
+      </segment>
+    </unit>
   </file>
 </xliff>

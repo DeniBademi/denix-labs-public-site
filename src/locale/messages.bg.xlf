@@ -34,6 +34,596 @@
           <context context-type="linenumber">38,43</context>
         </context-group>
       </trans-unit>
+
+      <!-- Navbar -->
+      <trans-unit id="navbar.services" datatype="html">
+        <source>Services</source>
+        <target>Услуги</target>
+      </trans-unit>
+      <trans-unit id="navbar.solutions" datatype="html">
+        <source>Solutions</source>
+        <target>Решения</target>
+      </trans-unit>
+      <trans-unit id="navbar.contact" datatype="html">
+        <source>Contact</source>
+        <target>Контакти</target>
+      </trans-unit>
+      <trans-unit id="navbar.contactUs" datatype="html">
+        <source>Contact Us</source>
+        <target>Свържи се с нас</target>
+      </trans-unit>
+      <trans-unit id="navbar.copyright" datatype="html">
+        <source>Copyright DenixLabs 2025</source>
+        <target>Copyright DenixLabs 2025</target>
+      </trans-unit>
+
+      <!-- VAPI Demo -->
+      <trans-unit id="vapi.demo.tryFree" datatype="html">
+        <source>Try <x id="PH" equiv-text="&lt;br/&gt;"/> for free</source>
+        <target>Опитай <x id="PH" equiv-text="&lt;br/&gt;"/> безплатно</target>
+      </trans-unit>
+      <trans-unit id="vapi.demo.buttonTitle" datatype="html">
+        <source>Start/Stop</source>
+        <target>Старт/Стоп</target>
+      </trans-unit>
+
+      <!-- VAPI Section -->
+      <trans-unit id="vapi.section.title" datatype="html">
+        <source>Introducing our first voice agent, Phillips</source>
+        <target>Представяме първият ни гласов агент, Филипс</target>
+      </trans-unit>
+      <trans-unit id="vapi.section.description" datatype="html">
+        <source>Voice agents can help your staff be more efficient and productive, and your customers to be served faster and more efficiently.</source>
+        <target>Гласовите агенти могат да помагат на персоналът ви да бъде по-ефективен и продуктивен, а на клиентите - да бъдат обслужени по-бързо и ефективно.</target>
+      </trans-unit>
+      <trans-unit id="vapi.section.requestDemo" datatype="html">
+        <source>Request Demo</source>
+        <target>Поискай демо</target>
+      </trans-unit>
+
+      <!-- Why Use AI -->
+      <trans-unit id="whyUseAi.title" datatype="html">
+        <source>Why integrate AI into your business?</source>
+        <target>Защо да интегрирате AI в бизнеса си?</target>
+      </trans-unit>
+      <trans-unit id="whyUseAi.informedDecisions.title" datatype="html">
+        <source>Informed decisions</source>
+        <target>Информирани решения</target>
+      </trans-unit>
+      <trans-unit id="whyUseAi.informedDecisions.description" datatype="html">
+        <source>With AI you can transform data from your business and customers into a foundation for making informed decisions.</source>
+        <target>С AI можете да трансформирате данните от бизнеса и клиентите си в основа за вземане на информирани решения.</target>
+      </trans-unit>
+      <trans-unit id="whyUseAi.automation.title" datatype="html">
+        <source>Automation</source>
+        <target>Автоматизация</target>
+      </trans-unit>
+      <trans-unit id="whyUseAi.automation.description" datatype="html">
+        <source>With AI you can automate routine tasks and business processes.</source>
+        <target>С AI можете да автоматизирате рутинни задачи и бизнес процеси.</target>
+      </trans-unit>
+      <trans-unit id="whyUseAi.personalization.title" datatype="html">
+        <source>Personalization</source>
+        <target>Персонализация</target>
+      </trans-unit>
+      <trans-unit id="whyUseAi.personalization.description" datatype="html">
+        <source>With AI you can understand your customers' needs and offer personalized products and services.</source>
+        <target>С AI можете да вникнете в нуждите на клиентите си, да предложите персонализирани продукти и услуги.</target>
+      </trans-unit>
+      <trans-unit id="whyUseAi.reduceCosts.title" datatype="html">
+        <source>Lower costs</source>
+        <target>По-малко разходи</target>
+      </trans-unit>
+      <trans-unit id="whyUseAi.reduceCosts.description" datatype="html">
+        <source>Direct your resources and personnel to more important tasks and reduce costs with the help of AI.</source>
+        <target>Насочете ресурсите и персонала си към по-важни задачи и намалете разходите с помощта на AI.</target>
+      </trans-unit>
+
+      <!-- Solutions Page -->
+      <trans-unit id="solutions.page.title" datatype="html">
+        <source>Solutions</source>
+        <target>Решения</target>
+      </trans-unit>
+      <trans-unit id="solutions.page.subtitle" datatype="html">
+        <source>The applications of artificial intelligence in business are many and highly customizable for your needs. Here we show you a number of proven AI applications that actively <x id="PH" equiv-text="&lt;br&gt;"/>contribute to organizations from various fields.</source>
+        <target>Приложенията на изкуственият интелект в бизнеса са много и с високо ниво на персонализация за вашите нужди. Тук ви показваме редица доказали се приложения на AI, които активно <x id="PH" equiv-text="&lt;br&gt;"/>допринасят в организации от различни сфери.</target>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.title" datatype="html">
+        <source>Natural Language Processing</source>
+        <target>Анализ на естествен език</target>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.customerSupport.title" datatype="html">
+        <source>Automatic Customer Support</source>
+        <target>Автоматично обслужване на клиенти</target>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.customerSupport.description" datatype="html">
+        <source>Chatbots and virtual assistants can answer inquiries, offer help, schedule meetings more efficiently and quickly.</source>
+        <target>Чатботовете и виртуалните асистенти могат да отговарят на запитвания, да предлагат помощ, да насрочват срещи по ефикасно и бързо.</target>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.documentAnalysis.title" datatype="html">
+        <source>Document Analysis</source>
+        <target>Анализ на документи</target>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.documentAnalysis.description" datatype="html">
+        <source>Artificial intelligence can search and extract key information from contracts, invoices, group them, summarize and connect them by different criteria.</source>
+        <target>Изкуственият интелект може да търси и извлича ключова информация от договори, фактури, да ги групира, обобщава и свързва по различни критерии.</target>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.reportWriting.title" datatype="html">
+        <source>Automatic Report Generation</source>
+        <target>Автоматично съставяне на репорти</target>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.reportWriting.description" datatype="html">
+        <source>Artificial intelligence can automate the creation of contracts, agreements and other legal documents using pre-defined templates.</source>
+        <target>Изкуственият интелект може да автоматизира създаването на договори, споразумения и други правни документи чрез използване на предварително зададени шаблони.</target>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.title" datatype="html">
+        <source>Image Analysis</source>
+        <target>Анализ на изображения</target>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.qaAndAnomalies.title" datatype="html">
+        <source>Quality Control and Defect Detection</source>
+        <target>Качествен контрол и разпознаване на дефекти</target>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.qaAndAnomalies.description" datatype="html">
+        <source>Artificial intelligence can detect defects in production (e.g. on the production line), notify about problems and provide statistics.</source>
+        <target>Изкуственият интелект може да открива дефекти в производството (напр. на поточната линия), да известява при проблеми и да предоставя статистики.</target>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.inventoryManagement.title" datatype="html">
+        <source>Automatic Inventory Management</source>
+        <target>Автоматично менижиране на инвентара</target>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.inventoryManagement.description" datatype="html">
+        <source>Smart cameras can monitor inventory levels and detect shortages of goods in warehouses and stores.</source>
+        <target>Умни камери могат да следят нивата на инвентара и да откриват липси на стоки в складове и магазини.</target>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.faceRecognition.title" datatype="html">
+        <source>Face Recognition</source>
+        <target>Лицево разпознаване</target>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.faceRecognition.description" datatype="html">
+        <source>Artificial intelligence can identify you and your customers, providing a new level of security and access to CRM profile right from the door.</source>
+        <target>Изкуственият интелект може да идентифицира вас и клиентите ви, предоставяйки ново ниво на сигурност и достъп до CRM профил още от вратата.</target>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.title" datatype="html">
+        <source>Decision Support</source>
+        <target>Помощ за вземането на решения</target>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.riskAssessment.title" datatype="html">
+        <source>Risk Assessment</source>
+        <target>Оценка на риска</target>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.riskAssessment.description" datatype="html">
+        <source>AI can analyze various risk factors and provide comprehensive risk assessments to help make informed business decisions.</source>
+        <target>AI може да анализира различни фактори на риска и да предостави цялостни оценки на риска, за да помогне за вземане на информирани бизнес решения.</target>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.predictiveMaintenance.title" datatype="html">
+        <source>Predictive Maintenance</source>
+        <target>Предсказуема поддръжка</target>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.predictiveMaintenance.description" datatype="html">
+        <source>AI predicts equipment failures before they happen, reducing downtime and repair costs.</source>
+        <target>AI предсказва откази на оборудването преди те да настъпят, намалявайки времето на неактивност и разходите за ремонт.</target>
+      </trans-unit>
+      <trans-unit id="solutions.learnMore" datatype="html">
+        <source>Learn More</source>
+        <target>Научи повече</target>
+      </trans-unit>
+      <trans-unit id="solutions.contactInvite" datatype="html">
+        <source>And many more... let's discuss your AI model</source>
+        <target>И още много... нека обсъдим твоят AI модел</target>
+      </trans-unit>
+
+      <!-- Terms of Use -->
+      <trans-unit id="legal.termsOfUse.title" datatype="html">
+        <source>Terms of Use</source>
+        <target>Условия за ползване</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.intro" datatype="html">
+        <source>These terms of use ("Terms") will apply when you access or use our website. Please read these Terms carefully. By accessing or using the website, or by expressing your consent in another way, you are deemed to have accepted these Terms. We may change these Terms periodically, so please check them regularly. These Terms were last updated on March 3, 2025.</source>
+        <target>Тези условия за ползване („Условия") ще се прилагат, когато влизате в нашия уебсайт или го използвате. Моля, прочетете внимателно тези Условия. С достъпа или използването на уебсайта, или с изразяване на вашето съгласие по друг начин, вие се счита, че сте приели тези Условия. Ние можем да променяме тези Условия периодично, затова моля проверявайте ги редовно. Тези Условия са последно актуализирани на 3 март 2025 г.</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.definitions.title" datatype="html">
+        <source>Definitions</source>
+        <target>Дефиниции</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.definitions.content" datatype="html">
+        <source>In these Terms, references to "we", "us" or "our" mean the company Denix Labs Ltd., with UIC <x id="PH" equiv-text="&lt;b&gt;"/>AAAAAA<x id="PH_1" equiv-text="&lt;/b&gt;"/> and registered office at address <x id="PH_2" equiv-text="&lt;b&gt;"/>BBBBB<x id="PH_3" equiv-text="&lt;/b&gt;"/>. Any mention of "you" means the person who accesses or uses the website. "Content" means any information, data, text, software, photos, graphics, videos or other materials available on the website. "Website" means https://denixlabs.com/ and all related web pages.</source>
+        <target>В тези Условия, препратките към „ние", „нас" или „наш" означават компанията Деникс Лабс ЕООД., с ЕИК <x id="PH" equiv-text="&lt;b&gt;"/>AAAAAA<x id="PH_1" equiv-text="&lt;/b&gt;"/> и регистриран офис на адрес <x id="PH_2" equiv-text="&lt;b&gt;"/>BBBBB<x id="PH_3" equiv-text="&lt;/b&gt;"/>. Всяко споменаване на „вие" означава лицето, което достъпва или използва уебсайта. „Съдържание" означава всяка информация, данни, текст, софтуер, снимки, графики, видео или други материали, налични на уебсайта. „Уебсайт" означава https://denixlabs.com/ и всички свързани уеб страници.</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.access.title" datatype="html">
+        <source>Access to the website</source>
+        <target>Достъп до уебсайта</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.access.content" datatype="html">
+        <source>Please ensure that your computer system meets all necessary technical requirements for accessing and using the website and is compatible with it. While we strive to maintain the website accurate, current and error-free, we cannot guarantee this. We do not guarantee that the website will be accessible at all times, nor that your use of it will be uninterrupted. We may prevent or stop your access to the website if you do not comply with any part of these Terms.</source>
+        <target>Моля, уверете се, че вашата компютърна система отговаря на всички необходими технически изисквания за достъп и използване на уебсайта и че е съвместима с него. Въпреки че се стараем да поддържаме уебсайта точен, актуален и безгрешки, не можем да гарантираме това. Не гарантираме, че уебсайтът ще бъде достъпен по всяко време, нито че използването му от ваша страна ще бъде непрекъснато. Ние можем да предотвратим или спрем вашия достъп до уебсайта, ако не спазвате някоя част от тези Условия.</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.title" datatype="html">
+        <source>Use of content</source>
+        <target>Използване на съдържанието</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.intro" datatype="html">
+        <source>The Content is provided solely for your personal information to inform you about us, our products, news, features, services and other websites that may interest you. It does not constitute technical or other type of advice and you should not rely on it for any purposes. You may view, download, print and make copies of the Content on a computer to which only you have access. <x id="PH" equiv-text="&lt;br&gt;"/><x id="PH_1" equiv-text="&lt;b&gt;"/>When copying the Content, you must ensure that<x id="PH_2" equiv-text="&lt;/b&gt;"/>:</source>
+        <target>Съдържанието се предоставя само за ваша лична информация с цел да ви информира за нас, нашите продукти, новини, функции, услуги и други уебсайтове, които може да ви заинтересуват. То не представлява технически или друг вид съвет и не трябва да разчитате на него за каквито и да било цели. Можете да преглеждате, изтегляте, разпечатвате и правите копие на Съдържанието на компютър, до който имате достъп само вие. <x id="PH" equiv-text="&lt;br&gt;"/><x id="PH_1" equiv-text="&lt;b&gt;"/>Когато се прави копие на Съдържанието, вие трябва да гарантирате, че<x id="PH_2" equiv-text="&lt;/b&gt;"/>:</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.rule1" datatype="html">
+        <source>Denix Labs Ltd. is acknowledged as the source of the Content</source>
+        <target>Деникс Лабс ЕООД. се признава като източник на Съдържанието</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.rule2" datatype="html">
+        <source>The Content is copied without editing or modification</source>
+        <target>Съдържанието се копира без редактиране или промяна</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.rule3" datatype="html">
+        <source>All copyright or intellectual property rights are not altered or removed</source>
+        <target>Всички авторски или интелектуални права не се изменят или премахват</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.rule4" datatype="html">
+        <source>The person who will receive the copy is informed that these provisions also apply to them.</source>
+        <target>Лицето, което ще получи копието, е информирано, че тези разпоредби също се прилагат за него.</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.prohibited.intro" datatype="html">
+        <source><x id="PH" equiv-text="&lt;b&gt;"/>You are not allowed to:<x id="PH_1" equiv-text="&lt;/b&gt;"/></source>
+        <target><x id="PH" equiv-text="&lt;b&gt;"/>Вие нямате право да:<x id="PH_1" equiv-text="&lt;/b&gt;"/></target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.prohibited.commercial" datatype="html">
+        <source>use the website or Content for commercial benefit or other advantage</source>
+        <target>използвате уебсайта или Съдържанието за комерсиална изгода или друга облага</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.prohibited.modify" datatype="html">
+        <source>modify or interfere with the website in any way, including through the use of malicious code</source>
+        <target>модифицирате или намесвате в уебсайта по какъвто и да е начин, включително чрез използване на вреден код</target>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.prohibited.abuse" datatype="html">
+        <source>use the website for defamation, abuse or to violate the rights of others, including their intellectual property rights.</source>
+        <target>използвате уебсайта за клевета, злоупотреба или за нарушаване на правата на други лица, включително техните права на интелектуална собственост.</target>
+      </trans-unit>
+
+      <!-- Privacy Policy -->
+      <trans-unit id="legal.privacyPolicy.title" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Политика за поверителност</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.title" datatype="html">
+        <source>Who are we?</source>
+        <target>Кои сме ние?</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.companyName" datatype="html">
+        <source>Company name</source>
+        <target>Име на фирмата</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.managementAddress" datatype="html">
+        <source>Management address</source>
+        <target>Адрес на управление</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.uic" datatype="html">
+        <source>UIC:</source>
+        <target>ЕИК:</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.contactPhone" datatype="html">
+        <source>Contact phone</source>
+        <target>Телефон за контакт</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.email" datatype="html">
+        <source>Email</source>
+        <target>Имейл</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.intro" datatype="html">
+        <source>We know that when we collect and process information about an individual, we must do so responsibly, with due care for personal privacy, complying with data protection laws and privacy principles. This privacy policy ("Policy") describes the main types of personal information we collect within the company, how this information is processed and disclosed, as well as our obligations to the persons whose data we process. The Policy explains in principle how we strive to comply with privacy and data protection laws and regulations, including but not limited to Regulation (EU) 2016/679 (General Data Protection Regulation/GDPR). <x id="PH" equiv-text="&lt;br&gt;"/> The sole proprietorship company in its capacity as a personal data controller has introduced internal policies (instructions) and programs designed to ensure compliance with these laws.</source>
+        <target>Знаем, че когато събираме и обработваме информация за физическо лице, трябва да го направим отговорно, с дължимата грижа за личната неприкосновеност, спазвайки законите за защита на данните и принципите на поверителност.Тази политика за поверителност ("Политика") описва основните видове лична информация, която събираме в рамките на дружеството, как се обработва и разкрива тази информация, както и задълженията ни към лицата, чиито данни обработваме. Политиката обяснява по принцип как се стремим да спазваме законите и регламентите за поверителност на данните, включително, но не само Регламент (EU) 2016/679 (Общ регламент за защита на личните данни/GDPR). <x id="PH" equiv-text="&lt;br&gt;"/> Едноличното Дружеството в качеството му на администратор на лични данни, е въвело вътрешни политики (инструкции) и програми, предназначени да осигурят спазването на тези закони.</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.title" datatype="html">
+        <source>Personal data disclosure</source>
+        <target>Разкриване на лични данни</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.intro" datatype="html">
+        <source>Personal data of our customers may be disclosed by the sole proprietorship company:</source>
+        <target>Лични данни на купувачите ни могат да бъдат разкрити от Едноличното Дружеството:</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.accounting" datatype="html">
+        <source>to a company performing accounting activities</source>
+        <target>на дружество, извършващо счетоводна дейност</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.bank" datatype="html">
+        <source>to the bank servicing the Company (for the purposes of successful payment of the service under the contract)</source>
+        <target>а обслужващата Дружеството банка (за целите на успешното плащане на услугата по договора)</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.authorities" datatype="html">
+        <source>to investigating and other authorities, based on a legal text that obliges the Company to disclose information about the customer</source>
+        <target>разследващи и други органи, на основание законов текст, който задължава Дружеството да разкрие информация за клиента</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.internal" datatype="html">
+        <source>Within the company, only authorized persons, properly prepared for working with personal data, have access to personal data. The sole proprietorship company does not trade or sell databases, including anonymized or pseudonymized data, for any reason and for any purposes, including statistical ones. Transfer of personal data (disclosure to persons outside the country) The sole proprietorship company does not transfer personal data outside the borders of the country.</source>
+        <target>Вътре в дружеството, достъп до лични данни имат само оторизирани лица, надлежно подготвени за работа с лични данни. Едноличното Дружеството не търгува и не продава бази данни, вкл. анонимизирани или псевдонимизирани данни, по никакъв повод и за никакви цели, вкл. статистически. Трансфер на лични данни (разкриване пред лица извън страната) Едноличното Дружеството не извършва трансфер на лични данни извън пределите на страната.</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.notification.title" datatype="html">
+        <source>Notification and Consent</source>
+        <target>Уведомяване и Съгласие</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.notification.content" datatype="html">
+        <source>At the time of data collection, the sole proprietorship company notifies persons in a clear and consistent manner exactly how their information will be processed, disclosed, stored and deleted; what rights they have regarding personal data protection or according to this Policy, as well as what are the ways to exercise these rights. This notification is fully compliant with the requirements of the Regulation and aims to comply with it to the maximum extent, including but not limited to the principle of transparency and lawfulness in the processing of personal data of persons. Regarding their personal data, every user has the following rights:</source>
+        <target>В момента на събирането на данните, Едноличното Дружеството уведомява лицата по ясен и непротиворечив начин как точно информацията за тях ще бъде обработена, разкрита, съхранявана и заличена; какви права имат по отношение на защитата на личните данни или съгласно тази Политика, а също и какви са начините за упражняване на тези права. Това уведомление е изцяло съобразено с изискванията на Регламента и цели спазването му в максимална степен, включително, но не само принципа за прозрачност и законосъобразност при обработката на личните данни на лицата. По отношение на личните си данни всеки потребител има следните права:</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.access" datatype="html">
+        <source>right of access to them</source>
+        <target>право на достъп до тях</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.update" datatype="html">
+        <source>right to request updating and/or correction</source>
+        <target>право да иска актуализиране и/или коригиране</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.deletion" datatype="html">
+        <source>right to request deletion</source>
+        <target>право да искам заличаване</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.restriction" datatype="html">
+        <source>right to request restriction of processing</source>
+        <target>право да искам ограничаване на обработването</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.portability" datatype="html">
+        <source>right to data portability</source>
+        <target>право на преносимост на данните</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.object" datatype="html">
+        <source>right to object to processing in a certain way and for certain purposes, including automated processing (profiling)</source>
+        <target>право да възразя срещу обработване по определен начин и за определени цели, вкл. автоматизирано обработване (профилиране)</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rightsExercise" datatype="html">
+        <source>With the exception of the last right, the others are exercised with a written request to the seat of my Company at <x id="PH" equiv-text="&lt;b&gt;"/>ADDRESS<x id="PH_1" equiv-text="&lt;/b&gt;"/>. The sole proprietorship company guarantees that individuals can exercise all their rights regarding personal data processed by the sole proprietorship company, including but not limited to the right of access, updating and correction, right to data portability, right to temporary suspension of processing and data deletion and in general everything provided by law. The sole proprietorship company will make maximum efforts to consider and approve the person's request. Any refusal by the sole proprietorship company would be possible only on a legal basis (when a legal text prohibits this). In cases where required by law, as well as as an expression of good practice, the sole proprietorship company may request the consent of the individual to collect, use and disclose their data for specifically defined purposes.</source>
+        <target>С изключение на последното право, останалите се упражняват с писмено искане до седалището на Дружеството ми в <x id="PH" equiv-text="&lt;b&gt;"/>ADDRESS<x id="PH_1" equiv-text="&lt;/b&gt;"/>. Едноличното Дружеството гарантира, че физическите лица могат да упражняват всички свои права по отношение на личните данни, обработвани от едноличното дружеството, включително, но не само правото на достъп, актуализиране и коригиране, право на преносимост на данните, право на временно спиране на обработването и изтриване на данни и изобщо всичко, предвидено в закон. Едноличното Дружеството ще положи максимални усилия да разгледа и уважи искането на лицето. Евентуален отказ от страна на Едноличното Дружеството би бил възможен единствено на законово основание (когато законов текст забранява това). В случаите, когато това се изисква от закона, а също и като израз на добра практика, Едноличното Дружеството може да поиска съгласието на физическото лице да събира, използва и разкрива данните му за конкретно определени цели.</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.dataActuality.title" datatype="html">
+        <source>Data relevance and retention periods</source>
+        <target>Актуалност на данните и срокове на съхранение</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.dataActuality.content" datatype="html">
+        <source>Our privacy policy provides that every person whose data we have collected has full possibilities to request correction and updating of the data. The right to be forgotten is also among those provided in our privacy policy and every person can request deletion of their data. The Company deletes personal data immediately after the grounds for processing and storage cease, after consideration of special legal requirements.</source>
+        <target>Нашата политика за поверителност предвижда всяко лице, чиито данни сме събрали, да разполага с пълните възможности да заяви коригиране и актуализиране на данните. Правото да бъдеш забравен също е сред предвидените в политиката ни на поверителност и всяко лице може да заяви заличаване на данните си. Дружеството извършва заличаване на личните данни незабавно след отпадане на основанието за обработка и съхранение, след преценка на специалните законови изисквания.</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.security.title" datatype="html">
+        <source>Data security and protection</source>
+        <target>Сигурност и защита на данните</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.security.content" datatype="html">
+        <source>DENIX LABS Ltd. maintains a comprehensive information security policy with maximum emphasis on technical and organizational security measures that protect personal information from unauthorized access or loss. In accordance with regulatory requirements, the sole proprietorship company also maintains a practice for dealing with security breaches related to the protection of personal data, including making all necessary notifications to persons or the supervisory authority.</source>
+        <target>ДЕНИКС ЛАБС ЕООД поддържа цялостна политика за информационна сигурност с максимален акцент върху техническите и организационни мерки за сигурност, които защитават личната информация от неоторизиран достъп или загуба. В съответствие с регулаторните изисквания, Едноличното Дружеството поддържа също така и практика за справяне при нарушаване на сигурността, свързано със защитата на личните данни, включително извършване на всички необходими уведомления на лица или надзорния орган.</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.inquiries.title" datatype="html">
+        <source>Inquiries, reports, complaints and requests for exercising rights</source>
+        <target>Запитвания, сигнали, жалби и искания за упражняване на права</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.inquiries.content" datatype="html">
+        <source>Any communication, inquiries, reports, complaints and requests for exercising rights regarding personal data should be addressed to the seat of DENIX LABS Ltd.</source>
+        <target>Всякаква комуникация, питания, сигнали, жалби и искания за упражняване на права по отношение на личните данни следва да бъдат адресирани до седалището на ДЕНИКС ЛАБС ЕООД.</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.legalStatus.title" datatype="html">
+        <source>Legal status of this Policy, mentions and effect</source>
+        <target>Правен статус на тази Политика, помени и действие</target>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.legalStatus.content" datatype="html">
+        <source>This Privacy Policy is not a contract and has no binding effect. DENIX LABS Ltd. reserves the right to update the Policy (for example - in case of a change in legislation regarding personal data).</source>
+        <target>Тази Политика за поверителност не е договор и няма обвързващо действие. ДЕНИКС ЛАБС ЕООД запазва правото да актуализира Политиката (например – при промяна на законодателството по отношение на личните данни).</target>
+      </trans-unit>
+
+      <!-- Cookie Policy -->
+      <trans-unit id="legal.cookiePolicy.title" datatype="html">
+        <source>Cookie Policy</source>
+        <target>Политика за бисквитки</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.intro" datatype="html">
+        <source>This cookie policy will inform you how we use cookies when you visit our website, and will tell you about the purposes for which we use them. We provide it in a structured format, so you can navigate to specific sections below.</source>
+        <target>Тази политика за бисквитките ще ви информира как използваме бисквитки, когато посещавате нашия уебсайт, и ще ви разкаже за целите, за които ги използваме. Предоставяме я в структуриран формат, така че можете да преминете към конкретните раздели по-долу.</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.title" datatype="html">
+        <source>Contents</source>
+        <target>Съдържание</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.whatIsACookie" datatype="html">
+        <source>1. What is a cookie?</source>
+        <target>1. Какво е бисквитка?</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.ourCookies" datatype="html">
+        <source>2. What specific cookies do we use on denixlabs.com?</source>
+        <target>2. Какви конкретни бисквитки използваме на denixlabs.com?</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.howToTurnOff" datatype="html">
+        <source>3. How to turn off cookies?</source>
+        <target>3. Как да изключите бисквитките?</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.contact" datatype="html">
+        <source>4. How to contact us?</source>
+        <target>4. Как да се свържете с нас?</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.changes" datatype="html">
+        <source>5. Changes to this policy</source>
+        <target>5. Промени в тази политика</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.whatIsACookie.title" datatype="html">
+        <source>1. What is a cookie?</source>
+        <target>1. Какво е бисквитка?</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.whatIsACookie.definition" datatype="html">
+        <source>A cookie is a small text file that is placed on your computer or other electronic device when you visit our website.</source>
+        <target>Бисквитката е малък текстови файл, който се поставя на вашия компютър или друго електронно устройство, когато посещавате нашия уебсайт.</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.whatIsACookie.typesTitle" datatype="html">
+        <source>Cookie Types</source>
+        <target>Видове бисквитки</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.whatIsACookie.typesContent" datatype="html">
+        <source>There are different types of cookies: <x id="PH" equiv-text="&lt;br&gt;"/><x id="PH_1" equiv-text="&lt;br&gt;"/> <x id="PH_2" equiv-text="&lt;b&gt;"/>First and third party cookies<x id="PH_3" equiv-text="&lt;/b&gt;"/> – whether a cookie is "first" or "third" party depends on the domain that places it. First party cookies are those set by us on the website you visit (for example cookies placed by www.denixlabs.com). <x id="PH_4" equiv-text="&lt;br&gt;"/> <x id="PH_5" equiv-text="&lt;b&gt;"/>Session cookies<x id="PH_6" equiv-text="&lt;/b&gt;"/> – they allow our website to link your actions during a specific browser session. These cookies expire every time you close your browser and do not remain on your device; <x id="PH_7" equiv-text="&lt;br&gt;"/> <x id="PH_8" equiv-text="&lt;b&gt;"/>Persistent cookies<x id="PH_9" equiv-text="&lt;/b&gt;"/> – they are stored on your device between browser sessions. They allow your preferences or actions on our website to be remembered. They remain on your device until they expire or until you delete them from your cache. <x id="PH_10" equiv-text="&lt;br&gt;"/> <x id="PH_11" equiv-text="&lt;b&gt;"/>Strictly necessary cookies<x id="PH_12" equiv-text="&lt;/b&gt;"/> – these cookies are essential for you to be able to navigate our website and use its features. Without them we cannot provide the services you have requested; <x id="PH_13" equiv-text="&lt;br&gt;"/> <x id="PH_14" equiv-text="&lt;b&gt;"/>Performance cookies<x id="PH_15" equiv-text="&lt;/b&gt;"/> – these cookies collect information about how you use our website, such as which pages you visit most often. They do not collect personal information about you. All information collected by these cookies is aggregated and anonymous and is used only to improve the performance of our website; <x id="PH_16" equiv-text="&lt;br&gt;"/> <x id="PH_17" equiv-text="&lt;b&gt;"/>Functional cookies<x id="PH_18" equiv-text="&lt;/b&gt;"/> – these cookies allow our website to remember your choices (such as username, language, last action, and search preferences) and provide better, personalized features. The information collected by these cookies is anonymous and cannot track your activity on other websites.</source>
+        <target>Има различни видове бисквитки: <x id="PH" equiv-text="&lt;br&gt;"/><x id="PH_1" equiv-text="&lt;br&gt;"/> <x id="PH_2" equiv-text="&lt;b&gt;"/>Бисквитки на първа и трета страна<x id="PH_3" equiv-text="&lt;/b&gt;"/> – дали бисквитката е "първа" или "трета" страна зависи от домейна, който я поставя. Бисквитките на първа страна са тези, зададени от нас на уебсайта, който посещавате (например бисквитките, поставени от www.denixlabs.com). <x id="PH_4" equiv-text="&lt;br&gt;"/> <x id="PH_5" equiv-text="&lt;b&gt;"/>Сесийни бисквитки<x id="PH_6" equiv-text="&lt;/b&gt;"/> – те позволяват на нашия уебсайт да свърже вашите действия по време на конкретна сесия на браузъра. Тези бисквитки изтичат всеки път, когато затворите браузъра си и не остават на вашето устройство; <x id="PH_7" equiv-text="&lt;br&gt;"/> <x id="PH_8" equiv-text="&lt;b&gt;"/>Постоянни бисквитки<x id="PH_9" equiv-text="&lt;/b&gt;"/> – те се съхраняват на вашето устройство между сесиите на браузъра. Те позволяват да се запомнят вашите предпочитания или действия в нашия уебсайт. Те остават на вашето устройство, докато не изтекат или докато не ги изтриете от кеша си. <x id="PH_10" equiv-text="&lt;br&gt;"/> <x id="PH_11" equiv-text="&lt;b&gt;"/>Строго необходими бисквитки<x id="PH_12" equiv-text="&lt;/b&gt;"/> – тези бисквитки са от съществено значение, за да можете да навигирате в нашия уебсайт и да използвате неговите функции. Без тях не можем да предоставим услугите, които сте поискали; <x id="PH_13" equiv-text="&lt;br&gt;"/> <x id="PH_14" equiv-text="&lt;b&gt;"/>Бисквитки за производителност<x id="PH_15" equiv-text="&lt;/b&gt;"/> – тези бисквитки събират информация за това как използвате нашия уебсайт, например кои страници посещавате най-често. Те не събират лична информация за вас. Цялата информация, събрана от тези бисквитки, е обобщена и анонимна и се използва само за подобряване на работата на нашия уебсайт; <x id="PH_16" equiv-text="&lt;br&gt;"/> <x id="PH_17" equiv-text="&lt;b&gt;"/>Функционални бисквитки<x id="PH_18" equiv-text="&lt;/b&gt;"/> – тези бисквитки позволяват на нашия уебсайт да запомни вашите избори (като потребителско име, език, последно действие и предпочитания за търсене) и предоставят по-добри, персонализирани функции. Информацията, събрана от тези бисквитки, е анонимна и не може да проследява вашата активност в други уебсайтове.</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.ourCookies.title" datatype="html">
+        <source>2. What specific cookies do we use on denixlabs.com?</source>
+        <target>2. Какви конкретни бисквитки използваме на denixlabs.com?</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.ourCookies.intro" datatype="html">
+        <source>You can find more information about the individual cookies we use and the purposes for which we use them in the tables below:</source>
+        <target>Можете да намерите повече информация за индивидуалните бисквитки, които използваме, и целите, за които ги използваме, в таблиците по-долу:</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.title" datatype="html">
+        <source>Google Analytics</source>
+        <target>Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.description" datatype="html">
+        <source>Google Analytics is a web analytics service provided by Google, Inc. It sets a cookie to evaluate your use of our website and compile reports on activity.</source>
+        <target>Google Analytics е услуга за уеб анализ, предоставяна от Google, Inc. Тя задава бисквитка, за да оцени вашето използване на нашия уебсайт и да съставя отчети за активността.</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.tableCaption" datatype="html">
+        <source>Table 1: Cookies used by Google Analytics</source>
+        <target>Таблица 1: Бисквитки, използвани от Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.table.cookieName" datatype="html">
+        <source>Cookie Name</source>
+        <target>Име на бисквитката</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.table.purpose" datatype="html">
+        <source>Purpose</source>
+        <target>Цел</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.table.validity" datatype="html">
+        <source>Validity</source>
+        <target>Валидност</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._ga" datatype="html">
+        <source>Used to distinguish users</source>
+        <target>Използва се за разграничаване на потребителите</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._ga.validity" datatype="html">
+        <source>14 months</source>
+        <target>14 месеца</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._gid" datatype="html">
+        <source>Used to distinguish users</source>
+        <target>Използва се за разграничаване на потребителите</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._gid.validity" datatype="html">
+        <source>24 hours</source>
+        <target>24 часа</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._gat" datatype="html">
+        <source>Used to limit the request rate</source>
+        <target>Използва се за ограничаване на честотата на заявките</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._gat.validity" datatype="html">
+        <source>1 minute</source>
+        <target>1 минута</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.__utma" datatype="html">
+        <source>Distinguishes users and sessions</source>
+        <target>Разграничава потребителите и сесиите</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.__utma.validity" datatype="html">
+        <source>14 months</source>
+        <target>14 месеца</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.__utmz" datatype="html">
+        <source>Stores the traffic source or campaign</source>
+        <target>Съхранява източника на трафик или кампанията</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.__utmz.validity" datatype="html">
+        <source>6 months</source>
+        <target>6 месеца</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.title" datatype="html">
+        <source>Facebook</source>
+        <target>Facebook</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.description" datatype="html">
+        <source>Facebook uses cookies for advertising purposes. More information can be found <x id="PH" equiv-text="&lt;a href=&quot;https://www.facebook.com/privacy/policies/cookies/&quot; class=&quot;link&quot;&gt;"/>here<x id="PH_1" equiv-text="&lt;/a&gt;"/>.</source>
+        <target>Facebook използва бисквитки за рекламни цели. Повече информация можете да намерите <x id="PH" equiv-text="&lt;a href=&quot;https://www.facebook.com/privacy/policies/cookies/&quot; class=&quot;link&quot;&gt;"/>тук<x id="PH_1" equiv-text="&lt;/a&gt;"/>.</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.tableCaption" datatype="html">
+        <source>Table 2: Cookies used by Facebook</source>
+        <target>Таблица 2: Бисквитки, използвани от Facebook</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.tr" datatype="html">
+        <source>Used to track user actions</source>
+        <target>Използва се за проследяване на действията на потребителите</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.tr.validity" datatype="html">
+        <source>Session</source>
+        <target>Сесия</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.fr" datatype="html">
+        <source>Used for advertising purposes</source>
+        <target>Използва се за рекламни цели</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.fr.validity" datatype="html">
+        <source>3 months</source>
+        <target>3 месеца</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.howToTurnOff.title" datatype="html">
+        <source>3. How to turn off cookies?</source>
+        <target>3. Как да изключите бисквитките?</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.howToTurnOff.content" datatype="html">
+        <source>If you don't want to accept cookies, you can change your browser settings so that cookies are not accepted. These settings are usually found in the "options" or "preferences" menu of your browser.</source>
+        <target>Ако не искате да приемате бисквитки, можете да промените настройките на вашия браузър, така че бисквитките да не бъдат приемани. Тези настройки обикновено се намират в менюто „опции" или „предпочитания" на вашия браузър.</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.contact.title" datatype="html">
+        <source>4. How to contact us?</source>
+        <target>4. Как да се свържете с нас?</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.contact.content" datatype="html">
+        <source><x id="PH" equiv-text="&lt;p&gt;"/>Please contact us if you have questions about this policy.<x id="PH_1" equiv-text="&lt;/p&gt;"/> <x id="PH_2" equiv-text="&lt;br&gt;"/> <x id="PH_3" equiv-text="&lt;p&gt;"/><x id="PH_4" equiv-text="&lt;b&gt;"/>Company name<x id="PH_5" equiv-text="&lt;/b&gt;"/>: Denix Labs Ltd.<x id="PH_6" equiv-text="&lt;/p&gt;"/> <x id="PH_7" equiv-text="&lt;p&gt;"/><x id="PH_8" equiv-text="&lt;b&gt;"/>Email<x id="PH_9" equiv-text="&lt;/b&gt;"/>: info&#64;denixlabs.com<x id="PH_10" equiv-text="&lt;/p&gt;"/></source>
+        <target><x id="PH" equiv-text="&lt;p&gt;"/>Моля, свържете се с нас, ако имате въпроси относно тази политика.<x id="PH_1" equiv-text="&lt;/p&gt;"/> <x id="PH_2" equiv-text="&lt;br&gt;"/> <x id="PH_3" equiv-text="&lt;p&gt;"/><x id="PH_4" equiv-text="&lt;b&gt;"/>Име на юридическото лице<x id="PH_5" equiv-text="&lt;/b&gt;"/>: Деникс Лабс ЕООД<x id="PH_6" equiv-text="&lt;/p&gt;"/> <x id="PH_7" equiv-text="&lt;p&gt;"/><x id="PH_8" equiv-text="&lt;b&gt;"/>Имейл<x id="PH_9" equiv-text="&lt;/b&gt;"/>: info&#64;denixlabs.com<x id="PH_10" equiv-text="&lt;/p&gt;"/></target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.changes.title" datatype="html">
+        <source>5. Changes to this policy</source>
+        <target>5. Промени в тази политика</target>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.changes.content" datatype="html">
+        <source>This version was last updated on March 3, 2025 and previous versions may be obtained upon request.</source>
+        <target>Тази версия е последно актуализирана на 3 март 2025 г. и предишни версии могат да бъдат получени при запитване.</target>
+      </trans-unit>
+      
+      <!-- Contact Page -->
+      <trans-unit id="contact.page.title" datatype="html">
+        <source>Contact</source>
+        <target>Контакти</target>
+      </trans-unit>
+      <trans-unit id="contact.page.description" datatype="html">
+        <source>Tell us about your project or describe the problem you're trying to solve. We would be happy to discuss how DenixLabs can work with you. Please contact us at <x id="PH" equiv-text="&lt;a href=&quot;mailto:info@denixlabs.com&quot; class=&quot;text-indigo-500&quot;&gt;"/>info&#64;denixlabs.com<x id="PH_1" equiv-text="&lt;/a&gt;"/> or fill out the form below.</source>
+        <target>Разкажете ни за своя проект или опишете проблема, който се опитвате да решите. Ще се радваме да обсъдим как DenixLabs може да работи с Вас. Моля, свържете се с нас на <x id="PH" equiv-text="&lt;a href=&quot;mailto:info@denixlabs.com&quot; class=&quot;text-indigo-500&quot;&gt;"/>info&#64;denixlabs.com<x id="PH_1" equiv-text="&lt;/a&gt;"/> или попълнете формата по-долу.</target>
+      </trans-unit>
+      <trans-unit id="contact.form.name" datatype="html">
+        <source>Name*</source>
+        <target>Име*</target>
+      </trans-unit>
+      <trans-unit id="contact.form.company" datatype="html">
+        <source>Company*</source>
+        <target>Компания*</target>
+      </trans-unit>
+      <trans-unit id="contact.form.email" datatype="html">
+        <source>Email*</source>
+        <target>Имейл*</target>
+      </trans-unit>
+      <trans-unit id="contact.form.phone" datatype="html">
+        <source>Phone</source>
+        <target>Телефон</target>
+      </trans-unit>
+      <trans-unit id="contact.form.message" datatype="html">
+        <source>Message</source>
+        <target>Съобщение</target>
+      </trans-unit>
+      <trans-unit id="contact.form.budget" datatype="html">
+        <source>Budget</source>
+        <target>Бюджет</target>
+      </trans-unit>
+      <trans-unit id="contact.form.required" datatype="html">
+        <source>Required field</source>
+        <target>Задължително поле</target>
+      </trans-unit>
+      <trans-unit id="contact.form.submit" datatype="html">
+        <source>Send</source>
+        <target>Изпрати</target>
+      </trans-unit>
+      <trans-unit id="contact.form.thankYou" datatype="html">
+        <source>Thank you for your message!</source>
+        <target>Благодарим за съобщението!</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
