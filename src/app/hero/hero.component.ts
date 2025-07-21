@@ -15,7 +15,7 @@ export class HeroComponent  {
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platform_id)) {
-      particlesJS.load('particles-js', '/public/particlesjs-config.json', null);
+      particlesJS.load('particles-js', '/particlesjs-config.json', null);
     }
   }
 }
