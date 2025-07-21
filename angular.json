@@ -54,7 +54,7 @@
               "public/js/slider.js"
             ],
             "localize": true,
-            "prerender": false,
+            "prerender": true,
             "baseHref": "/"
           },
           "configurations": {
