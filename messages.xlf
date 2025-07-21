@@ -30,7 +30,7 @@
     <!-- VAPI Demo -->
     <unit id="vapi.demo.tryFree">
       <segment>
-        <source>Try <x id="PH" equiv-text="&lt;br/&gt;"/> for free</source>
+        <source>Try <x id="LINE_BREAK" equiv-text="&lt;br/&gt;"/> for free</source>
       </segment>
     </unit>
     <unit id="vapi.demo.buttonTitle">
@@ -111,7 +111,7 @@
     </unit>
     <unit id="solutions.page.subtitle">
       <segment>
-        <source>The applications of artificial intelligence in business are many and highly customizable for your needs. Here we show you a number of proven AI applications that actively <x id="PH" equiv-text="&lt;br&gt;"/>contribute to organizations from various fields.</source>
+        <source>The applications of artificial intelligence in business are many and highly customizable for your needs. Here we show you a number of proven AI applications that actively <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/>contribute to organizations from various fields.</source>
       </segment>
     </unit>
     <unit id="solutions.naturalLanguage.title">
@@ -238,7 +238,7 @@
     </unit>
     <unit id="legal.termsOfUse.definitions.content">
       <segment>
-        <source>In these Terms, references to "we", "us" or "our" mean the company Denix Labs Ltd., with UIC <x id="PH" equiv-text="&lt;b&gt;"/>AAAAAA<x id="PH_1" equiv-text="&lt;/b&gt;"/> and registered office at address <x id="PH_2" equiv-text="&lt;b&gt;"/>BBBBB<x id="PH_3" equiv-text="&lt;/b&gt;"/>. Any mention of "you" means the person who accesses or uses the website. "Content" means any information, data, text, software, photos, graphics, videos or other materials available on the website. "Website" means https://denixlabs.com/ and all related web pages.</source>
+        <source>In these Terms, references to "we", "us" or "our" mean the company Denix Labs Ltd., with UIC <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>AAAAAA<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> and registered office at address <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>BBBBB<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>. Any mention of "you" means the person who accesses or uses the website. "Content" means any information, data, text, software, photos, graphics, videos or other materials available on the website. "Website" means https://denixlabs.com/ and all related web pages.</source>
       </segment>
     </unit>
     <unit id="legal.termsOfUse.access.title">
@@ -258,7 +258,7 @@
     </unit>
     <unit id="legal.termsOfUse.contentUse.intro">
       <segment>
-        <source>The Content is provided solely for your personal information to inform you about us, our products, news, features, services and other websites that may interest you. It does not constitute technical or other type of advice and you should not rely on it for any purposes. You may view, download, print and make copies of the Content on a computer to which only you have access. <x id="PH" equiv-text="&lt;br&gt;"/><x id="PH_1" equiv-text="&lt;b&gt;"/>When copying the Content, you must ensure that<x id="PH_2" equiv-text="&lt;/b&gt;"/>:</source>
+        <source>The Content is provided solely for your personal information to inform you about us, our products, news, features, services and other websites that may interest you. It does not constitute technical or other type of advice and you should not rely on it for any purposes. You may view, download, print and make copies of the Content on a computer to which only you have access. <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>When copying the Content, you must ensure that<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>:</source>
       </segment>
     </unit>
     <unit id="legal.termsOfUse.contentUse.rule1">
@@ -283,7 +283,7 @@
     </unit>
     <unit id="legal.termsOfUse.prohibited.intro">
       <segment>
-        <source><x id="PH" equiv-text="&lt;b&gt;"/>You are not allowed to:<x id="PH_1" equiv-text="&lt;/b&gt;"/></source>
+        <source><x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>You are not allowed to:<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/></source>
       </segment>
     </unit>
     <unit id="legal.termsOfUse.prohibited.commercial">
@@ -340,7 +340,7 @@
     </unit>
     <unit id="legal.privacyPolicy.whoWeAre.intro">
       <segment>
-        <source>We know that when we collect and process information about an individual, we must do so responsibly, with due care for personal privacy, complying with data protection laws and privacy principles. This privacy policy ("Policy") describes the main types of personal information we collect within the company, how this information is processed and disclosed, as well as our obligations to the persons whose data we process. The Policy explains in principle how we strive to comply with privacy and data protection laws and regulations, including but not limited to Regulation (EU) 2016/679 (General Data Protection Regulation/GDPR). <x id="PH" equiv-text="&lt;br&gt;"/> The sole proprietorship company in its capacity as a personal data controller has introduced internal policies (instructions) and programs designed to ensure compliance with these laws.</source>
+        <source>We know that when we collect and process information about an individual, we must do so responsibly, with due care for personal privacy, complying with data protection laws and privacy principles. This privacy policy ("Policy") describes the main types of personal information we collect within the company, how this information is processed and disclosed, as well as our obligations to the persons whose data we process. The Policy explains in principle how we strive to comply with privacy and data protection laws and regulations, including but not limited to Regulation (EU) 2016/679 (General Data Protection Regulation/GDPR). <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> The sole proprietorship company in its capacity as a personal data controller has introduced internal policies (instructions) and programs designed to ensure compliance with these laws.</source>
       </segment>
     </unit>
     <unit id="legal.privacyPolicy.disclosure.title">
@@ -415,7 +415,7 @@
     </unit>
     <unit id="legal.privacyPolicy.rightsExercise">
       <segment>
-        <source>With the exception of the last right, the others are exercised with a written request to the seat of my Company at <x id="PH" equiv-text="&lt;b&gt;"/>ADDRESS<x id="PH_1" equiv-text="&lt;/b&gt;"/>. The sole proprietorship company guarantees that individuals can exercise all their rights regarding personal data processed by the sole proprietorship company, including but not limited to the right of access, updating and correction, right to data portability, right to temporary suspension of processing and data deletion and in general everything provided by law. The sole proprietorship company will make maximum efforts to consider and approve the person's request. Any refusal by the sole proprietorship company would be possible only on a legal basis (when a legal text prohibits this). In cases where required by law, as well as as an expression of good practice, the sole proprietorship company may request the consent of the individual to collect, use and disclose their data for specifically defined purposes.</source>
+        <source>With the exception of the last right, the others are exercised with a written request to the seat of my Company at <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>ADDRESS<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>. The sole proprietorship company guarantees that individuals can exercise all their rights regarding personal data processed by the sole proprietorship company, including but not limited to the right of access, updating and correction, right to data portability, right to temporary suspension of processing and data deletion and in general everything provided by law. The sole proprietorship company will make maximum efforts to consider and approve the person's request. Any refusal by the sole proprietorship company would be possible only on a legal basis (when a legal text prohibits this). In cases where required by law, as well as as an expression of good practice, the sole proprietorship company may request the consent of the individual to collect, use and disclose their data for specifically defined purposes.</source>
       </segment>
     </unit>
     <unit id="legal.privacyPolicy.dataActuality.title">
@@ -517,7 +517,7 @@
     </unit>
     <unit id="legal.cookiePolicy.whatIsACookie.typesContent">
       <segment>
-        <source>There are different types of cookies: <x id="PH" equiv-text="&lt;br&gt;"/><x id="PH_1" equiv-text="&lt;br&gt;"/> <x id="PH_2" equiv-text="&lt;b&gt;"/>First and third party cookies<x id="PH_3" equiv-text="&lt;/b&gt;"/> – whether a cookie is "first" or "third" party depends on the domain that places it. First party cookies are those set by us on the website you visit (for example cookies placed by www.denixlabs.com). <x id="PH_4" equiv-text="&lt;br&gt;"/> <x id="PH_5" equiv-text="&lt;b&gt;"/>Session cookies<x id="PH_6" equiv-text="&lt;/b&gt;"/> – they allow our website to link your actions during a specific browser session. These cookies expire every time you close your browser and do not remain on your device; <x id="PH_7" equiv-text="&lt;br&gt;"/> <x id="PH_8" equiv-text="&lt;b&gt;"/>Persistent cookies<x id="PH_9" equiv-text="&lt;/b&gt;"/> – they are stored on your device between browser sessions. They allow your preferences or actions on our website to be remembered. They remain on your device until they expire or until you delete them from your cache. <x id="PH_10" equiv-text="&lt;br&gt;"/> <x id="PH_11" equiv-text="&lt;b&gt;"/>Strictly necessary cookies<x id="PH_12" equiv-text="&lt;/b&gt;"/> – these cookies are essential for you to be able to navigate our website and use its features. Without them we cannot provide the services you have requested; <x id="PH_13" equiv-text="&lt;br&gt;"/> <x id="PH_14" equiv-text="&lt;b&gt;"/>Performance cookies<x id="PH_15" equiv-text="&lt;/b&gt;"/> – these cookies collect information about how you use our website, such as which pages you visit most often. They do not collect personal information about you. All information collected by these cookies is aggregated and anonymous and is used only to improve the performance of our website; <x id="PH_16" equiv-text="&lt;br&gt;"/> <x id="PH_17" equiv-text="&lt;b&gt;"/>Functional cookies<x id="PH_18" equiv-text="&lt;/b&gt;"/> – these cookies allow our website to remember your choices (such as username, language, last action, and search preferences) and provide better, personalized features. The information collected by these cookies is anonymous and cannot track your activity on other websites.</source>
+        <source>There are different types of cookies: <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>First and third party cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – whether a cookie is "first" or "third" party depends on the domain that places it. First party cookies are those set by us on the website you visit (for example cookies placed by www.denixlabs.com). <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Session cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – they allow our website to link your actions during a specific browser session. These cookies expire every time you close your browser and do not remain on your device; <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Persistent cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – they are stored on your device between browser sessions. They allow your preferences or actions on our website to be remembered. They remain on your device until they expire or until you delete them from your cache. <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Strictly necessary cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – these cookies are essential for you to be able to navigate our website and use its features. Without them we cannot provide the services you have requested; <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Performance cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – these cookies collect information about how you use our website, such as which pages you visit most often. They do not collect personal information about you. All information collected by these cookies is aggregated and anonymous and is used only to improve the performance of our website; <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Functional cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – these cookies allow our website to remember your choices (such as username, language, last action, and search preferences) and provide better, personalized features. The information collected by these cookies is anonymous and cannot track your activity on other websites.</source>
       </segment>
     </unit>
     <unit id="legal.cookiePolicy.ourCookies.title">
@@ -617,7 +617,7 @@
     </unit>
     <unit id="legal.cookiePolicy.facebook.description">
       <segment>
-        <source>Facebook uses cookies for advertising purposes. More information can be found <x id="PH" equiv-text="&lt;a href=&quot;https://www.facebook.com/privacy/policies/cookies/&quot; class=&quot;link&quot;&gt;"/>here<x id="PH_1" equiv-text="&lt;/a&gt;"/>.</source>
+        <source>Facebook uses cookies for advertising purposes. More information can be found <x id="START_LINK" equiv-text="&lt;a href=&quot;https://www.facebook.com/privacy/policies/cookies/&quot; class=&quot;link&quot;&gt;"/>here<x id="CLOSE_LINK" equiv-text="&lt;/a&gt;"/>.</source>
       </segment>
     </unit>
     <unit id="legal.cookiePolicy.facebook.tableCaption">
@@ -662,7 +662,7 @@
     </unit>
     <unit id="legal.cookiePolicy.contact.content">
       <segment>
-        <source><x id="PH" equiv-text="&lt;p&gt;"/>Please contact us if you have questions about this policy.<x id="PH_1" equiv-text="&lt;/p&gt;"/> <x id="PH_2" equiv-text="&lt;br&gt;"/> <x id="PH_3" equiv-text="&lt;p&gt;"/><x id="PH_4" equiv-text="&lt;b&gt;"/>Company name<x id="PH_5" equiv-text="&lt;/b&gt;"/>: Denix Labs Ltd.<x id="PH_6" equiv-text="&lt;/p&gt;"/> <x id="PH_7" equiv-text="&lt;p&gt;"/><x id="PH_8" equiv-text="&lt;b&gt;"/>Email<x id="PH_9" equiv-text="&lt;/b&gt;"/>: info&#64;denixlabs.com<x id="PH_10" equiv-text="&lt;/p&gt;"/></source>
+        <source><x id="START_PARAGRAPH" equiv-text="&lt;p&gt;"/>Please contact us if you have questions about this policy.<x id="CLOSE_PARAGRAPH" equiv-text="&lt;/p&gt;"/> <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_PARAGRAPH" equiv-text="&lt;p&gt;"/><x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Company name<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>: Denix Labs Ltd.<x id="CLOSE_PARAGRAPH" equiv-text="&lt;/p&gt;"/> <x id="START_PARAGRAPH" equiv-text="&lt;p&gt;"/><x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Email<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>: info&#64;denixlabs.com<x id="CLOSE_PARAGRAPH" equiv-text="&lt;/p&gt;"/></source>
       </segment>
     </unit>
     <unit id="legal.cookiePolicy.changes.title">
@@ -684,7 +684,7 @@
     </unit>
     <unit id="contact.page.description">
       <segment>
-        <source>Tell us about your project or describe the problem you're trying to solve. We would be happy to discuss how DenixLabs can work with you. Please contact us at <x id="PH" equiv-text="&lt;a href=&quot;mailto:info@denixlabs.com&quot; class=&quot;text-indigo-500&quot;&gt;"/>info&#64;denixlabs.com<x id="PH_1" equiv-text="&lt;/a&gt;"/> or fill out the form below.</source>
+        <source>Tell us about your project or describe the problem you're trying to solve. We would be happy to discuss how DenixLabs can work with you. Please contact us at <x id="START_LINK" equiv-text="&lt;a href=&quot;mailto:info@denixlabs.com&quot; class=&quot;text-indigo-500&quot;&gt;"/>info&#64;denixlabs.com<x id="CLOSE_LINK" equiv-text="&lt;/a&gt;"/> or fill out the form below.</source>
       </segment>
     </unit>
     <unit id="contact.form.name">
@@ -730,6 +730,48 @@
     <unit id="contact.form.thankYou">
       <segment>
         <source>Thank you for your message!</source>
+      </segment>
+    </unit>
+    
+    <!-- Footer -->
+    <unit id="footer.company">
+      <segment>
+        <source>COMPANY</source>
+      </segment>
+    </unit>
+    <unit id="footer.services">
+      <segment>
+        <source>Services</source>
+      </segment>
+    </unit>
+    <unit id="footer.solutions">
+      <segment>
+        <source>Solutions</source>
+      </segment>
+    </unit>
+    <unit id="footer.legal">
+      <segment>
+        <source>LEGAL</source>
+      </segment>
+    </unit>
+    <unit id="footer.terms">
+      <segment>
+        <source>Terms of Use</source>
+      </segment>
+    </unit>
+    <unit id="footer.cookies">
+      <segment>
+        <source>Cookie Policy</source>
+      </segment>
+    </unit>
+    <unit id="footer.privacy">
+      <segment>
+        <source>Privacy Policy</source>
+      </segment>
+    </unit>
+    <unit id="footer.copyright">
+      <segment>
+        <source>Copyright © 2025</source>
       </segment>
     </unit>
   </file>
