@@ -7,13 +7,11 @@
     },
     {
       "route": "/en/*",
-      "rewrite": "/en/index.html",
-      "statusCode": 200
+      "rewrite": "/en/index.html"
     },
     {
       "route": "/bg/*",
-      "rewrite": "/bg/index.html",
-      "statusCode": 200
+      "rewrite": "/bg/index.html"
     },
     {
       "route": "/fonts/*",
