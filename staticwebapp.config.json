@@ -1,15 +1,15 @@
 {
   "routes": [
     {
-      "route": "*.{js,json,css,jpg,png,ico,webmanifest,ttf,woff,woff2}"
-    },
-    {
       "route": "/",
       "redirect": "/en/index.html"
     },
     {
       "route": "/index.html",
       "rewrite": "/en/index.html"
+    },
+    {
+      "route": "*.{js,json,css,jpg,png,ico,webmanifest,ttf,woff,woff2}"
     }
   ],
   "navigationFallback": {
