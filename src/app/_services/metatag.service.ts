@@ -15,7 +15,7 @@ export class MetatagService {
     // if (!isPlatformBrowser(this.platform_id)) {
     //   return;
     // }
-    console.log(page);
+    console.log("Current page: ", page);
 
     if (window.location.pathname.includes('/bg/')) {
       this.setBulgarianTitle(page);

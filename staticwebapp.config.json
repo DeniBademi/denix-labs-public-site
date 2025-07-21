@@ -11,19 +11,19 @@
     {
       "route": "/*.{js,xml,txt,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
       "headers": {
-        "cache-control": "must-revalidate, max-age=86400"
+        "cache-control": "must-revalidate, max-age=15770000"
       }
     },
     {
       "route": "/en/*.{js,xml,txt,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
       "headers": {
-        "cache-control": "must-revalidate, max-age=86400"
+        "cache-control": "must-revalidate, max-age=15770000"
       }
     },
     {
       "route": "/bg/*.{js,xml,txt,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
       "headers": {
-        "cache-control": "must-revalidate, max-age=86400"
+        "cache-control": "must-revalidate, max-age=15770000"
       }
     },
     {
