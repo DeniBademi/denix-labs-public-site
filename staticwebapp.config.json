@@ -1,24 +1,45 @@
 {
   "routes": [
     {
-      "route": "/assets/*",
+      "route": "/",
+      "redirect": "/en/",
+      "statusCode": 301
+    },
+    {
+      "route": "/en/*",
+      "rewrite": "/en/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/bg/*",
+      "rewrite": "/bg/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/fonts/*",
       "headers": {
-        "cache-control": "must-revalidate, max-age=86400"
+        "cache-control": "must-revalidate, max-age=31536000"
       }
     },
     {
-      "route": "/",
-      "redirect": "/en/index.html"
+      "route": "/logos/*",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=31536000"
+      }
     },
     {
-      "route": "/index.html",
-      "rewrite": "/en/index.html"
+      "route": "/js/*",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=31536000"
+      }
     }
   ],
   "navigationFallback": {
     "rewrite": "/en/index.html",
     "exclude": [
-      "/assets/*",
+      "/fonts/*",
+      "/logos/*",
+      "/js/*",
       "/*.{js,css,map,ico,jpg,png,svg,ttf,woff,woff2}"
     ]
   },
@@ -35,5 +56,8 @@
     ".ttf": "font/ttf",
     ".woff": "font/woff",
     ".woff2": "font/woff2"
+  },
+  "globalHeaders": {
+    "content-security-policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.jsdelivr.net; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
   }
 }

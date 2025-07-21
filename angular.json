@@ -37,7 +37,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "output": "/assets"
+                "output": "/"
               },
               "src/favicon.ico",
               "src/assets",
@@ -49,17 +49,11 @@
               "node_modules/animate.css/animate.min.css"
             ],
             "scripts": [
-              {
-                "input": "public/js/particles.min.js",
-                "bundleName": "particles",
-                "inject": true
-              },
+              "public/particles.js",
               "public/js/burger.js",
               "public/js/slider.js"
             ],
-            "localize": true,
-            "prerender": false,
-            "baseHref": "/"
+            "localize": true
           },
           "configurations": {
             "production": {
@@ -123,7 +117,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "output": "/assets"
+                "output": "/"
               },
               "src/favicon.ico",
               "src/assets"
