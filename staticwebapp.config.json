@@ -1,6 +1,14 @@
 {
   "routes": [
     {
+      "route": "/sitemap.xml",
+      "rewrite": "/en/sitemap.xml"
+    },
+    {
+      "route": "/robots.txt", 
+      "rewrite": "/en/robots.txt"
+    },
+    {
       "route": "/*.{js,xml,txt,css,png,jpg,gif,svg,ttf,woff,woff2,eot,json}",
       "headers": {
         "cache-control": "must-revalidate, max-age=86400"
