@@ -52,6 +52,11 @@ A short description of _what_ this project does and **why** it exists.
 
 ---
 
+Here is a cool formula:
+$$
+\\frac{1}{2\\pi i} \\oint_C \\frac{f(z)}{z-z_0} dz
+$$
+
 ## Installation <a id="installation"></a>
 
 \`\`\`bash
