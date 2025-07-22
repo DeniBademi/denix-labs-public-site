@@ -17,3 +17,20 @@
   backdrop-filter: blur(6.1px);
   -webkit-backdrop-filter: blur(6.1px);
 }
+
+/* Enhanced gradient transition */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensure the gradient overlay is above particles but below content */
+section > div:nth-child(3) {
+  z-index: 1;
+}
+
+/* Make sure content stays above the gradient */
+section > div:nth-child(4) {
+  z-index: 2;
+  position: relative;
+}

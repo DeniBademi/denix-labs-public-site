@@ -690,6 +690,18 @@
         <source>Page not found</source>
         <target>Страницата не е намерена</target>
       </trans-unit>
+
+      <!-- Article Page -->
+      <trans-unit id="article.backToBlog" datatype="html">
+        <source>Back to Blog</source>
+        <target>Обратно към блога</target>
+      </trans-unit>
+
+      <!-- Navbar -->
+      <trans-unit id="navbar.blog" datatype="html">
+        <source>Blog</source>
+        <target>Блог</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

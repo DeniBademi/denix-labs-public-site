@@ -54,7 +54,6 @@
               "public/js/particles.min.js",
               "public/js/burger.js",
               "public/js/slider.js",
-              "public/keen_slider.js",
               "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
               "node_modules/katex/dist/katex.min.js",
               "node_modules/katex/dist/contrib/auto-render.min.js",

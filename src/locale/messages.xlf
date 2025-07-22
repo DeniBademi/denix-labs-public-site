@@ -52,6 +52,16 @@
       <trans-unit id="notFound.title" datatype="html">
         <source>Page not found</source>
       </trans-unit>
+
+      <!-- Article Page -->
+      <trans-unit id="article.backToBlog" datatype="html">
+        <source>Back to Blog</source>
+      </trans-unit>
+
+      <!-- Navbar -->
+      <trans-unit id="navbar.blog" datatype="html">
+        <source>Blog</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
