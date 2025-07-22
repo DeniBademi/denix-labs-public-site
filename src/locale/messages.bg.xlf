@@ -578,7 +578,7 @@
         <source>This version was last updated on March 3, 2025 and previous versions may be obtained upon request.</source>
         <target>Тази версия е последно актуализирана на 3 март 2025 г. и предишни версии могат да бъдат получени при запитване.</target>
       </trans-unit>
-      
+
       <!-- Contact Page -->
       <trans-unit id="contact.page.title" datatype="html">
         <source>Contact</source>
@@ -628,7 +628,7 @@
         <source>BGN</source>
         <target>лв</target>
       </trans-unit>
-      
+
       <!-- Footer -->
       <trans-unit id="footer.company" datatype="html">
         <source>COMPANY</source>
@@ -661,6 +661,34 @@
       <trans-unit id="footer.copyright" datatype="html">
         <source>Copyright © 2025</source>
         <target>Copyright © 2025</target>
+      </trans-unit>
+
+      <!-- Blog Page -->
+      <trans-unit id="blog.title" datatype="html">
+        <source>Blog</source>
+        <target>Блог</target>
+      </trans-unit>
+      <trans-unit id="blog.searchPlaceholder" datatype="html">
+        <source>Search articles...</source>
+        <target>Търси статии...</target>
+      </trans-unit>
+      <trans-unit id="blog.subscribeButton" datatype="html">
+        <source>Subscribe</source>
+        <target>Абонирай се</target>
+      </trans-unit>
+      <trans-unit id="blog.featuredSection" datatype="html">
+        <source>Featured</source>
+        <target>Избрано</target>
+      </trans-unit>
+      <trans-unit id="blog.articlesSection" datatype="html">
+        <source>Articles</source>
+        <target>Статии</target>
+      </trans-unit>
+
+      <!-- Not Found Page -->
+      <trans-unit id="notFound.title" datatype="html">
+        <source>Page not found</source>
+        <target>Страницата не е намерена</target>
       </trans-unit>
     </body>
   </file>

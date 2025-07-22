@@ -1,0 +1,12 @@
+<section class="bg-gray-900 py-16">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-black mb-12" i18n="@@blog.articlesSection">Articles</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <app-blog-card
+        *ngFor="let post of posts"
+        [post]="post"
+        [featured]="false"
+      ></app-blog-card>
+    </div>
+  </div>
+</section>

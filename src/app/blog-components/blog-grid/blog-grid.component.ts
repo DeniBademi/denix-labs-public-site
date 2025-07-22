@@ -1,0 +1,14 @@
+import { Component, Input } from '@angular/core';
+import { BlogPost } from '../../_models/BlogPost';
+import { CommonModule } from '@angular/common';
+import { BlogCardComponent } from '../blog-card/blog-card.component';
+
+@Component({
+  selector: 'app-blog-grid',
+  imports: [CommonModule, BlogCardComponent],
+  templateUrl: './blog-grid.component.html',
+  styleUrl: './blog-grid.component.css'
+})
+export class BlogGridComponent {
+  @Input() posts: BlogPost[] = [];
+}

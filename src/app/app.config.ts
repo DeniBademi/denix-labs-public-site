@@ -5,7 +5,6 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { NgcCookieConsentConfig, provideNgcCookieConsent } from 'ngx-cookieconsent';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
-import { provideMarkdown } from 'ngx-markdown';
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
     domain: "https://loquacious-piroshki-e14b7d.netlify.app" // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
@@ -51,7 +50,6 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
     provideNgcCookieConsent(cookieConfig),
     provideAnimations(),
-    provideHttpClient(),
-    provideMarkdown({ loader: HttpClient }),
+    provideHttpClient()
   ]
 };

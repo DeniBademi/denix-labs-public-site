@@ -30,6 +30,28 @@
           <context context-type="linenumber">38,43</context>
         </context-group>
       </trans-unit>
+
+      <!-- Blog Page -->
+      <trans-unit id="blog.title" datatype="html">
+        <source>Blog</source>
+      </trans-unit>
+      <trans-unit id="blog.searchPlaceholder" datatype="html">
+        <source>Search articles...</source>
+      </trans-unit>
+      <trans-unit id="blog.subscribeButton" datatype="html">
+        <source>Subscribe</source>
+      </trans-unit>
+      <trans-unit id="blog.featuredSection" datatype="html">
+        <source>Featured</source>
+      </trans-unit>
+      <trans-unit id="blog.articlesSection" datatype="html">
+        <source>Articles</source>
+      </trans-unit>
+
+      <!-- Not Found Page -->
+      <trans-unit id="notFound.title" datatype="html">
+        <source>Page not found</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

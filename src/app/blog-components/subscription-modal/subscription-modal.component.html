@@ -1,0 +1,71 @@
+<div class="modal-backdrop" (click)="onBackdropClick($event)">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Subscribe to Our Blog</h2>
+      <button class="close-button" (click)="onClose()" type="button">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <div *ngIf="!isSubmitted" class="subscription-form">
+        <p class="description">
+          Stay updated with our latest insights on AI, automation, and intelligent business solutions.
+        </p>
+
+        <form (ngSubmit)="onSubmit()" class="email-form">
+          <div class="input-group">
+            <label for="email" class="input-label">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              [(ngModel)]="email"
+              name="email"
+              placeholder="Enter your email address"
+              class="email-input"
+              [class.error]="hasUserTyped && !isEmailValid"
+              [class.valid]="hasUserTyped && isEmailValid"
+              (input)="onEmailChange()"
+              required
+            >
+            <div *ngIf="getEmailHint()" class="hint-message" [class.error]="!isEmailValid">
+              {{ getEmailHint() }}
+            </div>
+            <div *ngIf="errorMessage" class="error-message">
+              {{ errorMessage }}
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="subscribe-button"
+            [disabled]="isSubmitting || !email.trim() || (hasUserTyped && !isEmailValid)"
+          >
+            <span *ngIf="!isSubmitting">Subscribe</span>
+            <span *ngIf="isSubmitting" class="loading">
+              <svg class="animate-spin w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              Subscribing...
+            </span>
+          </button>
+        </form>
+      </div>
+
+      <div *ngIf="isSubmitted" class="success-message">
+        <div class="success-icon">
+          <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <h3 class="success-title">Thank You!</h3>
+        <p class="success-description">
+          You've been successfully subscribed to our blog. We'll send you updates on the latest AI insights and automation trends.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

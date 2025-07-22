@@ -1,6 +1,6 @@
 <!-- <article class="markdown-article" [innerHTML]="processedMarkdown"></article> -->
 <div class="markdown-article">
-    <remark [markdown]="markdowntest" [processor]="processor">
+    <remark [markdown]="markdown" [processor]="processor">
         <!-- Code blocks-->
         <ng-template [remarkTemplate]="'code'" let-node>
           @if(node.lang === 'mermaid') {
@@ -9,41 +9,41 @@
           <remark-prism [code]="node.value" [language]="node.lang" />
           }
         </ng-template>
-      
+
         <!-- Math expressions -->
         <remark-katex
           *remarkTemplate="'math'; let node"
           [expr]="node.value"
           class="d-block mb-3"
         ></remark-katex>
-      
+
         <!-- Inline math expresions -->
         <remark-katex
           *remarkTemplate="'inlineMath'; let node"
           [expr]="node.value"
         ></remark-katex>
-      
+
         <!-- Custom links -->
         <span *remarkTemplate="'link'; let node">
           🔗<a
             [href]="node?.url"
             [title]="node.title ?? ''"
             [remarkNode]="node"
-            style="color: green;"
+            style="color: #6366f1;"
           >
           </a>
         </span>
-      
+
         <!-- Custom headings -->
-        <remark-heading
+        <!-- <remark-heading
           *remarkTemplate="'heading'; let node"
           [node]="node"
-        ></remark-heading>
+        ></remark-heading> -->
 
         <remark-prism *remarkTemplate="'code'; let node"
           [code]="node.value"
           [language]="node.lang">
         </remark-prism>
       </remark>
-      
+
 </div>

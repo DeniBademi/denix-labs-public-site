@@ -1,0 +1,19 @@
+/* Blog hero styles */
+.transition-colors {
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+
+  .text-6xl {
+    font-size: 3rem;
+  }
+}

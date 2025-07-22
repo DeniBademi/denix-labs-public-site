@@ -1,0 +1,13 @@
+<!-- Hero Section with Search and Filters -->
+<app-blog-hero
+  (searchQuery)="onSearch($event)"
+  (categorySelected)="onCategorySelect($event)"
+  (subscribeClicked)="onSubscribe()"
+></app-blog-hero>
+
+
+<!-- Featured Article -->
+<app-blog-featured [post]="featuredPost$ | async"></app-blog-featured>
+
+<!-- Blog Posts Grid -->
+<app-blog-grid [posts]="currentPosts"></app-blog-grid>

@@ -45,6 +45,9 @@ export class MetatagService {
       case 'contact':
         this.title.setTitle('DenixLabs - Contact');
         break;
+      case 'blog':
+        this.title.setTitle('DenixLabs - Blog');
+        break;
       default:
         this.title.setTitle('DenixLabs');
     }
@@ -67,10 +70,13 @@ export class MetatagService {
       case 'contact':
         this.title.setTitle('DenixLabs - Контакти');
         break;
+      case 'blog':
+        this.title.setTitle('DenixLabs - Блог');
+        break;
       default:
         this.title.setTitle('DenixLabs');
     }
   }
 
-  
+
 }

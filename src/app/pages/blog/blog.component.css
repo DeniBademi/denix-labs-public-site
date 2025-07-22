@@ -1,0 +1,66 @@
+/* Blog page styles */
+
+/* Custom hover effect for blog cards */
+.hover\:bg-gray-750:hover {
+  background-color: #374151;
+}
+
+/* Smooth transitions */
+.transition-colors {
+  transition: all 0.3s ease;
+}
+
+/* Custom focus styles for search input */
+input:focus {
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+
+  .text-6xl {
+    font-size: 3rem;
+  }
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Animation for category filters */
+.category-filter {
+  transition: all 0.2s ease;
+}
+
+.category-filter:hover {
+  transform: translateY(-1px);
+}
+
+/* Custom button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+}
