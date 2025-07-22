@@ -2,7 +2,9 @@
 @charset "UTF-8";
 @import "tailwindcss";
 @import 'animate.css';
-
+remark-prism {
+    @include meta.load-css('../node_modules/prismjs/themes/prism-okaidia.css');
+  }
 @font-face {
     font-family: 'jakarta';
     font-display: auto;

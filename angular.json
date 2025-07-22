@@ -46,13 +46,19 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/animate.css/animate.min.css"
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
+              "node_modules/katex/dist/katex.min.css"
             ],
             "scripts": [
               "public/js/particles.min.js",
               "public/js/burger.js",
               "public/js/slider.js",
-              "public/keen_slider.js"
+              "public/keen_slider.js",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
+              "node_modules/katex/dist/katex.min.js",
+              "node_modules/katex/dist/contrib/auto-render.min.js",
+              "node_modules/clipboard/dist/clipboard.min.js"
             ],
             "localize": true,
             "aot": true
@@ -136,8 +142,8 @@
               "node_modules/prismjs/components/prism-css.min.js",
               "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
               "node_modules/katex/dist/katex.min.js",
-              "node_modules/katex/dist/contrib/auto-render.min.js"
-              
+              "node_modules/katex/dist/contrib/auto-render.min.js",
+              "node_modules/clipboard/dist/clipboard.min.js"
             ]
           }
         }

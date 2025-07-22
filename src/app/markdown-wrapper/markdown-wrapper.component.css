@@ -110,18 +110,18 @@
     font-size: 0.9rem;
 }
 
-.markdown-article code {
+/* .markdown-article code {
     background-color: #f3f4f6;
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
     font-size: 0.9em;
     font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
-}
+} */
 
-.markdown-article pre code {
+/* .markdown-article pre code {
     background-color: transparent;
     padding: 0;
-}
+} */
 
 .markdown-article table {
     width: 100%;
