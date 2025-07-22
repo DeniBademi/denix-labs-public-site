@@ -1,61 +1,67 @@
-import { APP_BASE_HREF } from '@angular/common';
-import { CommonEngine, isMainModule } from '@angular/ssr/node';
+import {
+  AngularNodeAppEngine,
+  createNodeRequestHandler,
+  isMainModule,
+  writeResponseToNodeResponse,
+} from '@angular/ssr/node';
 import express from 'express';
-import { dirname, join, resolve } from 'node:path';
+import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import bootstrap from './main.server';
-import { render } from '@netlify/angular-runtime/common-engine'
 
-const serverDistFolder = dirname(fileURLToPath(import.meta.url));
-const browserDistFolder = resolve(serverDistFolder, '../browser');
-const indexHtml = join(serverDistFolder, 'index.server.html');
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const browserDistFolder = join(__dirname, '../browser');
 
 const app = express();
-const commonEngine = new CommonEngine();
+const angularApp = new AngularNodeAppEngine();
 
-// Serve static files from /browser
-app.use(express.static(browserDistFolder, {
-  maxAge: '1y'
-}));
+/**
+ * Example Express Rest API endpoints can be defined here.
+ * Uncomment and define endpoints as necessary.
+ *
+ * Example:
+ * ```ts
+ * app.get('/api/{*splat}', (req, res) => {
+ *   // Handle API request
+ * });
+ * ```
+ */
 
-// Serve static files from /public directory at the root
-app.use('/public', express.static(join(browserDistFolder, 'public'), {
-  maxAge: '1y'
-}));
+/**
+ * Serve static files from /browser
+ */
+app.use(
+  express.static(browserDistFolder, {
+    maxAge: '1y',
+    index: false,
+    redirect: false,
+  }),
+);
 
-// Serve localized static files
-app.use('/bg/public', express.static(join(browserDistFolder, 'public'), {
-  maxAge: '1y'
-}));
-
-export async function netlifyCommonEngineHandler(request: Request, context: any): Promise<Response> {
-  return await render(commonEngine)
-}
-
-app.get('**', (req, res, next) => {
-  const { protocol, originalUrl, baseUrl, headers } = req;
-
-  // Determine the locale from the URL
-  const locale = originalUrl.startsWith('/bg') ? 'bg' : 'en';
-  const baseHref = locale === 'bg' ? '/bg/' : '/';
-
-  commonEngine
-    .render({
-      bootstrap,
-      documentFilePath: indexHtml,
-      url: `${protocol}://${headers.host}${originalUrl}`,
-      publicPath: browserDistFolder,
-      providers: [{ provide: APP_BASE_HREF, useValue: baseHref }],
-    })
-    .then((html) => res.send(html))
-    .catch((err) => next(err));
+/**
+ * Handle all other requests by rendering the Angular application.
+ */
+app.use((req, res, next) => {
+  angularApp
+    .handle(req)
+    .then((response) =>
+      response ? writeResponseToNodeResponse(response, res) : next(),
+    )
+    .catch(next);
 });
 
+/**
+ * Start the server if this module is the main entry point.
+ * The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
+ */
 if (isMainModule(import.meta.url)) {
   const port = process.env['PORT'] || 4000;
   app.listen(port, () => {
+
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
 }
 
-export default app;
+/**
+ * Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.
+ */
+export const reqHandler = createNodeRequestHandler(app);
