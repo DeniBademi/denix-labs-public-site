@@ -19,9 +19,9 @@ export class LanguageSwitcherComponent {
 
   // Remove existing locale prefix if present
   if (currentUrl.startsWith('/en/')) {
-    newUrl = currentUrl.replace(/^\/en/, '');
+    newUrl = currentUrl.replace(/^\/en/, '/bg');
   } else if (currentUrl.startsWith('/bg/')) {
-    newUrl = currentUrl.replace(/^\/bg/, '');
+    newUrl = currentUrl.replace(/^\/bg/, '/en');
   }
 
 
