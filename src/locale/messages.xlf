@@ -68,7 +68,7 @@
         <source>Services</source>
       </trans-unit>
       <trans-unit id="services.description" datatype="html">
-        <source>DenixLabs offers customized solutions for its clients' needs and helps them extract maximum value from their data and this new technology. Here we introduce you superficially to our work process and the services, <br>that we offer.</source>
+        <source>DenixLabs offers customized solutions for its clients' needs and helps them extract maximum value from their data and this new technology. Here we introduce you superficially to our work process and the services, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>that we offer.</source>
       </trans-unit>
       <trans-unit id="services.workflow.title" datatype="html">
         <source>Workflow</source>
