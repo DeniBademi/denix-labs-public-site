@@ -134,6 +134,35 @@
       <trans-unit id="contactInvite.button" datatype="html">
         <source>Contact Us</source>
       </trans-unit>
+
+      <!-- Footer Component -->
+      <trans-unit id="footer.company" datatype="html">
+        <source>COMPANY</source>
+      </trans-unit>
+      <trans-unit id="footer.services" datatype="html">
+        <source>Services</source>
+      </trans-unit>
+      <trans-unit id="footer.solutions" datatype="html">
+        <source>Solutions</source>
+      </trans-unit>
+      <trans-unit id="footer.blog" datatype="html">
+        <source>Blog</source>
+      </trans-unit>
+      <trans-unit id="footer.legal" datatype="html">
+        <source>LEGAL</source>
+      </trans-unit>
+      <trans-unit id="footer.terms" datatype="html">
+        <source>Terms of Use</source>
+      </trans-unit>
+      <trans-unit id="footer.cookies" datatype="html">
+        <source>Cookie Policy</source>
+      </trans-unit>
+      <trans-unit id="footer.privacy" datatype="html">
+        <source>Privacy Policy</source>
+      </trans-unit>
+      <trans-unit id="footer.copyright" datatype="html">
+        <source>Copyright © 2025</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

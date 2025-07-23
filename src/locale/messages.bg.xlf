@@ -662,6 +662,10 @@
         <source>Copyright © 2025</source>
         <target>Copyright © 2025</target>
       </trans-unit>
+      <trans-unit id="footer.blog" datatype="html">
+        <source>Blog</source>
+        <target>Блог</target>
+      </trans-unit>
 
       <!-- Blog Page -->
       <trans-unit id="blog.title" datatype="html">

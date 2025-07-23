@@ -41,7 +41,7 @@
         <source> Contact Us </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact-invite/contact-invite.component.html</context>
-          <context context-type="linenumber">10,12</context>
+          <context context-type="linenumber">10,13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.company" datatype="html">
@@ -63,6 +63,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.blog" datatype="html">
+        <source>Blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">18,19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.legal" datatype="html">
