@@ -764,6 +764,38 @@
         <source>Machine learning and artificial intelligence algorithms should be not only accurate but also accessible. In case your business does not have third-party IT infrastructure, we can also take on the development of web applications as a means of interacting with your models in an intuitive way, as well as visualizing key indicators and statistics.</source>
         <target>Алгоритмите за машинно обучение и изкуствен интелект трябва освен точни да са и достъпни. В случай, че бизнесът ви няма странична IT инфраструктура, можем да поемем и разработката на уеб приложения като средство за интеракция с вашите модели по интуитивен начин, както и визуализация на ключови показатели и статистики.</target>
       </trans-unit>
+
+      <!-- Our Expertise Component -->
+      <trans-unit id="expertise.title" datatype="html">
+        <source>Our Expertise</source>
+        <target>Нашата експертиза</target>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.title" datatype="html">
+        <source>Concepts</source>
+        <target>Концепции</target>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description1" datatype="html">
+        <source>Data analysis and visualization, working with (un)structured data and images, hypothesis testing, statistical tests</source>
+        <target>Анализ и визуализация на данни, работа с (не)структурирани данни и изображения, тестване на хипотези, статистически тестове</target>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description2" datatype="html">
+        <source>Supervised and unsupervised machine learning, optimization, working with time series</source>
+        <target>Надзиравано и ненадзиравано машинно обучение, оптимизация, работа с времеви редове</target>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description3" datatype="html">
+        <source>Deep neural networks, convolutional neural networks, generative models, siamese neural networks, Bayesian networks</source>
+        <target>Дълбоки невронни мрежи, конволюционни невронни мрежи, генеративни модели, сиамски невронни мрежи, бейсови мрежи</target>
+      </trans-unit>
+      <trans-unit id="expertise.technologies.title" datatype="html">
+        <source>Technologies</source>
+        <target>Технологии</target>
+      </trans-unit>
+
+      <!-- Contact Invite Component -->
+      <trans-unit id="contactInvite.button" datatype="html">
+        <source>Contact Us</source>
+        <target>Свържи се с нас</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

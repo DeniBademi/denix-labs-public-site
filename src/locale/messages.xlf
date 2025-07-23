@@ -109,6 +109,31 @@
       <trans-unit id="services.webdev.description" datatype="html">
         <source>Machine learning and artificial intelligence algorithms should be not only accurate but also accessible. In case your business does not have third-party IT infrastructure, we can also take on the development of web applications as a means of interacting with your models in an intuitive way, as well as visualizing key indicators and statistics.</source>
       </trans-unit>
+
+      <!-- Our Expertise Component -->
+      <trans-unit id="expertise.title" datatype="html">
+        <source>Our Expertise</source>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.title" datatype="html">
+        <source>Concepts</source>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description1" datatype="html">
+        <source>Data analysis and visualization, working with (un)structured data and images, hypothesis testing, statistical tests</source>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description2" datatype="html">
+        <source>Supervised and unsupervised machine learning, optimization, working with time series</source>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description3" datatype="html">
+        <source>Deep neural networks, convolutional neural networks, generative models, siamese neural networks, Bayesian networks</source>
+      </trans-unit>
+      <trans-unit id="expertise.technologies.title" datatype="html">
+        <source>Technologies</source>
+      </trans-unit>
+
+      <!-- Contact Invite Component -->
+      <trans-unit id="contactInvite.button" datatype="html">
+        <source>Contact Us</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

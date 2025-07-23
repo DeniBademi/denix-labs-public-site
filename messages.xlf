@@ -37,6 +37,13 @@
           <context context-type="linenumber">27,31</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="contactInvite.button" datatype="html">
+        <source> Contact Us </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-invite/contact-invite.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="footer.company" datatype="html">
         <source>COMPANY</source>
         <context-group purpose="location">
@@ -170,6 +177,48 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
           <context context-type="linenumber">89,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.title" datatype="html">
+        <source> Our Expertise </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.title" datatype="html">
+        <source>Concepts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description1" datatype="html">
+        <source>Data analysis and visualization, working with (un)structured data and images, hypothesis testing, statistical tests</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description2" datatype="html">
+        <source>Supervised and unsupervised machine learning, optimization, working with time series</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description3" datatype="html">
+        <source>Deep neural networks, convolutional neural networks, generative models, siamese neural networks, Bayesian networks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.technologies.title" datatype="html">
+        <source>Technologies</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">14,15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="article.backToBlog" datatype="html">
