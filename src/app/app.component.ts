@@ -50,17 +50,20 @@ export class AppComponent implements OnInit, OnDestroy {
     }
 
   ngOnInit(): void {
-    console.log(window.navigator.language)
+    if (typeof window !== 'undefined') {
+      console.log(window.navigator.language);
+    }
     if (isPlatformBrowser(this.platform_id)) {
       this.meta.updateMetaTags();
-      if(localStorage.getItem('cookieconsent_dismissed') === 'yes') {
+      if (typeof window !== 'undefined' && localStorage.getItem('cookieconsent_dismissed') === 'yes') {
         this.ccService.destroy();
       }
-      this.popupCloseSubscription = this.ccService.popupClose$.subscribe( () => {
-        localStorage.setItem('cookieconsent_dismissed', 'yes');
-       });
+      this.popupCloseSubscription = this.ccService.popupClose$.subscribe(() => {
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('cookieconsent_dismissed', 'yes');
+        }
+      });
     }
-
 
 
    }

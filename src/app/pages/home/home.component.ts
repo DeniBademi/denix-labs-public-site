@@ -5,11 +5,10 @@ import { WhyUseAiComponent } from '../../why-use-ai/why-use-ai.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { MetatagService } from '../../_services/metatag.service';
 import { VapiSectionComponent } from '../../vapi-section/vapi-section.component';
-import { MarkdownWrapperComponent } from '../../markdown-wrapper/markdown-wrapper.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent, FaqComponent, WhyUseAiComponent, VapiSectionComponent, MarkdownWrapperComponent],
+  imports: [HeroComponent, FaqComponent, WhyUseAiComponent, VapiSectionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
