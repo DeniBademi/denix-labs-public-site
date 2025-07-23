@@ -4,7 +4,7 @@ import { marked } from 'marked';
 // import { MarkdownComponent } from 'ngx-markdown';
 import { NgStyle } from "@angular/common";
 // import { KatexOptions } from 'ngx-markdown';
-import { RemarkModule, KatexComponent, PrismComponent, MermaidComponent, HeadingComponent } from 'ngx-remark';
+import { RemarkModule, KatexComponent, PrismComponent, MermaidComponent } from 'ngx-remark';
 import { unified } from 'unified';
 import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
@@ -14,14 +14,14 @@ import remarkMath from 'remark-math';
   imports: [ NgStyle,     RemarkModule,
     PrismComponent,
     KatexComponent,
-    MermaidComponent,
-    HeadingComponent,],
+    MermaidComponent
+  ],
   templateUrl: './markdown-wrapper.component.html',
   styleUrl: './markdown-wrapper.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.ShadowDom,
 })
-export class MarkdownWrapperComponent { 
+export class MarkdownWrapperComponent {
   @Input() markdown: string = '';
   processor = unified().use(remarkParse).use(remarkGfm).use(remarkMath);
   markdowntest = `# My Awesome Project
@@ -41,14 +41,14 @@ A short description of _what_ this project does and **why** it exists.
 
 ## Features <a id="features"></a>
 
-- ✨ **Fast** – optimized algorithms  
-- 📦 **Modular** – tiny, composable pieces  
-- 🔒 **Secure** – audited dependencies  
-  - Uses **OWASP‑recommended** practices  
-  - Automatic secret scanning  
-- 🧪 **Tested**  
-  - Unit tests  
-  - Integration tests  
+- ✨ **Fast** – optimized algorithms
+- 📦 **Modular** – tiny, composable pieces
+- 🔒 **Secure** – audited dependencies
+  - Uses **OWASP‑recommended** practices
+  - Automatic secret scanning
+- 🧪 **Tested**
+  - Unit tests
+  - Integration tests
 
 ---
 
@@ -72,7 +72,7 @@ npm install
 
 
   constructor(private sanitizer: DomSanitizer) {}
-  
+
   get processedMarkdown(): SafeHtml {
     const html = marked(this.markdown) as string;
     return this.sanitizer.bypassSecurityTrustHtml(html);

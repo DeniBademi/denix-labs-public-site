@@ -17,6 +17,7 @@ import { ReportWritingComponent } from './pages/solutions/report-writing/report-
 import { FaceRecognitionComponent } from './pages/solutions/face-recognition/face-recognition.component';
 import { RiskAssessmentComponent } from './pages/solutions/risk-assessment/risk-assessment.component';
 import { ArticleComponent } from './pages/article/article.component';
+import { RenderMode, ServerRoute } from '@angular/ssr';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -31,7 +32,7 @@ export const routes: Routes = [
     { path: 'solutions/face-recognition', component: FaceRecognitionComponent },
     { path: 'solutions/risk-assessment', component: RiskAssessmentComponent },
     { path: 'blog', loadComponent: () => import('./pages/blog/blog.component').then(m => m.BlogComponent) },
-    { path: 'article/:id', loadComponent: () => import('./pages/blog/blog.component').then(m => m.BlogComponent) },
+    { path: 'article/:id', loadComponent: () => import('./pages/article/article.component').then(m => m.ArticleComponent) },
 
     { path: 'solutions', component: SolutionsComponent },
     { path: 'contact', loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent) },

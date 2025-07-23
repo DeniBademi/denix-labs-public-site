@@ -6,7 +6,6 @@ import { AsyncPipe } from '@angular/common';
 import { BlogHeroComponent } from '../../blog-components/blog-hero/blog-hero.component';
 import { BlogFeaturedComponent } from '../../blog-components/blog-featured/blog-featured.component';
 import { BlogGridComponent } from '../../blog-components/blog-grid/blog-grid.component';
-import { BlogCardComponent } from '../../blog-components/blog-card/blog-card.component';
 
 @Component({
   selector: 'app-blog',
@@ -14,8 +13,7 @@ import { BlogCardComponent } from '../../blog-components/blog-card/blog-card.com
     AsyncPipe,
     BlogHeroComponent,
     BlogFeaturedComponent,
-    BlogGridComponent,
-    BlogCardComponent
+    BlogGridComponent
   ],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
