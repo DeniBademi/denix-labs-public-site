@@ -60,7 +60,6 @@
               "node_modules/clipboard/dist/clipboard.min.js"
             ],
             "localize": true,
-            "prerender": true,
             "aot": true
           },
           "configurations": {
