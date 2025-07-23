@@ -65,6 +65,26 @@ input:focus {
   box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
 }
 
+/* Mobile-specific z-index management */
+@media (max-width: 768px) {
+  /* Ensure content sections appear above hero animations */
+  app-blog-featured,
+  app-blog-grid {
+    position: relative;
+    z-index: 5;
+    background: #111827; /* Ensure solid background */
+    transform: translateZ(0); /* Force hardware acceleration */
+  }
+  
+  /* Force new stacking context for mobile */
+  app-blog-hero {
+    position: relative;
+    z-index: 1;
+    isolation: isolate; /* Create new stacking context */
+    overflow: hidden; /* Prevent animation overflow */
+  }
+}
+
 * {
   position: relative;
   z-index: 10;
