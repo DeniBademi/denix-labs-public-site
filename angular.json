@@ -60,7 +60,8 @@
               "node_modules/clipboard/dist/clipboard.min.js"
             ],
             "localize": true,
-            "aot": true
+            "aot": true,
+            "prerender": true
           },
           "configurations": {
             "production": {
@@ -159,6 +160,8 @@
             }
           }
         },
+
+
         "prerender": {
           "builder": "@angular-devkit/build-angular:prerender",
           "options": {

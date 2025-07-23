@@ -6,27 +6,11 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender,
   },
   {
-    path: 'en',
+    path: 'services',
     renderMode: RenderMode.Prerender,
   },
   {
-    path: 'bg',
-    renderMode: RenderMode.Prerender,
-  },
-  {
-    path: 'en/services',
-    renderMode: RenderMode.Prerender,
-  },
-  {
-    path: 'bg/services',
-    renderMode: RenderMode.Prerender,
-  },
-  {
-    path: 'en/article/:id', // This renders the "/" route on the client (CSR)
-    renderMode: RenderMode.Server,
-  },
-  {
-    path: 'bg/article/:id', // This renders the "/" route on the client (CSR)
+    path: 'article/:id', // This renders the "/" route on the client (CSR)
     renderMode: RenderMode.Server,
   },
   {
