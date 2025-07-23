@@ -43,6 +43,7 @@ jobs:
           cp -R public/js dist/denix-labs-public-site/browser/js
           cp -R public/logos dist/denix-labs-public-site/browser/logos
           cp -R public/icons dist/denix-labs-public-site/browser/icons
+          cp -R public/data dist/denix-labs-public-site/browser/data
 
       - name: Deploy
         id: deploy
