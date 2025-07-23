@@ -163,6 +163,32 @@
       <trans-unit id="footer.copyright" datatype="html">
         <source>Copyright © 2025</source>
       </trans-unit>
+
+      <!-- Subscription Modal Component -->
+      <trans-unit id="subscriptionModal.title" datatype="html">
+        <source>Subscribe to Our Blog</source>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.description" datatype="html">
+        <source>Stay updated with our latest insights on AI, automation, and intelligent business solutions.</source>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailLabel" datatype="html">
+        <source>Email Address</source>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailPlaceholder" datatype="html">
+        <source>Enter your email address</source>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribeButton" datatype="html">
+        <source>Subscribe</source>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribing" datatype="html">
+        <source>Subscribing...</source>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successTitle" datatype="html">
+        <source>Thank You!</source>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successDescription" datatype="html">
+        <source>You've been successfully subscribed to our blog. We'll send you updates on the latest AI insights and automation trends.</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

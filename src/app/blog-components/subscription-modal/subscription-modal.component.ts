@@ -47,9 +47,10 @@ export class SubscriptionModalComponent {
         // Auto close after 2 seconds
         setTimeout(() => {
           this.onClose();
-        }, 2000);
+        }, 3000);
       }, 1000);
     } else {
+      // This should be translated in a real app, but for now we'll keep it simple
       this.errorMessage = 'Please enter a valid email address.';
     }
   }
@@ -64,6 +65,7 @@ export class SubscriptionModalComponent {
       return '';
     }
     if (!this.email.trim()) {
+      // These hint messages should be translated in a real app
       return 'Email address is required.';
     }
     if (!this.isEmailValid) {

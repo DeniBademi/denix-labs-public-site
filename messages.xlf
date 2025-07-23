@@ -37,6 +37,62 @@
           <context context-type="linenumber">27,31</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="subscriptionModal.title" datatype="html">
+        <source>Subscribe to Our Blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.description" datatype="html">
+        <source> Stay updated with our latest insights on AI, automation, and intelligent business solutions. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">15,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailLabel" datatype="html">
+        <source>Email Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailPlaceholder" datatype="html">
+        <source>Enter your email address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribeButton" datatype="html">
+        <source>Subscribe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribing" datatype="html">
+        <source>Subscribing...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successTitle" datatype="html">
+        <source>Thank You!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successDescription" datatype="html">
+        <source> You&apos;ve been successfully subscribed to our blog. We&apos;ll send you updates on the latest AI insights and automation trends. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">67,70</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="contactInvite.button" datatype="html">
         <source> Contact Us </source>
         <context-group purpose="location">

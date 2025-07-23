@@ -667,6 +667,40 @@
         <target>Блог</target>
       </trans-unit>
 
+      <!-- Subscription Modal Component -->
+      <trans-unit id="subscriptionModal.title" datatype="html">
+        <source>Subscribe to Our Blog</source>
+        <target>Абонирай се за нашия блог</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.description" datatype="html">
+        <source>Stay updated with our latest insights on AI, automation, and intelligent business solutions.</source>
+        <target>Бъдете в течение с най-новите ни прозрения за изкуствен интелект, автоматизация и интелигентни бизнес решения.</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailLabel" datatype="html">
+        <source>Email Address</source>
+        <target>Имейл адрес</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailPlaceholder" datatype="html">
+        <source>Enter your email address</source>
+        <target>Въведете вашия имейл адрес</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribeButton" datatype="html">
+        <source>Subscribe</source>
+        <target>Абонирай се</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribing" datatype="html">
+        <source>Subscribing...</source>
+        <target>Абониране...</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successTitle" datatype="html">
+        <source>Thank You!</source>
+        <target>Благодарим!</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successDescription" datatype="html">
+        <source>You've been successfully subscribed to our blog. We'll send you updates on the latest AI insights and automation trends.</source>
+        <target>Успешно се абонирахте за нашия блог. Ще ви изпращаме актуализации за най-новите прозрения за изкуствен интелект и тенденции в автоматизацията.</target>
+      </trans-unit>
+
       <!-- Blog Page -->
       <trans-unit id="blog.title" datatype="html">
         <source>Blog</source>
