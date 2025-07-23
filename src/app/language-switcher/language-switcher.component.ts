@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { LOCALE_ID } from '@angular/core';
 @Component({
   selector: 'app-language-switcher',
   imports: [],
@@ -8,7 +8,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LanguageSwitcherComponent {
-  locale: string = this.getCurrentLocale();
+  public locale = inject(LOCALE_ID);
 
   switchLanguage(lang: 'en' | 'bg') {
     if (this.locale === lang) return;
@@ -33,14 +33,4 @@ export class LanguageSwitcherComponent {
     window.location.pathname = newUrl;
   }
 
-  getCurrentLocale() {
-    if (typeof window === 'undefined') {
-      return 'en';
-    }
-    const path = window.location.pathname;
-    if (path.startsWith('/bg/')) {
-      return 'bg';
-    }
-    return 'en';
-  }
 }
