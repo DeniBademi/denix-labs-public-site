@@ -7,11 +7,16 @@ import { FaqData } from '../_models/Faq';
   providedIn: 'root'
 })
 export class FaqService {
-  private faqDataUrl = '/data/faq.json';
+  private faqDataUrls = {
+    'en': '/data/faq.json',
+    'bg': '/data/faq-bg.json'
+  };
 
   constructor(private http: HttpClient) { }
 
-  getFaqData(): Observable<FaqData> {
-    return this.http.get<FaqData>(this.faqDataUrl);
+  getFaqData(locale: string = 'en'): Observable<FaqData> {
+    // Default to English if locale is not supported
+    const url = this.faqDataUrls[locale as keyof typeof this.faqDataUrls] || this.faqDataUrls['en'];
+    return this.http.get<FaqData>(url);
   }
 } 
