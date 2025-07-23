@@ -94,8 +94,8 @@
         <target>Зареждане...</target>
       </trans-unit>
       <trans-unit id="faq.error" datatype="html">
-        <source>Error loading FAQ data</source>
-        <target>Грешка при зареждане на данни за често задавани въпроси</target>
+        <source>Failed to load FAQ data</source>
+        <target>Неуспешно зареждане на данни за често задавани въпроси</target>
       </trans-unit>
 
       <!-- Why Use AI -->

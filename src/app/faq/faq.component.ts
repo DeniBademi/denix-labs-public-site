@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, LOCALE_ID, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FaqService } from '../_services/faq.service';
 import { FaqData, Faq } from '../_models/Faq';
@@ -15,6 +15,8 @@ export class FaqComponent implements OnInit {
   isLoading: boolean = true;
   error: string | null = null;
 
+  private locale = inject(LOCALE_ID);
+
   constructor(private faqService: FaqService) {}
 
   ngOnInit(): void {
@@ -22,7 +24,7 @@ export class FaqComponent implements OnInit {
   }
 
   private loadFaqData(): void {
-    this.faqData$ = this.faqService.getFaqData();
+    this.faqData$ = this.faqService.getFaqData(this.locale);
     
     this.faqData$.subscribe({
       next: (data) => {
