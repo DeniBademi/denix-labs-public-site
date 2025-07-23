@@ -53,9 +53,4 @@ export class BlogComponent implements OnInit {
     });
   }
 
-  onSubscribe(): void {
-    // Handle subscribe functionality
-    console.log('Subscribe clicked');
-    alert('Thank you for subscribing to our blog!');
-  }
 }
