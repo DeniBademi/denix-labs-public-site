@@ -84,8 +84,3 @@ input:focus {
     overflow: hidden; /* Prevent animation overflow */
   }
 }
-
-* {
-  position: relative;
-  z-index: 10;
-}
