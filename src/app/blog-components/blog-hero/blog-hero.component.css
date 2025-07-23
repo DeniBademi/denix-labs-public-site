@@ -17,3 +17,20 @@ input:focus {
     font-size: 3rem;
   }
 }
+
+/* Z-index management for proper layering */
+header {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure animated elements stay below content sections */
+.animate__animated {
+  position: relative;
+  z-index: 1;
+}
+
+/* Search and category sections should be below modal and other content */
+.animate__fadeInUp {
+  z-index: 1;
+}
