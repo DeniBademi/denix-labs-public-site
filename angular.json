@@ -61,7 +61,7 @@
             ],
             "localize": true,
             "aot": true,
-            "prerender": true
+            "prerender": false
           },
           "configurations": {
             "production": {

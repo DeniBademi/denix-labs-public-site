@@ -62,6 +62,53 @@
       <trans-unit id="navbar.blog" datatype="html">
         <source>Blog</source>
       </trans-unit>
+
+      <!-- Services Page -->
+      <trans-unit id="services.title" datatype="html">
+        <source>Services</source>
+      </trans-unit>
+      <trans-unit id="services.description" datatype="html">
+        <source>DenixLabs offers customized solutions for its clients' needs and helps them extract maximum value from their data and this new technology. Here we introduce you superficially to our work process and the services, <br>that we offer.</source>
+      </trans-unit>
+      <trans-unit id="services.workflow.title" datatype="html">
+        <source>Workflow</source>
+      </trans-unit>
+      <trans-unit id="services.workflow.step1.title" datatype="html">
+        <source>Idea</source>
+      </trans-unit>
+      <trans-unit id="services.workflow.step1.description" datatype="html">
+        <source>Our experts and consultants listen to your ideas and requirements. We translate your business problem into an artificial intelligence task, after which we prepare a plan that we present to you and adjust with your feedback.</source>
+      </trans-unit>
+      <trans-unit id="services.workflow.step2.title" datatype="html">
+        <source>Preparation and Prototype</source>
+      </trans-unit>
+      <trans-unit id="services.workflow.step2.description" datatype="html">
+        <source>In this step, we offer a prototype of your idea. We work closely with you to develop a project plan and unique strategy with a defined overall system architecture and technology stack. When the project plan is ready, a team of DenixLabs experts is formed.</source>
+      </trans-unit>
+      <trans-unit id="services.workflow.step3.title" datatype="html">
+        <source>Development</source>
+      </trans-unit>
+      <trans-unit id="services.workflow.step3.description" datatype="html">
+        <source>We start working to bring your vision to reality. We create the desired solution, integrating a number of functions and specific functionalities into it. Then detailed testing of system performance and functionality is performed before presentation.</source>
+      </trans-unit>
+      <trans-unit id="services.workflow.step4.title" datatype="html">
+        <source>Delivery and Maintenance</source>
+      </trans-unit>
+      <trans-unit id="services.workflow.step4.description" datatype="html">
+        <source>We integrate the created system into your existing IT infrastructure. After the system is ready, we move to its continuous monitoring and maintenance. Regular maintenance may include retraining the model with new data, adjusting parameters, or updating software as needed.</source>
+      </trans-unit>
+      <trans-unit id="services.consulting.title" datatype="html">
+        <source>Artificial Intelligence and Machine Learning Consulting</source>
+      </trans-unit>
+      <trans-unit id="services.consulting.description" datatype="html">
+        <source>The long-term experience of our team and work on various projects allows us to offer consultations for AI applications in various fields and for every step of the process. We offer consultations for choosing appropriate algorithms, data processing, building models and testing them.</source>
+      </trans-unit>
+      <trans-unit id="services.webdev.title" datatype="html">
+        <source>Web Application Development</source>
+      </trans-unit>
+      <trans-unit id="services.webdev.description" datatype="html">
+        <source>Machine learning and artificial intelligence algorithms should be not only accurate but also accessible. In case your business does not have third-party IT infrastructure, we can also take on the development of web applications as a means of interacting with your models in an intuitive way, as well as visualizing key indicators and statistics.</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
