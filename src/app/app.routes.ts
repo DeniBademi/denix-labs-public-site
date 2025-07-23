@@ -36,7 +36,7 @@ export const routes: Routes = [
     { path: 'article/:id', loadComponent: () => import('./pages/article/article.component').then(m => m.ArticleComponent) },
 
     { path: 'solutions', component: SolutionsComponent },
-    { path: 'contact', loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent) },
+    { path: 'contact', component: ContactComponent },
     { path: 'cookies', loadComponent: () => import('./pages/legal/cookie-policy/cookie-policy.component').then(m => m.CookiePolicyComponent) },
     { path: 'privacy', loadComponent: () => import('./pages/legal/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent) },
     { path: 'terms', loadComponent: () => import('./pages/legal/terms-of-use/terms-of-use.component').then(m => m.TermsOfUseComponent) },
