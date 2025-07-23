@@ -38,8 +38,8 @@ export const routes: Routes = [
     { path: 'solutions', component: SolutionsComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'cookies', component: CookiePolicyComponent },
-    { path: 'privacy', loadComponent: () => import('./pages/legal/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent) },
-    { path: 'terms', loadComponent: () => import('./pages/legal/terms-of-use/terms-of-use.component').then(m => m.TermsOfUseComponent) },
+    { path: 'privacy', component: PrivacyPolicyComponent },
+    { path: 'terms', component: TermsOfUseComponent },
     { path: 'not-found', component: NotFoundComponent },
     // { path: '**', redirectTo: 'not-found' }, // Redirect any unmatched route to login
 ];
