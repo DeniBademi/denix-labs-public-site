@@ -145,6 +145,33 @@
               "node_modules/clipboard/dist/clipboard.min.js"
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/denix-labs-public-site/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "browserTarget": "denix-labs-public-site:build:production",
+            "serverTarget": "denix-labs-public-site:server:production",
+            "routes": [
+              "/",
+              "/en",
+              "/bg",
+              "/en/services",
+              "/bg/services"
+            ]
+          }
         }
       }
     }
