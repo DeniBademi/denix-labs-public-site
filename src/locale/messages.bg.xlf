@@ -49,8 +49,8 @@
         <target>Контакти</target>
       </trans-unit>
       <trans-unit id="navbar.contactUs" datatype="html">
-        <source>Contact Us</source>
-        <target>Свържи се с нас</target>
+        <source>Book a Free Demo</source>
+        <target>Свържи се с нас </target>
       </trans-unit>
       <trans-unit id="navbar.copyright" datatype="html">
         <source>Copyright DenixLabs 2025</source>

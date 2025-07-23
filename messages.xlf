@@ -100,6 +100,34 @@
           <context context-type="linenumber">10,13</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="faq.title" datatype="html">
+        <source> FAQs </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/faq/faq.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faq.subtitle" datatype="html">
+        <source> Frequently Asked Questions </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/faq/faq.component.html</context>
+          <context context-type="linenumber">7,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faq.loading" datatype="html">
+        <source>Loading...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/faq/faq.component.html</context>
+          <context context-type="linenumber">14,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faq.error" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ error }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/faq/faq.component.html</context>
+          <context context-type="linenumber">19,22</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="footer.company" datatype="html">
         <source>COMPANY</source>
         <context-group purpose="location">
@@ -225,7 +253,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="navbar.contactUs" datatype="html">
-        <source>Contact Us</source>
+        <source>Book a Free Demo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
           <context context-type="linenumber">45,47</context>
@@ -330,10 +358,6 @@
           <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
           <context context-type="linenumber">53,55</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
-          <context context-type="linenumber">61,63</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="contact.form.company" datatype="html">
         <source>Company*</source>
@@ -361,24 +385,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
           <context context-type="linenumber">58,59</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="contact.form.budget" datatype="html">
-        <source>Budget</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
-          <context context-type="linenumber">65,66</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="contact.form.currency" datatype="html">
-        <source>BGN</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
-          <context context-type="linenumber">71</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
-          <context context-type="linenumber">71,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.form.submit" datatype="html">

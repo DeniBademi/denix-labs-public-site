@@ -1,37 +1,37 @@
-<div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen py-10">
+<div class="max-w-screen-xl mx-auto px-5 bg-white min-h-screen py-10">
 	<div class="flex flex-col items-center">
-		<h2 class="font-bold text-4xl tracking-tight">
-			Често задавани въпроси
+		<h2 class="font-bold text-4xl tracking-tight" i18n="@@faq.title">
+			FAQs
 		</h2>
-		<!-- <p class="text-neutral-500 text-xl mt-3">
-			Често задавани въпроси
-		</p> -->
+		<p class="text-neutral-500 text-xl mt-3" i18n="@@faq.subtitle">
+			Frequently Asked Questions
+		</p>
 	</div>
-	<div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
-		<div class="py-5">
+
+	<!-- Loading State -->
+	<div *ngIf="isLoading" class="flex justify-center items-center mt-8">
+		<div class="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
+		<span class="ml-2 text-neutral-600" i18n="@@faq.loading">Loading...</span>
+	</div>
+
+	<!-- Error State -->
+	<div *ngIf="error && !isLoading" class="text-center mt-8">
+		<p class="text-red-600" i18n="@@faq.error">{{ error }}</p>
+	</div>
+
+	<!-- FAQ Content -->
+	<div *ngIf="faqData$ | async as faqData" class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+		<div *ngFor="let faq of faqData.faqs; trackBy: trackByFaqId" class="py-5">
 			<details class="group">
 				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span>Какво е изкуствен интелект?</span>
+					<span>{{ faq.question }}</span>
 					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-              </span>
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+							<path d="M6 9l6 6 6-6"></path>
+						</svg>
+					</span>
 				</summary>
-				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    Data scientists analyze, interpret, and extract valuable insights from complex datasets to help organizations make informed decisions. They employ advanced statistical techniques, machine learning algorithms, and data visualization tools to identify trends, patterns, and relationships within the data.
-				</p>
-			</details>
-		</div>
-        <div class="py-5">
-			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span>What is machine learning?</span>
-					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-              </span>
-				</summary>
-				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    Machine learning is a subset of artificial intelligence that enables computer systems to learn from data and improve their performance over time without explicit programming. It involves developing algorithms that can process and analyze vast amounts of data to recognize patterns, make predictions, and adapt to new information.
-				</p>
+				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn" [innerHTML]="faq.answer"></p>
 			</details>
 		</div>
 	</div>
