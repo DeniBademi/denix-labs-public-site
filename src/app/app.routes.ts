@@ -31,7 +31,7 @@ export const routes: Routes = [
     { path: 'solutions/face-recognition', component: FaceRecognitionComponent },
     { path: 'solutions/risk-assessment', component: RiskAssessmentComponent },
     { path: 'blog', loadComponent: () => import('./pages/blog/blog.component').then(m => m.BlogComponent) },
-    { path: 'article/:id', component: ArticleComponent },
+    { path: 'article/:id', loadComponent: () => import('./pages/article/article.component').then(m => m.ArticleComponent) },
 
     { path: 'solutions', component: SolutionsComponent },
     { path: 'contact', loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent) },
