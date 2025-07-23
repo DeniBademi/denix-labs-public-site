@@ -10,6 +10,14 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender,
   },
   {
+    path: 'blog',
+    renderMode: RenderMode.Server,
+  },
+  {
+    path: 'contact',
+    renderMode: RenderMode.Server,
+  },
+  {
     path: 'article/:id', // This renders the "/" route on the client (CSR)
     renderMode: RenderMode.Server,
   },
