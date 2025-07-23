@@ -90,8 +90,15 @@
   <app-root></app-root>
 
 <!-- scripts -->
-<script src="/js/particles.min.js" type="text/javascript" defer></script>
-
+<script>
+  // Load particles after page load to avoid blocking LCP
+  window.addEventListener('load', function() {
+    const script = document.createElement('script');
+    script.src = '/js/particles.min.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  });
+</script>
 <form name="contact" method="POST" netlify hidden>
   <input type="hidden" name="form-name" value="contact" />
   <input type="hidden" id="name" name="name" />
