@@ -21,17 +21,17 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { RenderMode, ServerRoute } from '@angular/ssr';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'about', component: AboutComponent },
-    { path: 'services', component: ServicesComponent },
-    { path: 'solutions/automatic-customer-support', component: AutomaticCustomerSupportComponent},
-    { path: 'solutions/document-analysis', component: DocumentAnalysisComponent},
-    { path: 'solutions/report-writing', component: ReportWritingComponent },
-    { path: 'solutions/qa-and-anomalies', component: QaAndAnomaliesComponent },
-    { path: 'solutions/inventory-management', component: InventoryManagementComponent},
-    { path: 'solutions/predictive-maintenance', component: PredictiveMaintenanceComponent },
-    { path: 'solutions/face-recognition', component: FaceRecognitionComponent },
-    { path: 'solutions/risk-assessment', component: RiskAssessmentComponent },
+    { path: '', loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent) },
+    { path: 'about', loadComponent: () => import('./about/about.component').then(m => m.AboutComponent) },
+    { path: 'services', loadComponent: () => import('./pages/services/services.component').then(m => m.ServicesComponent) },
+    { path: 'solutions/automatic-customer-support', loadComponent: () => import('./pages/solutions/automatic-customer-support/automatic-customer-support.component').then(m => m.AutomaticCustomerSupportComponent) },
+    { path: 'solutions/document-analysis', loadComponent: () => import('./pages/solutions/document-analysis/document-analysis.component').then(m => m.DocumentAnalysisComponent) },
+    { path: 'solutions/report-writing', loadComponent: () => import('./pages/solutions/report-writing/report-writing.component').then(m => m.ReportWritingComponent) },
+    { path: 'solutions/qa-and-anomalies', loadComponent: () => import('./pages/solutions/qa-and-anomalies/qa-and-anomalies.component').then(m => m.QaAndAnomaliesComponent) },
+    { path: 'solutions/inventory-management', loadComponent: () => import('./pages/solutions/inventory-management/inventory-management.component').then(m => m.InventoryManagementComponent) },
+    { path: 'solutions/predictive-maintenance', loadComponent: () => import('./pages/solutions/predictive-maintenance/predictive-maintenance.component').then(m => m.PredictiveMaintenanceComponent) },
+    { path: 'solutions/face-recognition', loadComponent: () => import('./pages/solutions/face-recognition/face-recognition.component').then(m => m.FaceRecognitionComponent) },
+    { path: 'solutions/risk-assessment', loadComponent: () => import('./pages/solutions/risk-assessment/risk-assessment.component').then(m => m.RiskAssessmentComponent) },
     { path: 'blog', loadComponent: () => import('./pages/blog/blog.component').then(m => m.BlogComponent) },
     { path: 'article/:id', loadComponent: () => import('./pages/article/article.component').then(m => m.ArticleComponent) },
 
