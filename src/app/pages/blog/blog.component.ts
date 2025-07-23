@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, LOCALE_ID, inject } from '@angular/core';
 import { BlogService } from '../../_services/blog.service';
 import { BlogPost } from '../../_models/BlogPost';
 import { Observable } from 'rxjs';
@@ -22,6 +22,8 @@ export class BlogComponent implements OnInit {
   featuredPost$: Observable<BlogPost | undefined>;
   posts$: Observable<BlogPost[]>;
   currentPosts: BlogPost[] = [];
+
+  private locale = inject(LOCALE_ID);
 
   constructor(private blogService: BlogService) {
     this.featuredPost$ = this.blogService.getFeaturedPost();

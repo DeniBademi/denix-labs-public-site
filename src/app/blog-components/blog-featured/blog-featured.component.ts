@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, LOCALE_ID, inject } from '@angular/core';
 import { BlogPost } from '../../_models/BlogPost';
 import { CommonModule } from '@angular/common';
 import { BlogCardComponent } from '../blog-card/blog-card.component';
@@ -11,4 +11,6 @@ import { BlogCardComponent } from '../blog-card/blog-card.component';
 })
 export class BlogFeaturedComponent {
   @Input() post?: BlogPost | null;
+  
+  private locale = inject(LOCALE_ID);
 }

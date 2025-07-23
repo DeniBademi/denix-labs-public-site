@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, LOCALE_ID, inject } from '@angular/core';
 import { BlogService } from '../../_services/blog.service';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
@@ -20,6 +20,8 @@ export class BlogHeroComponent {
   searchText: string = '';
   selectedCategory: string = 'All';
   showSubscriptionModal: boolean = false;
+
+  private locale = inject(LOCALE_ID);
 
   constructor(private blogService: BlogService) {
     this.categories$ = this.blogService.getCategories();
