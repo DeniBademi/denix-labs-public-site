@@ -81,6 +81,23 @@
         <target>Поискай демо</target>
       </trans-unit>
 
+      <trans-unit id="faq.title" datatype="html">
+        <source>FAQs</source>
+        <target>Често задавани въпроси</target>
+      </trans-unit>
+      <trans-unit id="faq.subtitle" datatype="html">
+        <source>Frequently Asked Questions</source>
+        <target>Често задавани въпроси</target>
+      </trans-unit>
+      <trans-unit id="faq.loading" datatype="html">
+        <source>Loading...</source>
+        <target>Зареждане...</target>
+      </trans-unit>
+      <trans-unit id="faq.error" datatype="html">
+        <source>Error loading FAQ data</source>
+        <target>Грешка при зареждане на данни за често задавани въпроси</target>
+      </trans-unit>
+
       <!-- Why Use AI -->
       <trans-unit id="whyUseAi.title" datatype="html">
         <source>Why integrate AI into your business?</source>

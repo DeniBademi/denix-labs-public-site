@@ -63,6 +63,21 @@
         <source>Blog</source>
       </trans-unit>
 
+      <!-- FAQ Page -->
+      <trans-unit id="faq.title" datatype="html">
+        <source>FAQs</source>
+      </trans-unit>
+      <trans-unit id="faq.subtitle" datatype="html">
+        <source>Frequently Asked Questions</source>
+      </trans-unit>
+      <trans-unit id="faq.loading" datatype="html">
+        <source>Loading...</source>
+      </trans-unit>
+      <trans-unit id="faq.error" datatype="html">
+        <source>Error loading FAQ data</source>
+      </trans-unit>
+      
+
       <!-- Services Page -->
       <trans-unit id="services.title" datatype="html">
         <source>Services</source>
