@@ -17,6 +17,10 @@ export class MetatagService {
     // }
     console.log("Current page: ", page);
 
+    if(typeof window === 'undefined') {
+      return;
+    }
+
     if (window.location.pathname.includes('/bg/')) {
       this.setBulgarianTitle(page);
     } else {
