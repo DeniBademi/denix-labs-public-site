@@ -11,11 +11,11 @@ export const serverRoutes: ServerRoute[] = [
   },
   {
     path: 'blog',
-    renderMode: RenderMode.Server,
+    renderMode: RenderMode.Prerender,
   },
   {
     path: 'contact',
-    renderMode: RenderMode.Server,
+    renderMode: RenderMode.Prerender,
   },
   {
     path: 'article/:id', // This renders the "/" route on the client (CSR)
