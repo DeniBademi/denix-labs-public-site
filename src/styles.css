@@ -65,6 +65,10 @@ button {
     font-family: 'jakarta', 'nunito';
 }
 
+span {
+    font-family: 'jakarta', 'nunito';
+}
+
 .link {
     color: #6366F1;
     cursor: pointer;
