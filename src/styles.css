@@ -61,6 +61,10 @@ a {
     /* font-size: 1.1rem; */
 }
 
+button {
+    font-family: 'jakarta', 'nunito';
+}
+
 .link {
     color: #6366F1;
     cursor: pointer;
