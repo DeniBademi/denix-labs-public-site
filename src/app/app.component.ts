@@ -58,12 +58,6 @@ export class AppComponent implements OnInit, OnDestroy {
 
     this.meta.updateMetaTags();
 
-    // Basic debug to ensure this runs in the browser
-    console.log('CookieConsent: ngOnInit (browser)');
-    if (typeof window !== 'undefined' && (window as any).cookieconsent) {
-      console.log('CookieConsent: global script detected');
-    }
-
     // Subscribe to cookieconsent observables on the browser only
     this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(() => {
       // Popup opened
