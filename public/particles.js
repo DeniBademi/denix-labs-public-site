@@ -1221,7 +1221,7 @@ var pJS = function(tag_id, params){
     var svg = new Blob([coloredSvgXml], {type: 'image/svg+xml;charset=utf-8'}),
         DOMURL = window.URL || window.webkitURL || window,
         url = DOMURL.createObjectURL(svg);
-    console.log(svg);
+
     /* create particle img obj */
     var img = new Image();
     img.addEventListener('load', function(){

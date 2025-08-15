@@ -15,7 +15,6 @@ export class MetatagService {
     // if (!isPlatformBrowser(this.platform_id)) {
     //   return;
     // }
-    console.log("Current page: ", page);
 
     if(typeof window === 'undefined') {
       return;

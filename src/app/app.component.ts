@@ -2,7 +2,7 @@ import { Component, inject, PLATFORM_ID } from '@angular/core';
 import { Router, RouterOutlet, Event, NavigationEnd, ActivatedRoute } from '@angular/router';
 import {FooterComponent} from './footer/footer.component';
 import { NavbarComponent } from "./navbar/navbar.component";
-import { NgcCookieConsentService, NgcStatusChangeEvent } from 'ngx-cookieconsent';
+import { NgcCookieConsentService, NgcInitializationErrorEvent, NgcInitializingEvent, NgcNoCookieLawEvent, NgcStatusChangeEvent } from 'ngx-cookieconsent';
 import { OnInit, OnDestroy } from '@angular/core';
 import { Subscription }   from 'rxjs';
 import { filter } from 'rxjs/operators';
@@ -52,31 +52,69 @@ export class AppComponent implements OnInit, OnDestroy {
     }
 
   ngOnInit(): void {
-    if (typeof window !== 'undefined') {
-      console.log(window.navigator.language);
+    if (!isPlatformBrowser(this.platform_id)) {
+      return;
     }
-    if (isPlatformBrowser(this.platform_id)) {
-      this.meta.updateMetaTags();
-      if (typeof window !== 'undefined' && localStorage.getItem('cookieconsent_dismissed') === 'yes') {
-        this.ccService.destroy();
-      }
-      this.popupCloseSubscription = this.ccService.popupClose$.subscribe(() => {
-        if (typeof window !== 'undefined') {
-          localStorage.setItem('cookieconsent_dismissed', 'yes');
-        }
-      });
 
-      // Reset scroll position to top on route change
-      this.routerSubscription = this.router.events
-        .pipe(filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd))
-        .subscribe((event: NavigationEnd) => {
-          // Scroll to top of the page
-          if (typeof window !== 'undefined') {
-            window.scrollTo(0, 0);
-          }
-        });
+    this.meta.updateMetaTags();
+
+    // Basic debug to ensure this runs in the browser
+    console.log('CookieConsent: ngOnInit (browser)');
+    if (typeof window !== 'undefined' && (window as any).cookieconsent) {
+      console.log('CookieConsent: global script detected');
     }
-   }
+
+    // Subscribe to cookieconsent observables on the browser only
+    this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(() => {
+      // Popup opened
+    });
+
+    this.popupCloseSubscription = this.ccService.popupClose$.subscribe(() => {
+      // Popup closed
+    });
+
+    this.initializingSubscription = this.ccService.initializing$.subscribe(
+      (event: NgcInitializingEvent) => {
+        console.log(`initializing: ${JSON.stringify(event)}`);
+      }
+    );
+
+    this.initializedSubscription = this.ccService.initialized$.subscribe(() => {
+      // Now safe to call service methods
+      console.log('CookieConsent: initialized with config:', this.ccService.getConfig());
+      // Force open once in dev to verify UI appears (will be ignored if already answered)
+      this.ccService.open();
+    });
+
+    this.initializationErrorSubscription = this.ccService.initializationError$.subscribe(
+      (event: NgcInitializationErrorEvent) => {
+        console.log(`initializationError: ${JSON.stringify(event.error?.message)}`);
+      }
+    );
+
+    this.statusChangeSubscription = this.ccService.statusChange$.subscribe(
+      (event: NgcStatusChangeEvent) => {
+        // Status changed
+      }
+    );
+
+    this.revokeChoiceSubscription = this.ccService.revokeChoice$.subscribe(() => {
+      // Choice revoked
+    });
+
+    this.noCookieLawSubscription = this.ccService.noCookieLaw$.subscribe(
+      (event: NgcNoCookieLawEvent) => {
+        // No cookie law in this region
+      }
+    );
+
+    // Reset scroll position to top on route change
+    this.routerSubscription = this.router.events
+      .pipe(filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo(0, 0);
+      });
+  }
   ngOnDestroy() {
     // unsubscribe to cookieconsent observables to prevent memory leaks
     // this.popupOpenSubscription.unsubscribe();
@@ -89,7 +127,7 @@ export class AppComponent implements OnInit, OnDestroy {
     // this.statusChangeSubscription.unsubscribe();
     // this.revokeChoiceSubscription.unsubscribe();
     // this.noCookieLawSubscription.unsubscribe();
-    
+
     // Unsubscribe from router events to prevent memory leaks
     if (this.routerSubscription) {
       this.routerSubscription.unsubscribe();

@@ -69,7 +69,7 @@ export class NavbarComponent {
   onClick() {
     this.isHamburguer = !this.isHamburguer;
     this.isNavbarOpen = !this.isNavbarOpen;
-    console.log(this.locale)
+    // console.log(this.locale)
   }
 
   isNavbarOpen = false;

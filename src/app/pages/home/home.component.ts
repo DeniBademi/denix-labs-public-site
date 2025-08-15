@@ -101,7 +101,7 @@ function foo (bar) {
   return bar++;
 };
 
-console.log(foo(5));
+// console.log(foo(5));
 \`\`\`
 
 ## Tables

@@ -1,7 +1,7 @@
 // Burger menus
 document.addEventListener('DOMContentLoaded', function() {
     // open
-    console.log('DOMContentLoaded');
+    // console.log('DOMContentLoaded');
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
 

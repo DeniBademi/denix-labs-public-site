@@ -46,7 +46,7 @@ export class BlogHeroComponent {
 
   onSubscribeSubmit(email: string): void {
     this.subscribeClicked.emit();
-    console.log('Subscribed email:', email);
+    // console.log('Subscribed email:', email);
     // Here you would typically send the email to your backend
   }
 }

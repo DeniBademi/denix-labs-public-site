@@ -10,7 +10,7 @@ export class CookiePolicyComponent {
 
 
   scrollToElement($element: any): void {
-    console.log($element);
+    // console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 }

@@ -47,7 +47,7 @@ export class ContactComponent {
 
 
   onSubmit(evt: SubmitEvent): void {
-    console.log('Form Data:', this.contactForm.value);
+    // console.log('Form Data:', this.contactForm.value);
     evt.preventDefault();
 
     const formData = this.contactForm.value;

@@ -7,8 +7,11 @@ import { NgcCookieConsentConfig, provideNgcCookieConsent } from 'ngx-cookieconse
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: "https://loquacious-piroshki-e14b7d.netlify.app" // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
+    domain: 'denixlabs.com' // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
   },
+  autoOpen: true,
+  location: false, // disable geolocation check so banner always shows in dev
+  law: { regionalLaw: false },
   position: "bottom-right", //  'top', 'bottom', 'top-left', 'top-right', 'bottom-left', 'bottom-right'
   theme: "classic", // or 'block' or 'edgeless'
   showLink: true, // false
@@ -38,7 +41,6 @@ const cookieConfig: NgcCookieConsentConfig = {
     link: "Политика за бисквитки",
     href: "/cookies",
     policy: "Cookie Policy",
-    cookieconsent_dismissed: "yes",
     close: '&#x274c;'
   }
 };
@@ -46,7 +48,7 @@ const cookieConfig: NgcCookieConsentConfig = {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, 
+    provideRouter(routes,
       withPreloading(PreloadAllModules),
       withInMemoryScrolling({
         scrollPositionRestoration: 'top',
