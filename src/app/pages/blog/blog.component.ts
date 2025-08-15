@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, LOCALE_ID, inject } from '@angular/core';
 import { BlogService } from '../../_services/blog.service';
 import { BlogPost } from '../../_models/BlogPost';
 import { Observable } from 'rxjs';
@@ -24,6 +24,8 @@ export class BlogComponent implements OnInit {
   posts$: Observable<BlogPost[]>;
   currentPosts: BlogPost[] = [];
   loadingPosts: boolean = true;
+
+  private locale = inject(LOCALE_ID);
 
   constructor(private blogService: BlogService) {
     this.featuredPost$ = this.blogService.getFeaturedPosts().pipe(
@@ -71,9 +73,4 @@ export class BlogComponent implements OnInit {
       });
   }
 
-  onSubscribe(): void {
-    // Handle subscribe functionality
-    console.log('Subscribe clicked');
-    alert('Thank you for subscribing to our blog!');
-  }
 }

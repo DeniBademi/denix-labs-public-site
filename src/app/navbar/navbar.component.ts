@@ -1,12 +1,13 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
+import { LOCALE_ID } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
-  imports: [CommonModule, LanguageSwitcherComponent],
+  imports: [CommonModule, LanguageSwitcherComponent, NgOptimizedImage],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
   animations: [
@@ -59,7 +60,7 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
   ],
 })
 export class NavbarComponent {
-
+  public locale = inject(LOCALE_ID);
   constructor(public router: Router) {
 
   }
@@ -68,6 +69,7 @@ export class NavbarComponent {
   onClick() {
     this.isHamburguer = !this.isHamburguer;
     this.isNavbarOpen = !this.isNavbarOpen;
+    console.log(this.locale)
   }
 
   isNavbarOpen = false;

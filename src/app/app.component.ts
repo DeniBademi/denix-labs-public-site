@@ -5,6 +5,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { NgcCookieConsentService, NgcStatusChangeEvent } from 'ngx-cookieconsent';
 import { OnInit, OnDestroy } from '@angular/core';
 import { Subscription }   from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 declare var particlesJS: any;
 
@@ -39,6 +40,7 @@ export class AppComponent implements OnInit, OnDestroy {
     private statusChangeSubscription!: Subscription;
     private revokeChoiceSubscription!: Subscription;
     private noCookieLawSubscription!: Subscription;
+    private routerSubscription!: Subscription;
     private readonly platform_id = inject(PLATFORM_ID);
 
     constructor(private ccService: NgcCookieConsentService,
@@ -63,20 +65,35 @@ export class AppComponent implements OnInit, OnDestroy {
           localStorage.setItem('cookieconsent_dismissed', 'yes');
         }
       });
+
+      // Reset scroll position to top on route change
+      this.routerSubscription = this.router.events
+        .pipe(filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd))
+        .subscribe((event: NavigationEnd) => {
+          // Scroll to top of the page
+          if (typeof window !== 'undefined') {
+            window.scrollTo(0, 0);
+          }
+        });
     }
-
-
    }
   ngOnDestroy() {
     // unsubscribe to cookieconsent observables to prevent memory leaks
     // this.popupOpenSubscription.unsubscribe();
-    // this.popupCloseSubscription.unsubscribe();
+    if (this.popupCloseSubscription) {
+      this.popupCloseSubscription.unsubscribe();
+    }
     // this.initializingSubscription.unsubscribe();
     // this.initializedSubscription.unsubscribe();
     // this.initializationErrorSubscription.unsubscribe();
     // this.statusChangeSubscription.unsubscribe();
     // this.revokeChoiceSubscription.unsubscribe();
     // this.noCookieLawSubscription.unsubscribe();
+    
+    // Unsubscribe from router events to prevent memory leaks
+    if (this.routerSubscription) {
+      this.routerSubscription.unsubscribe();
+    }
   }
 
 

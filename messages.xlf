@@ -1,783 +1,1426 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
-  <file id="ngi18n" original="ng.template">
-    <unit id="navbar.services">
-      <segment>
-        <source>Services</source>
-      </segment>
-    </unit>
-    <unit id="navbar.solutions">
-      <segment>
-        <source>Solutions</source>
-      </segment>
-    </unit>
-    <unit id="navbar.contact">
-      <segment>
-        <source>Contact</source>
-      </segment>
-    </unit>
-    <unit id="navbar.contactUs">
-      <segment>
-        <source>Contact Us</source>
-      </segment>
-    </unit>
-    <unit id="navbar.copyright">
-      <segment>
-        <source>Copyright DenixLabs 2025</source>
-      </segment>
-    </unit>
-    
-    <!-- VAPI Demo -->
-    <unit id="vapi.demo.tryFree">
-      <segment>
-        <source>Try <x id="LINE_BREAK" equiv-text="&lt;br/&gt;"/> for free</source>
-      </segment>
-    </unit>
-    <unit id="vapi.demo.buttonTitle">
-      <segment>
-        <source>Start/Stop</source>
-      </segment>
-    </unit>
-    
-    <!-- VAPI Section -->
-    <unit id="vapi.section.title">
-      <segment>
-        <source>Introducing our first voice agent, Phillips</source>
-      </segment>
-    </unit>
-    <unit id="vapi.section.description">
-      <segment>
-        <source>Voice agents can help your staff be more efficient and productive, and your customers to be served faster and more efficiently.</source>
-      </segment>
-    </unit>
-    <unit id="vapi.section.requestDemo">
-      <segment>
-        <source>Request Demo</source>
-      </segment>
-    </unit>
-    
-    <!-- Why Use AI -->
-    <unit id="whyUseAi.title">
-      <segment>
-        <source>Why integrate AI into your business?</source>
-      </segment>
-    </unit>
-    <unit id="whyUseAi.informedDecisions.title">
-      <segment>
-        <source>Informed decisions</source>
-      </segment>
-    </unit>
-    <unit id="whyUseAi.informedDecisions.description">
-      <segment>
-        <source>With AI you can transform data from your business and customers into a foundation for making informed decisions.</source>
-      </segment>
-    </unit>
-    <unit id="whyUseAi.automation.title">
-      <segment>
-        <source>Automation</source>
-      </segment>
-    </unit>
-    <unit id="whyUseAi.automation.description">
-      <segment>
-        <source>With AI you can automate routine tasks and business processes.</source>
-      </segment>
-    </unit>
-    <unit id="whyUseAi.personalization.title">
-      <segment>
-        <source>Personalization</source>
-      </segment>
-    </unit>
-    <unit id="whyUseAi.personalization.description">
-      <segment>
-        <source>With AI you can understand your customers' needs and offer personalized products and services.</source>
-      </segment>
-    </unit>
-    <unit id="whyUseAi.reduceCosts.title">
-      <segment>
-        <source>Lower costs</source>
-      </segment>
-    </unit>
-    <unit id="whyUseAi.reduceCosts.description">
-      <segment>
-        <source>Direct your resources and personnel to more important tasks and reduce costs with the help of AI.</source>
-      </segment>
-    </unit>
-    
-    <!-- Solutions Page -->
-    <unit id="solutions.page.title">
-      <segment>
-        <source>Solutions</source>
-      </segment>
-    </unit>
-    <unit id="solutions.page.subtitle">
-      <segment>
-        <source>The applications of artificial intelligence in business are many and highly customizable for your needs. Here we show you a number of proven AI applications that actively <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/>contribute to organizations from various fields.</source>
-      </segment>
-    </unit>
-    <unit id="solutions.naturalLanguage.title">
-      <segment>
-        <source>Natural Language Processing</source>
-      </segment>
-    </unit>
-    <unit id="solutions.naturalLanguage.customerSupport.title">
-      <segment>
-        <source>Automatic Customer Support</source>
-      </segment>
-    </unit>
-    <unit id="solutions.naturalLanguage.customerSupport.description">
-      <segment>
-        <source>Chatbots and virtual assistants can answer inquiries, offer help, schedule meetings more efficiently and quickly.</source>
-      </segment>
-    </unit>
-    <unit id="solutions.naturalLanguage.documentAnalysis.title">
-      <segment>
-        <source>Document Analysis</source>
-      </segment>
-    </unit>
-    <unit id="solutions.naturalLanguage.documentAnalysis.description">
-      <segment>
-        <source>Artificial intelligence can search and extract key information from contracts, invoices, group them, summarize and connect them by different criteria.</source>
-      </segment>
-    </unit>
-    <unit id="solutions.naturalLanguage.reportWriting.title">
-      <segment>
-        <source>Automatic Report Generation</source>
-      </segment>
-    </unit>
-    <unit id="solutions.naturalLanguage.reportWriting.description">
-      <segment>
-        <source>Artificial intelligence can automate the creation of contracts, agreements and other legal documents using pre-defined templates.</source>
-      </segment>
-    </unit>
-    <unit id="solutions.imageAnalysis.title">
-      <segment>
-        <source>Image Analysis</source>
-      </segment>
-    </unit>
-    <unit id="solutions.imageAnalysis.qaAndAnomalies.title">
-      <segment>
-        <source>Quality Control and Defect Detection</source>
-      </segment>
-    </unit>
-    <unit id="solutions.imageAnalysis.qaAndAnomalies.description">
-      <segment>
-        <source>Artificial intelligence can detect defects in production (e.g. on the production line), notify about problems and provide statistics.</source>
-      </segment>
-    </unit>
-    <unit id="solutions.imageAnalysis.inventoryManagement.title">
-      <segment>
-        <source>Automatic Inventory Management</source>
-      </segment>
-    </unit>
-    <unit id="solutions.imageAnalysis.inventoryManagement.description">
-      <segment>
-        <source>Smart cameras can monitor inventory levels and detect shortages of goods in warehouses and stores.</source>
-      </segment>
-    </unit>
-    <unit id="solutions.imageAnalysis.faceRecognition.title">
-      <segment>
-        <source>Face Recognition</source>
-      </segment>
-    </unit>
-    <unit id="solutions.imageAnalysis.faceRecognition.description">
-      <segment>
-        <source>Artificial intelligence can identify you and your customers, providing a new level of security and access to CRM profile right from the door.</source>
-      </segment>
-    </unit>
-    <unit id="solutions.decisionSupport.title">
-      <segment>
-        <source>Decision Support</source>
-      </segment>
-    </unit>
-    <unit id="solutions.decisionSupport.riskAssessment.title">
-      <segment>
-        <source>Risk Assessment</source>
-      </segment>
-    </unit>
-    <unit id="solutions.decisionSupport.riskAssessment.description">
-      <segment>
-        <source>AI can analyze various risk factors and provide comprehensive risk assessments to help make informed business decisions.</source>
-      </segment>
-    </unit>
-    <unit id="solutions.decisionSupport.predictiveMaintenance.title">
-      <segment>
-        <source>Predictive Maintenance</source>
-      </segment>
-    </unit>
-    <unit id="solutions.decisionSupport.predictiveMaintenance.description">
-      <segment>
-        <source>AI predicts equipment failures before they happen, reducing downtime and repair costs.</source>
-      </segment>
-    </unit>
-    <unit id="solutions.learnMore">
-      <segment>
-        <source>Learn More</source>
-      </segment>
-    </unit>
-    <unit id="solutions.contactInvite">
-      <segment>
-        <source>And many more... let's discuss your AI model</source>
-      </segment>
-    </unit>
-    
-    <!-- Terms of Use -->
-    <unit id="legal.termsOfUse.title">
-      <segment>
-        <source>Terms of Use</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.intro">
-      <segment>
-        <source>These terms of use ("Terms") will apply when you access or use our website. Please read these Terms carefully. By accessing or using the website, or by expressing your consent in another way, you are deemed to have accepted these Terms. We may change these Terms periodically, so please check them regularly. These Terms were last updated on March 3, 2025.</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.definitions.title">
-      <segment>
-        <source>Definitions</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.definitions.content">
-      <segment>
-        <source>In these Terms, references to "we", "us" or "our" mean the company Denix Labs Ltd., with UIC <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>AAAAAA<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> and registered office at address <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>BBBBB<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>. Any mention of "you" means the person who accesses or uses the website. "Content" means any information, data, text, software, photos, graphics, videos or other materials available on the website. "Website" means https://denixlabs.com/ and all related web pages.</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.access.title">
-      <segment>
-        <source>Access to the website</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.access.content">
-      <segment>
-        <source>Please ensure that your computer system meets all necessary technical requirements for accessing and using the website and is compatible with it. While we strive to maintain the website accurate, current and error-free, we cannot guarantee this. We do not guarantee that the website will be accessible at all times, nor that your use of it will be uninterrupted. We may prevent or stop your access to the website if you do not comply with any part of these Terms.</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.contentUse.title">
-      <segment>
-        <source>Use of content</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.contentUse.intro">
-      <segment>
-        <source>The Content is provided solely for your personal information to inform you about us, our products, news, features, services and other websites that may interest you. It does not constitute technical or other type of advice and you should not rely on it for any purposes. You may view, download, print and make copies of the Content on a computer to which only you have access. <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>When copying the Content, you must ensure that<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>:</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.contentUse.rule1">
-      <segment>
-        <source>Denix Labs Ltd. is acknowledged as the source of the Content</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.contentUse.rule2">
-      <segment>
-        <source>The Content is copied without editing or modification</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.contentUse.rule3">
-      <segment>
-        <source>All copyright or intellectual property rights are not altered or removed</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.contentUse.rule4">
-      <segment>
-        <source>The person who will receive the copy is informed that these provisions also apply to them.</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.prohibited.intro">
-      <segment>
-        <source><x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>You are not allowed to:<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/></source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.prohibited.commercial">
-      <segment>
-        <source>use the website or Content for commercial benefit or other advantage</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.prohibited.modify">
-      <segment>
-        <source>modify or interfere with the website in any way, including through the use of malicious code</source>
-      </segment>
-    </unit>
-    <unit id="legal.termsOfUse.prohibited.abuse">
-      <segment>
-        <source>use the website for defamation, abuse or to violate the rights of others, including their intellectual property rights.</source>
-      </segment>
-    </unit>
-    
-    <!-- Privacy Policy -->
-    <unit id="legal.privacyPolicy.title">
-      <segment>
-        <source>Privacy Policy</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.whoWeAre.title">
-      <segment>
-        <source>Who are we?</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.whoWeAre.companyName">
-      <segment>
-        <source>Company name</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.whoWeAre.managementAddress">
-      <segment>
-        <source>Management address</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.whoWeAre.uic">
-      <segment>
-        <source>UIC:</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.whoWeAre.contactPhone">
-      <segment>
-        <source>Contact phone</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.whoWeAre.email">
-      <segment>
-        <source>Email</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.whoWeAre.intro">
-      <segment>
-        <source>We know that when we collect and process information about an individual, we must do so responsibly, with due care for personal privacy, complying with data protection laws and privacy principles. This privacy policy ("Policy") describes the main types of personal information we collect within the company, how this information is processed and disclosed, as well as our obligations to the persons whose data we process. The Policy explains in principle how we strive to comply with privacy and data protection laws and regulations, including but not limited to Regulation (EU) 2016/679 (General Data Protection Regulation/GDPR). <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> The sole proprietorship company in its capacity as a personal data controller has introduced internal policies (instructions) and programs designed to ensure compliance with these laws.</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.disclosure.title">
-      <segment>
-        <source>Personal data disclosure</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.disclosure.intro">
-      <segment>
-        <source>Personal data of our customers may be disclosed by the sole proprietorship company:</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.disclosure.accounting">
-      <segment>
-        <source>to a company performing accounting activities</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.disclosure.bank">
-      <segment>
-        <source>to the bank servicing the Company (for the purposes of successful payment of the service under the contract)</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.disclosure.authorities">
-      <segment>
-        <source>to investigating and other authorities, based on a legal text that obliges the Company to disclose information about the customer</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.disclosure.internal">
-      <segment>
-        <source>Within the company, only authorized persons, properly prepared for working with personal data, have access to personal data. The sole proprietorship company does not trade or sell databases, including anonymized or pseudonymized data, for any reason and for any purposes, including statistical ones. Transfer of personal data (disclosure to persons outside the country) The sole proprietorship company does not transfer personal data outside the borders of the country.</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.notification.title">
-      <segment>
-        <source>Notification and Consent</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.notification.content">
-      <segment>
-        <source>At the time of data collection, the sole proprietorship company notifies persons in a clear and consistent manner exactly how their information will be processed, disclosed, stored and deleted; what rights they have regarding personal data protection or according to this Policy, as well as what are the ways to exercise these rights. This notification is fully compliant with the requirements of the Regulation and aims to comply with it to the maximum extent, including but not limited to the principle of transparency and lawfulness in the processing of personal data of persons. Regarding their personal data, every user has the following rights:</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.rights.access">
-      <segment>
-        <source>right of access to them</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.rights.update">
-      <segment>
-        <source>right to request updating and/or correction</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.rights.deletion">
-      <segment>
-        <source>right to request deletion</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.rights.restriction">
-      <segment>
-        <source>right to request restriction of processing</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.rights.portability">
-      <segment>
-        <source>right to data portability</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.rights.object">
-      <segment>
-        <source>right to object to processing in a certain way and for certain purposes, including automated processing (profiling)</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.rightsExercise">
-      <segment>
-        <source>With the exception of the last right, the others are exercised with a written request to the seat of my Company at <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>ADDRESS<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>. The sole proprietorship company guarantees that individuals can exercise all their rights regarding personal data processed by the sole proprietorship company, including but not limited to the right of access, updating and correction, right to data portability, right to temporary suspension of processing and data deletion and in general everything provided by law. The sole proprietorship company will make maximum efforts to consider and approve the person's request. Any refusal by the sole proprietorship company would be possible only on a legal basis (when a legal text prohibits this). In cases where required by law, as well as as an expression of good practice, the sole proprietorship company may request the consent of the individual to collect, use and disclose their data for specifically defined purposes.</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.dataActuality.title">
-      <segment>
-        <source>Data relevance and retention periods</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.dataActuality.content">
-      <segment>
-        <source>Our privacy policy provides that every person whose data we have collected has full possibilities to request correction and updating of the data. The right to be forgotten is also among those provided in our privacy policy and every person can request deletion of their data. The Company deletes personal data immediately after the grounds for processing and storage cease, after consideration of special legal requirements.</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.security.title">
-      <segment>
-        <source>Data security and protection</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.security.content">
-      <segment>
-        <source>DENIX LABS Ltd. maintains a comprehensive information security policy with maximum emphasis on technical and organizational security measures that protect personal information from unauthorized access or loss. In accordance with regulatory requirements, the sole proprietorship company also maintains a practice for dealing with security breaches related to the protection of personal data, including making all necessary notifications to persons or the supervisory authority.</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.inquiries.title">
-      <segment>
-        <source>Inquiries, reports, complaints and requests for exercising rights</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.inquiries.content">
-      <segment>
-        <source>Any communication, inquiries, reports, complaints and requests for exercising rights regarding personal data should be addressed to the seat of DENIX LABS Ltd.</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.legalStatus.title">
-      <segment>
-        <source>Legal status of this Policy, mentions and effect</source>
-      </segment>
-    </unit>
-    <unit id="legal.privacyPolicy.legalStatus.content">
-      <segment>
-        <source>This Privacy Policy is not a contract and has no binding effect. DENIX LABS Ltd. reserves the right to update the Policy (for example - in case of a change in legislation regarding personal data).</source>
-      </segment>
-    </unit>
-    
-    <!-- Cookie Policy -->
-    <unit id="legal.cookiePolicy.title">
-      <segment>
-        <source>Cookie Policy</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.intro">
-      <segment>
-        <source>This cookie policy will inform you how we use cookies when you visit our website, and will tell you about the purposes for which we use them. We provide it in a structured format, so you can navigate to specific sections below.</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.toc.title">
-      <segment>
-        <source>Contents</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.toc.whatIsACookie">
-      <segment>
-        <source>1. What is a cookie?</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.toc.ourCookies">
-      <segment>
-        <source>2. What specific cookies do we use on denixlabs.com?</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.toc.howToTurnOff">
-      <segment>
-        <source>3. How to turn off cookies?</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.toc.contact">
-      <segment>
-        <source>4. How to contact us?</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.toc.changes">
-      <segment>
-        <source>5. Changes to this policy</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.whatIsACookie.title">
-      <segment>
-        <source>1. What is a cookie?</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.whatIsACookie.definition">
-      <segment>
-        <source>A cookie is a small text file that is placed on your computer or other electronic device when you visit our website.</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.whatIsACookie.typesTitle">
-      <segment>
-        <source>Cookie Types</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.whatIsACookie.typesContent">
-      <segment>
-        <source>There are different types of cookies: <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>First and third party cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – whether a cookie is "first" or "third" party depends on the domain that places it. First party cookies are those set by us on the website you visit (for example cookies placed by denixlabs.com). <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Session cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – they allow our website to link your actions during a specific browser session. These cookies expire every time you close your browser and do not remain on your device; <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Persistent cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – they are stored on your device between browser sessions. They allow your preferences or actions on our website to be remembered. They remain on your device until they expire or until you delete them from your cache. <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Strictly necessary cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – these cookies are essential for you to be able to navigate our website and use its features. Without them we cannot provide the services you have requested; <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Performance cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – these cookies collect information about how you use our website, such as which pages you visit most often. They do not collect personal information about you. All information collected by these cookies is aggregated and anonymous and is used only to improve the performance of our website; <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Functional cookies<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/> – these cookies allow our website to remember your choices (such as username, language, last action, and search preferences) and provide better, personalized features. The information collected by these cookies is anonymous and cannot track your activity on other websites.</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.ourCookies.title">
-      <segment>
-        <source>2. What specific cookies do we use on denixlabs.com?</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.ourCookies.intro">
-      <segment>
-        <source>You can find more information about the individual cookies we use and the purposes for which we use them in the tables below:</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics.title">
-      <segment>
-        <source>Google Analytics</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics.description">
-      <segment>
-        <source>Google Analytics is a web analytics service provided by Google, Inc. It sets a cookie to evaluate your use of our website and compile reports on activity.</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics.tableCaption">
-      <segment>
-        <source>Table 1: Cookies used by Google Analytics</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.table.cookieName">
-      <segment>
-        <source>Cookie Name</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.table.purpose">
-      <segment>
-        <source>Purpose</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.table.validity">
-      <segment>
-        <source>Validity</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics._ga">
-      <segment>
-        <source>Used to distinguish users</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics._ga.validity">
-      <segment>
-        <source>14 months</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics._gid">
-      <segment>
-        <source>Used to distinguish users</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics._gid.validity">
-      <segment>
-        <source>24 hours</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics._gat">
-      <segment>
-        <source>Used to limit the request rate</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics._gat.validity">
-      <segment>
-        <source>1 minute</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics.__utma">
-      <segment>
-        <source>Distinguishes users and sessions</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics.__utma.validity">
-      <segment>
-        <source>14 months</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics.__utmz">
-      <segment>
-        <source>Stores the traffic source or campaign</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.googleAnalytics.__utmz.validity">
-      <segment>
-        <source>6 months</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.facebook.title">
-      <segment>
-        <source>Facebook</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.facebook.description">
-      <segment>
-        <source>Facebook uses cookies for advertising purposes. More information can be found <x id="START_LINK" equiv-text="&lt;a href=&quot;https://www.facebook.com/privacy/policies/cookies/&quot; class=&quot;link&quot;&gt;"/>here<x id="CLOSE_LINK" equiv-text="&lt;/a&gt;"/>.</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.facebook.tableCaption">
-      <segment>
-        <source>Table 2: Cookies used by Facebook</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.facebook.tr">
-      <segment>
-        <source>Used to track user actions</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.facebook.tr.validity">
-      <segment>
-        <source>Session</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.facebook.fr">
-      <segment>
-        <source>Used for advertising purposes</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.facebook.fr.validity">
-      <segment>
-        <source>3 months</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.howToTurnOff.title">
-      <segment>
-        <source>3. How to turn off cookies?</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.howToTurnOff.content">
-      <segment>
-        <source>If you don't want to accept cookies, you can change your browser settings so that cookies are not accepted. These settings are usually found in the "options" or "preferences" menu of your browser.</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.contact.title">
-      <segment>
-        <source>4. How to contact us?</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.contact.content">
-      <segment>
-        <source><x id="START_PARAGRAPH" equiv-text="&lt;p&gt;"/>Please contact us if you have questions about this policy.<x id="CLOSE_PARAGRAPH" equiv-text="&lt;/p&gt;"/> <x id="LINE_BREAK" equiv-text="&lt;br&gt;"/> <x id="START_PARAGRAPH" equiv-text="&lt;p&gt;"/><x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Company name<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>: Denix Labs Ltd.<x id="CLOSE_PARAGRAPH" equiv-text="&lt;/p&gt;"/> <x id="START_PARAGRAPH" equiv-text="&lt;p&gt;"/><x id="START_BOLD_TEXT" equiv-text="&lt;b&gt;"/>Email<x id="CLOSE_BOLD_TEXT" equiv-text="&lt;/b&gt;"/>: info&#64;denixlabs.com<x id="CLOSE_PARAGRAPH" equiv-text="&lt;/p&gt;"/></source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.changes.title">
-      <segment>
-        <source>5. Changes to this policy</source>
-      </segment>
-    </unit>
-    <unit id="legal.cookiePolicy.changes.content">
-      <segment>
-        <source>This version was last updated on March 3, 2025 and previous versions may be obtained upon request.</source>
-      </segment>
-    </unit>
-    
-    <!-- Contact Page -->
-    <unit id="contact.page.title">
-      <segment>
-        <source>Contact</source>
-      </segment>
-    </unit>
-    <unit id="contact.page.description">
-      <segment>
-        <source>Tell us about your project or describe the problem you're trying to solve. We would be happy to discuss how DenixLabs can work with you. Please contact us at <x id="START_LINK" equiv-text="&lt;a href=&quot;mailto:info@denixlabs.com&quot; class=&quot;text-indigo-500&quot;&gt;"/>info&#64;denixlabs.com<x id="CLOSE_LINK" equiv-text="&lt;/a&gt;"/> or fill out the form below.</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.name">
-      <segment>
-        <source>Name*</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.company">
-      <segment>
-        <source>Company*</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.email">
-      <segment>
-        <source>Email*</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.phone">
-      <segment>
-        <source>Phone</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.message">
-      <segment>
-        <source>Message</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.budget">
-      <segment>
-        <source>Budget</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.required">
-      <segment>
-        <source>Required field</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.submit">
-      <segment>
-        <source>Send</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.thankYou">
-      <segment>
-        <source>Thank you for your message!</source>
-      </segment>
-    </unit>
-    <unit id="contact.form.currency">
-      <segment>
-        <source>BGN</source>
-      </segment>
-    </unit>
-    
-    <!-- Footer -->
-    <unit id="footer.company">
-      <segment>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="blog.featuredSection" datatype="html">
+        <source>Featured</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/blog-featured/blog-featured.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="blog.articlesSection" datatype="html">
+        <source>Articles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/blog-grid/blog-grid.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="blog.title" datatype="html">
+        <source> Blog </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/blog-hero/blog-hero.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="blog.searchPlaceholder" datatype="html">
+        <source>Search articles...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/blog-hero/blog-hero.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="blog.subscribeButton" datatype="html">
+        <source><x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg class=&quot;w-5 h-5 mr-2&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;&gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0&quot;&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;/path&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/> Subscribe </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/blog-hero/blog-hero.component.html</context>
+          <context context-type="linenumber">27,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.title" datatype="html">
+        <source>Subscribe to Our Blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.description" datatype="html">
+        <source> Stay updated with our latest insights on AI, automation, and intelligent business solutions. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">15,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailLabel" datatype="html">
+        <source>Email Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailPlaceholder" datatype="html">
+        <source>Enter your email address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribeButton" datatype="html">
+        <source>Subscribe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribing" datatype="html">
+        <source>Subscribing...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successTitle" datatype="html">
+        <source>Thank You!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successDescription" datatype="html">
+        <source> You&apos;ve been successfully subscribed to our blog. We&apos;ll send you updates on the latest AI insights and automation trends. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog-components/subscription-modal/subscription-modal.component.html</context>
+          <context context-type="linenumber">67,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactInvite.button" datatype="html">
+        <source> Contact Us </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-invite/contact-invite.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faq.title" datatype="html">
+        <source> FAQs </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/faq/faq.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faq.subtitle" datatype="html">
+        <source> Frequently Asked Questions </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/faq/faq.component.html</context>
+          <context context-type="linenumber">7,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faq.loading" datatype="html">
+        <source>Loading...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/faq/faq.component.html</context>
+          <context context-type="linenumber">14,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faq.error" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ error }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/faq/faq.component.html</context>
+          <context context-type="linenumber">19,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.company" datatype="html">
         <source>COMPANY</source>
-      </segment>
-    </unit>
-    <unit id="footer.services">
-      <segment>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.services" datatype="html">
         <source>Services</source>
-      </segment>
-    </unit>
-    <unit id="footer.solutions">
-      <segment>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.solutions" datatype="html">
         <source>Solutions</source>
-      </segment>
-    </unit>
-    <unit id="footer.legal">
-      <segment>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.blog" datatype="html">
+        <source>Blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.legal" datatype="html">
         <source>LEGAL</source>
-      </segment>
-    </unit>
-    <unit id="footer.terms">
-      <segment>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.terms" datatype="html">
         <source>Terms of Use</source>
-      </segment>
-    </unit>
-    <unit id="footer.cookies">
-      <segment>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.cookies" datatype="html">
         <source>Cookie Policy</source>
-      </segment>
-    </unit>
-    <unit id="footer.privacy">
-      <segment>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.privacy" datatype="html">
         <source>Privacy Policy</source>
-      </segment>
-    </unit>
-    <unit id="footer.copyright">
-      <segment>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.copyright" datatype="html">
         <source>Copyright © 2025</source>
-      </segment>
-    </unit>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroTitle" datatype="html">
+        <source>Let AI work for you</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.html</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroDescription" datatype="html">
+        <source> DenixLabs is a bridge between science and business. We create modern and intelligent AI systems that help you make informed decisions and automate routine tasks. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.html</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroContactButton" datatype="html">
+        <source> Contact Us </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.html</context>
+          <context context-type="linenumber">34,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroLearnMoreButton" datatype="html">
+        <source>Learn More <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;3&quot; class=&quot;w-4 h-4 ml-2&quot; viewBox=&quot;0 0 24 24&quot;&gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path d=&quot;M5 12h14M12 5l7 7-7 7&quot;&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;/path&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.html</context>
+          <context context-type="linenumber">41,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar.services" datatype="html">
+        <source>Services</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">69,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar.solutions" datatype="html">
+        <source>Solutions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">72,74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar.blog" datatype="html">
+        <source>Blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">75,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar.contactUs" datatype="html">
+        <source>Book a Free Demo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar.copyright" datatype="html">
+        <source>Copyright DenixLabs 2025</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">89,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.title" datatype="html">
+        <source> Our Expertise </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.title" datatype="html">
+        <source>Concepts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description1" datatype="html">
+        <source>Data analysis and visualization, working with (un)structured data and images, hypothesis testing, statistical tests</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description2" datatype="html">
+        <source>Supervised and unsupervised machine learning, optimization, working with time series</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description3" datatype="html">
+        <source>Deep neural networks, convolutional neural networks, generative models, siamese neural networks, Bayesian networks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="expertise.technologies.title" datatype="html">
+        <source>Technologies</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/our-expertise/our-expertise.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="article.backToBlog" datatype="html">
+        <source>Back to Blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/article/article.component.html</context>
+          <context context-type="linenumber">50,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.page.title" datatype="html">
+        <source>Contact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.page.description" datatype="html">
+        <source> Tell us about your project or describe the problem you&apos;re trying to solve. We would be happy to discuss how DenixLabs can work with you. Please contact us at <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;mailto:info@denixlabs.com&quot; class=&quot;text-indigo-500&quot;&gt;"/>info@denixlabs.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or fill out the form below. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">8,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.name" datatype="html">
+        <source>Name*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.required" datatype="html">
+        <source>Required field</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.company" datatype="html">
+        <source>Company*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.email" datatype="html">
+        <source>Email*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.phone" datatype="html">
+        <source>Phone</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.submit" datatype="html">
+        <source>Send</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">79,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.thankYou" datatype="html">
+        <source>Thank you for your message!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">82,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.title" datatype="html">
+        <source>Cookie Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.intro" datatype="html">
+        <source>This cookie policy will inform you how we use cookies when you visit our website, and will tell you about the purposes for which we use them. We provide it in a structured format, so you can navigate to specific sections below. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">5,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.title" datatype="html">
+        <source>Contents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.whatIsACookie" datatype="html">
+        <source>1. What is a cookie?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.ourCookies" datatype="html">
+        <source>2. What specific cookies do we use on denixlabs.com?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.howToTurnOff" datatype="html">
+        <source>3. How to turn off cookies?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.contact" datatype="html">
+        <source>4. How to contact us?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.toc.changes" datatype="html">
+        <source>5. Changes to this policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">17,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.whatIsACookie.title" datatype="html">
+        <source>1. What is a cookie?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.whatIsACookie.definition" datatype="html">
+        <source>A cookie is a small text file that is placed on your computer or other electronic device when you visit our website.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.whatIsACookie.typesTitle" datatype="html">
+        <source>Cookie Types</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.whatIsACookie.typesContent" datatype="html">
+        <source>There are different types of cookies: <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>First and third party cookies<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> – whether a cookie is &quot;first&quot; or &quot;third&quot; party depends on the domain that places it. First party cookies are those set by us on the website you visit (for example cookies placed by denixlabs.com). <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Session cookies<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> – they allow our website to link your actions during a specific browser session. These cookies expire every time you close your browser and do not remain on your device; <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Persistent cookies<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> – they are stored on your device between browser sessions. They allow your preferences or actions on our website to be remembered. They remain on your device until they expire or until you delete them from your cache. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Strictly necessary cookies<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> – these cookies are essential for you to be able to navigate our website and use its features. Without them we cannot provide the services you have requested; <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Performance cookies<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> – these cookies collect information about how you use our website, such as which pages you visit most often. They do not collect personal information about you. All information collected by these cookies is aggregated and anonymous and is used only to improve the performance of our website; <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Functional cookies<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> – these cookies allow our website to remember your choices (such as username, language, last action, and search preferences) and provide better, personalized features. The information collected by these cookies is anonymous and cannot track your activity on other websites. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">28,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.ourCookies.title" datatype="html">
+        <source>2. What specific cookies do we use on denixlabs.com?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.ourCookies.intro" datatype="html">
+        <source>You can find more information about the individual cookies we use and the purposes for which we use them in the tables below:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">50,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.title" datatype="html">
+        <source>Google Analytics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.description" datatype="html">
+        <source>Google Analytics is a web analytics service provided by Google, Inc. It sets a cookie to evaluate your use of our website and compile reports on activity.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">54,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.tableCaption" datatype="html">
+        <source> Table 1: Cookies used by Google Analytics </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">60,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.table.cookieName" datatype="html">
+        <source>Cookie Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">109,110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.table.purpose" datatype="html">
+        <source>Purpose</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">110,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.table.validity" datatype="html">
+        <source>Validity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">111,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._ga" datatype="html">
+        <source>Used to distinguish users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._ga.validity" datatype="html">
+        <source>14 months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">73,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._gid" datatype="html">
+        <source>Used to distinguish users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._gid.validity" datatype="html">
+        <source>24 hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">78,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._gat" datatype="html">
+        <source>Used to limit the request rate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics._gat.validity" datatype="html">
+        <source>1 minute</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">83,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.__utma" datatype="html">
+        <source>Distinguishes users and sessions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.__utma.validity" datatype="html">
+        <source>14 months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">88,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.__utmz" datatype="html">
+        <source>Stores the traffic source or campaign</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.googleAnalytics.__utmz.validity" datatype="html">
+        <source>6 months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">93,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.title" datatype="html">
+        <source>Facebook</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">99,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.description" datatype="html">
+        <source>Facebook uses cookies for advertising purposes. More information can be found <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.facebook.com/privacy/policies/cookies/&quot; class=&quot;link&quot;&gt;"/>here<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">101,103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.tableCaption" datatype="html">
+        <source> Table 2: Cookies used by Facebook </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">105,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.tr" datatype="html">
+        <source>Used to track user actions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">117,118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.tr.validity" datatype="html">
+        <source>Session</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">118,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.fr" datatype="html">
+        <source>Used for advertising purposes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">122,123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.facebook.fr.validity" datatype="html">
+        <source>3 months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">123,127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.howToTurnOff.title" datatype="html">
+        <source>3. How to turn off cookies?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">129,131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.howToTurnOff.content" datatype="html">
+        <source>If you don&apos;t want to accept cookies, you can change your browser settings so that cookies are not accepted. These settings are usually found in the &quot;options&quot; or &quot;preferences&quot; menu of your browser.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">131,134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.contact.title" datatype="html">
+        <source>4. How to contact us?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">151,153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.contact.content" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Please contact us if you have questions about this policy.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Company name<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>: Denix Labs Ltd.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Email<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>: info@denixlabs.com<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">154,159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.changes.title" datatype="html">
+        <source>5. Changes to this policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">160,162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookiePolicy.changes.content" datatype="html">
+        <source>This version was last updated on March 3, 2025 and previous versions may be obtained upon request.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/cookie-policy/cookie-policy.component.html</context>
+          <context context-type="linenumber">162,165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.title" datatype="html">
+        <source>Privacy Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.title" datatype="html">
+        <source>Who are we?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.companyName" datatype="html">
+        <source>Company name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.uic" datatype="html">
+        <source>UIC:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.contactPhone" datatype="html">
+        <source>Contact phone</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.email" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.whoWeAre.intro" datatype="html">
+        <source>We know that when we collect and process information about an individual, we must do so responsibly, with due care for personal privacy, complying with data protection laws and privacy principles. This privacy policy (&quot;Policy&quot;) describes the main types of personal information we collect within the company, how this information is processed and disclosed, as well as our obligations to the persons whose data we process. The Policy explains in principle how we strive to comply with privacy and data protection laws and regulations, including but not limited to Regulation (EU) 2016/679 (General Data Protection Regulation/GDPR). <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> The sole proprietorship company in its capacity as a personal data controller has introduced internal policies (instructions) and programs designed to ensure compliance with these laws.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">18,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.title" datatype="html">
+        <source>Personal data disclosure</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.intro" datatype="html">
+        <source>Personal data of our customers may be disclosed by the sole proprietorship company:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">32,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.accounting" datatype="html">
+        <source>to a company performing accounting activities</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.bank" datatype="html">
+        <source>to the bank servicing the Company (for the purposes of successful payment of the service under the contract)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.authorities" datatype="html">
+        <source>to investigating and other authorities, based on a legal text that obliges the Company to disclose information about the customer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">37,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.disclosure.internal" datatype="html">
+        <source>Within the company, only authorized persons, properly prepared for working with personal data, have access to personal data. The sole proprietorship company does not trade or sell databases, including anonymized or pseudonymized data, for any reason and for any purposes, including statistical ones. Transfer of personal data (disclosure to persons outside the country) The sole proprietorship company does not transfer personal data outside the borders of the country.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">40,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.notification.title" datatype="html">
+        <source>Notification and Consent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.notification.content" datatype="html">
+        <source>At the time of data collection, the sole proprietorship company notifies persons in a clear and consistent manner exactly how their information will be processed, disclosed, stored and deleted; what rights they have regarding personal data protection or according to this Policy, as well as what are the ways to exercise these rights. This notification is fully compliant with the requirements of the Regulation and aims to comply with it to the maximum extent, including but not limited to the principle of transparency and lawfulness in the processing of personal data of persons. Regarding their personal data, every user has the following rights:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">48,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.access" datatype="html">
+        <source>right of access to them</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.update" datatype="html">
+        <source>right to request updating and/or correction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.deletion" datatype="html">
+        <source>right to request deletion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.restriction" datatype="html">
+        <source>right to request restriction of processing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.portability" datatype="html">
+        <source>right to data portability</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rights.object" datatype="html">
+        <source>right to object to processing in a certain way and for certain purposes, including automated processing (profiling)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">65,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.rightsExercise" datatype="html">
+        <source>With the exception of the last right, the others are exercised with a written request to the seat of my Company at <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>ADDRESS<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. The sole proprietorship company guarantees that individuals can exercise all their rights regarding personal data processed by the sole proprietorship company, including but not limited to the right of access, updating and correction, right to data portability, right to temporary suspension of processing and data deletion and in general everything provided by law. The sole proprietorship company will make maximum efforts to consider and approve the person&apos;s request. Any refusal by the sole proprietorship company would be possible only on a legal basis (when a legal text prohibits this). In cases where required by law, as well as as an expression of good practice, the sole proprietorship company may request the consent of the individual to collect, use and disclose their data for specifically defined purposes.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">70,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.dataActuality.title" datatype="html">
+        <source>Data relevance and retention periods</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.dataActuality.content" datatype="html">
+        <source>Our privacy policy provides that every person whose data we have collected has full possibilities to request correction and updating of the data. The right to be forgotten is also among those provided in our privacy policy and every person can request deletion of their data. The Company deletes personal data immediately after the grounds for processing and storage cease, after consideration of special legal requirements.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">88,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.security.title" datatype="html">
+        <source>Data security and protection</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">96,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.security.content" datatype="html">
+        <source>DENIX LABS Ltd. maintains a comprehensive information security policy with maximum emphasis on technical and organizational security measures that protect personal information from unauthorized access or loss. In accordance with regulatory requirements, the sole proprietorship company also maintains a practice for dealing with security breaches related to the protection of personal data, including making all necessary notifications to persons or the supervisory authority.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">99,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.inquiries.title" datatype="html">
+        <source>Inquiries, reports, complaints and requests for exercising rights</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">106,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.inquiries.content" datatype="html">
+        <source>Any communication, inquiries, reports, complaints and requests for exercising rights regarding personal data should be addressed to the seat of DENIX LABS Ltd.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">108,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.legalStatus.title" datatype="html">
+        <source>Legal status of this Policy, mentions and effect</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacyPolicy.legalStatus.content" datatype="html">
+        <source>This Privacy Policy is not a contract and has no binding effect. DENIX LABS Ltd. reserves the right to update the Policy (for example - in case of a change in legislation regarding personal data).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">115,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.title" datatype="html">
+        <source>Terms of Use</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.intro" datatype="html">
+        <source>These terms of use (&quot;Terms&quot;) will apply when you access or use our website. Please read these Terms carefully. By accessing or using the website, or by expressing your consent in another way, you are deemed to have accepted these Terms. We may change these Terms periodically, so please check them regularly. These Terms were last updated on March 3, 2025. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">5,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.definitions.title" datatype="html">
+        <source>Definitions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.definitions.content" datatype="html">
+        <source> In these Terms, references to &quot;we&quot;, &quot;us&quot; or &quot;our&quot; mean the company Denix Labs Ltd., with UIC <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>AAAAAA<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and registered office at address <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>BBBBB<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Any mention of &quot;you&quot; means the person who accesses or uses the website. &quot;Content&quot; means any information, data, text, software, photos, graphics, videos or other materials available on the website. &quot;Website&quot; means https://denixlabs.com/ and all related web pages. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">14,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.access.title" datatype="html">
+        <source>Access to the website</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.access.content" datatype="html">
+        <source>Please ensure that your computer system meets all necessary technical requirements for accessing and using the website and is compatible with it. While we strive to maintain the website accurate, current and error-free, we cannot guarantee this. We do not guarantee that the website will be accessible at all times, nor that your use of it will be uninterrupted. We may prevent or stop your access to the website if you do not comply with any part of these Terms.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">22,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.title" datatype="html">
+        <source>Use of content</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.intro" datatype="html">
+        <source> The Content is provided solely for your personal information to inform you about us, our products, news, features, services and other websites that may interest you. It does not constitute technical or other type of advice and you should not rely on it for any purposes. You may view, download, print and make copies of the Content on a computer to which only you have access. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>When copying the Content, you must ensure that<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">31,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.rule1" datatype="html">
+        <source> Denix Labs Ltd. is acknowledged as the source of the Content </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">36,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.rule2" datatype="html">
+        <source> The Content is copied without editing or modification </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.rule3" datatype="html">
+        <source> All copyright or intellectual property rights are not altered or removed </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.contentUse.rule4" datatype="html">
+        <source> The person who will receive the copy is informed that these provisions also apply to them. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.prohibited.intro" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>You are not allowed to:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.prohibited.commercial" datatype="html">
+        <source> use the website or Content for commercial benefit or other advantage </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">52,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.prohibited.modify" datatype="html">
+        <source> modify or interfere with the website in any way, including through the use of malicious code </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.termsOfUse.prohibited.abuse" datatype="html">
+        <source> use the website for defamation, abuse or to violate the rights of others, including their intellectual property rights. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/legal/terms-of-use/terms-of-use.component.html</context>
+          <context context-type="linenumber">58,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.title" datatype="html">
+        <source> Page not found </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.title" datatype="html">
+        <source> Services </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.description" datatype="html">
+        <source> DenixLabs offers customized solutions for its clients&apos; needs and helps them extract maximum value from their data and this new technology. Here we introduce you superficially to our work process and the services, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>that we offer. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">8,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.workflow.title" datatype="html">
+        <source>Workflow</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.workflow.step1.title" datatype="html">
+        <source>Idea</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.workflow.step1.description" datatype="html">
+        <source> Our experts and consultants listen to your ideas and requirements. We translate your business problem into an artificial intelligence task, after which we prepare a plan that we present to you and adjust with your feedback. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">34,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.workflow.step2.title" datatype="html">
+        <source>Preparation and Prototype</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.workflow.step2.description" datatype="html">
+        <source> In this step, we offer a prototype of your idea. We work closely with you to develop a project plan and unique strategy with a defined overall system architecture and technology stack. When the project plan is ready, a team of DenixLabs experts is formed. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">92,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.workflow.step3.title" datatype="html">
+        <source>Development</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">111,112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.workflow.step3.description" datatype="html">
+        <source> We start working to bring your vision to reality. We create the desired solution, integrating a number of functions and specific functionalities into it. Then detailed testing of system performance and functionality is performed before presentation. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">113,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.workflow.step4.title" datatype="html">
+        <source>Delivery and Maintenance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">137,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.workflow.step4.description" datatype="html">
+        <source> We integrate the created system into your existing IT infrastructure. After the system is ready, we move to its continuous monitoring and maintenance. Regular maintenance may include retraining the model with new data, adjusting parameters, or updating software as needed. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">139,142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.consulting.title" datatype="html">
+        <source> Artificial Intelligence and Machine Learning Consulting </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">154,157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.consulting.description" datatype="html">
+        <source> The long-term experience of our team and work on various projects allows us to offer consultations for AI applications in various fields and for every step of the process. We offer consultations for choosing appropriate algorithms, data processing, building models and testing them. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">158,161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.webdev.title" datatype="html">
+        <source> Web Application Development </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">178,180</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="services.webdev.description" datatype="html">
+        <source> Machine learning and artificial intelligence algorithms should be not only accurate but also accessible. In case your business does not have third-party IT infrastructure, we can also take on the development of web applications as a means of interacting with your models in an intuitive way, as well as visualizing key indicators and statistics. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/services/services.component.html</context>
+          <context context-type="linenumber">182,184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.page.title" datatype="html">
+        <source> Solutions </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.page.subtitle" datatype="html">
+        <source> The applications of artificial intelligence in business are many and highly customizable for your needs. Here we show you a number of proven AI applications that actively <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>contribute to organizations from various fields. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.title" datatype="html">
+        <source>Natural Language Processing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.customerSupport.title" datatype="html">
+        <source>Automatic Customer Support</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.customerSupport.description" datatype="html">
+        <source>Chatbots and virtual assistants can answer inquiries, offer help, schedule meetings more efficiently and quickly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.learnMore" datatype="html">
+        <source>Learn More</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">116,117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">140,141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">163,164</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">198,199</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">223,224</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.documentAnalysis.title" datatype="html">
+        <source>Document Analysis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.documentAnalysis.description" datatype="html">
+        <source>Artificial intelligence can search and extract key information from contracts, invoices, group them, summarize and connect them by different criteria.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.reportWriting.title" datatype="html">
+        <source>Automatic Report Generation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">77,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.naturalLanguage.reportWriting.description" datatype="html">
+        <source>Artificial intelligence can automate the creation of contracts, agreements and other legal documents using pre-defined templates.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.title" datatype="html">
+        <source>Image Analysis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">99,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.qaAndAnomalies.title" datatype="html">
+        <source>Quality Control and Defect Detection</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">111,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.qaAndAnomalies.description" datatype="html">
+        <source>Artificial intelligence can detect defects in production (e.g. on the production line), notify about problems and provide statistics.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.inventoryManagement.title" datatype="html">
+        <source>Automatic Inventory Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">133,136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.inventoryManagement.description" datatype="html">
+        <source> Smart cameras can monitor inventory levels and detect shortages of goods in warehouses and stores. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">137,139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.faceRecognition.title" datatype="html">
+        <source>Face Recognition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">158,160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.imageAnalysis.faceRecognition.description" datatype="html">
+        <source>Artificial intelligence can identify you and your customers, providing a new level of security and access to CRM profile right from the door.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">161,162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.title" datatype="html">
+        <source>Decision Support</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">181,183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.riskAssessment.title" datatype="html">
+        <source>Risk Assessment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">193,195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.riskAssessment.description" datatype="html">
+        <source>AI can analyze various risk factors and provide comprehensive risk assessments to help make informed business decisions.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">196,197</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.predictiveMaintenance.title" datatype="html">
+        <source>Predictive Maintenance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">216,219</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.decisionSupport.predictiveMaintenance.description" datatype="html">
+        <source> AI predicts equipment failures before they happen, reducing downtime and repair costs. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.html</context>
+          <context context-type="linenumber">220,222</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="solutions.contactInvite" datatype="html">
+        <source>And many more... let&apos;s discuss your AI model</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/solutions/solutions.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vapi.demo.tryFree" datatype="html">
+        <source> Try <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> for free </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/vapi-demo/vapi-demo.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vapi.section.title" datatype="html">
+        <source>Introducing our first voice agent, Phillips </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/vapi-section/vapi-section.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vapi.section.description" datatype="html">
+        <source>Voice agents can help your staff be more efficient and productive, and your customers to be served faster and more efficiently.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/vapi-section/vapi-section.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vapi.section.requestDemo" datatype="html">
+        <source>Request Demo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/vapi-section/vapi-section.component.html</context>
+          <context context-type="linenumber">8,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyUseAi.title" datatype="html">
+        <source> Why integrate AI into your business? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyUseAi.informedDecisions.title" datatype="html">
+        <source>Informed decisions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyUseAi.informedDecisions.description" datatype="html">
+        <source> With AI you can transform data from your business and customers into a foundation for making informed decisions. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyUseAi.automation.title" datatype="html">
+        <source>Automation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyUseAi.automation.description" datatype="html">
+        <source> With AI you can automate routine tasks and business processes. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyUseAi.personalization.title" datatype="html">
+        <source>Personalization</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyUseAi.personalization.description" datatype="html">
+        <source> With AI you can understand your customers&apos; needs and offer personalized products and services. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
+          <context context-type="linenumber">37,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyUseAi.reduceCosts.title" datatype="html">
+        <source>Lower costs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyUseAi.reduceCosts.description" datatype="html">
+        <source> Direct your resources and personnel to more important tasks and reduce costs with the help of AI. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/why-use-ai/why-use-ai.component.html</context>
+          <context context-type="linenumber">47,50</context>
+        </context-group>
+      </trans-unit>
+    </body>
   </file>
 </xliff>

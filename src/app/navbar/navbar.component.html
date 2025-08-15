@@ -1,8 +1,8 @@
 <header class="bg-gray-900 sticky top-0 z-50">
     <nav class="relative px-5 py-4 flex justify-between items-center mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-5">
-      <a class="text-3xl font-bold leading-none" href="#" aria-label="go to home page">
-         <img class="ml-3 w-40 sm:w-40 desktop-only" src="logos/main.svg" alt="logo" aria-hidden="true" />
-         <img class="lg ml-3 w-10 sm:w-10 mobile-only" src="logos/mini_white_rgb.svg" alt="logo" aria-hidden="true" />
+      <a class="text-3xl font-bold leading-none" href="/{{locale}}" aria-label="go to home page">
+         <img class="ml-3 w-40 sm:w-40 desktop-only" ngSrc="logos/main.svg" alt="logo" aria-hidden="true" width="160" height="160" priority/>
+         <img class="lg ml-3 w-10 sm:w-10 mobile-only" ngSrc="logos/mini_white_rgb.svg" alt="logo" aria-hidden="true" width="40" height="40" priority/>
          <!-- <img class="ml-3 w-40 sm:w-40 desktop-light" src="logos/denix.svg" alt="logo" aria-hidden="true" />
          <img class="lg ml-3 w-10 sm:w-10 mobile-light" src="logos/mini_black_rgb.svg" alt="logo" aria-hidden="true" /> -->
 
@@ -23,26 +23,26 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
           </svg>
         </li> -->
-        <li><a class="text-gray-500 px-5 transition hover:text-gray-500/75 text-white hover:text-white/75" href="/services" i18n="@@navbar.services">Services</a></li>
+        <li><a class="text-gray-500 px-5 transition font-semibold hover:text-gray-500/75 text-white hover:text-white/75" href="/{{locale}}/services" i18n="@@navbar.services">Services</a></li>
         <li class="text-gray-300">
           <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
           </svg> -->
         </li>
-        <li><a class="text-gray-500 px-5 transition hover:text-gray-500/75 text-white hover:text-white/75" href="/solutions" i18n="@@navbar.solutions">Solutions</a></li>
+        <li><a class="text-gray-500 px-5 transition font-semibold hover:text-gray-500/75 text-white hover:text-white/75" href="/{{locale}}/solutions" i18n="@@navbar.solutions">Solutions</a></li>
         <li class="text-gray-300">
           <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
           </svg> -->
         </li>
-        <li><a class="text-gray-500 px-5 transition hover:text-gray-500/75 text-white hover:text-white/75" href="/blog" i18n="@@navbar.blog">Blog</a></li>
+        <li><a class="text-gray-500 px-5 transition font-semibold hover:text-gray-500/75 text-white hover:text-white/75" href="/{{locale}}/blog" i18n="@@navbar.blog">Blog</a></li>
         <!-- <li><a class="ttext-gray-500 px-5 transition hover:text-gray-500/75 text-white hover:text-white/75" href="/contact" i18n="@@navbar.contact">Contact</a></li> -->
       </ul>
       <div class="flex items-center space-x-2 hidden lg:flex gap-2">
         <app-language-switcher></app-language-switcher>
         <a
         class="rounded-md bg-indigo-500 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:shadow-xl hover:bg-indigo-600 transition duration-300"
-        href="/contact" i18n="@@navbar.contactUs">Contact Us</a>
+        href="/{{locale}}/contact" i18n="@@navbar.contactUs">Book a Free Demo</a>
       </div>
     </nav>
     <nav class="mobile-navbar" [class.open]="isNavbarOpen">
@@ -50,9 +50,9 @@
       <!-- <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div> -->
       <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-gray-900 border-r overflow-y-auto">
         <div class="flex items-center mb-8">
-          <a class="mr-auto text-3xl font-bold leading-none" href="#" aria-label="go to home page">
-                <img class="ml-3 w-40 sm:w-40 mobile-dark" src="logos/main.svg" alt="logo" aria-hidden="true" />
-                <img class="ml-3 w-40 sm:w-40 mobile-light" src="logos/denix.svg" alt="logo" aria-hidden="true" />
+          <a class="mr-auto text-3xl font-bold leading-none" href="/{{locale}}" aria-label="go to home page">
+                <img class="ml-3 w-40 sm:w-40" ngSrc="logos/main.svg" alt="logo" aria-hidden="true" width="40" height="40" priority/>
+                <!-- <img class="ml-3 w-40 sm:w-40 mobile-light" ngSrc="logos/denix.svg" alt="logo" aria-hidden="true" width="40" height="40" priority/> -->
           </a>
           <!-- <button class="navbar-close">
             <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -66,13 +66,13 @@
               <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" (click)="redirectAndClose('/about')">За нас</a>
             </li> -->
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" href="/services" (click)="redirectAndClose('/services')" i18n="@@navbar.services">Services</a>
+              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" href="/{{locale}}/services" (click)="redirectAndClose('/services')" i18n="@@navbar.services">Services</a>
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" href="/solutions" (click)="redirectAndClose('/solutions')" i18n="@@navbar.solutions">Solutions</a>
+              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" href="/{{locale}}/solutions" (click)="redirectAndClose('/solutions')" i18n="@@navbar.solutions">Solutions</a>
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" href="/blog" (click)="redirectAndClose('/blog')" i18n="@@navbar.blog">Blog</a>
+              <a class="block p-4 text-sm font-semibold text-gray-500 text-white hover:text-indigo-500 rounded" href="/{{locale}}/blog" (click)="redirectAndClose('/blog')" i18n="@@navbar.blog">Blog</a>
             </li>
           </ul>
         </div>
@@ -81,8 +81,8 @@
             <app-language-switcher></app-language-switcher>
             <a
             class="rounded-md bg-indigo-500 px-5 py-2.5 my-4 text-sm font-medium text-white shadow-sm mobile-only text-center w-full hover:shadow-xl hover:bg-indigo-600 transition duration-300"
-            href="/contact" i18n="@@navbar.contactUs">
-            Contact Us
+            href="/{{locale}}/contact" i18n="@@navbar.contactUs">
+            Book a Free Demo
             </a>
           </div>
           <p class="my-4 text-xs text-center text-gray-400">

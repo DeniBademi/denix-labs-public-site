@@ -17,3 +17,48 @@ input:focus {
     font-size: 3rem;
   }
 }
+
+/* Z-index management for proper layering */
+header {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure animated elements stay below content sections */
+.animate__animated {
+  position: relative;
+  z-index: 1;
+}
+
+/* Search and category sections should be below modal and other content */
+.animate__fadeInUp {
+  z-index: 1;
+}
+
+/* Mobile-specific z-index fixes */
+@media (max-width: 768px) {
+  header {
+    z-index: 0;
+  }
+  
+  .animate__animated {
+    z-index: 0;
+  }
+  
+  .animate__fadeInUp {
+    z-index: 0;
+    transform: translateZ(0); /* Force hardware acceleration */
+  }
+  
+  /* Ensure hero content doesn't overlap following sections */
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: transparent;
+    z-index: -1;
+  }
+}

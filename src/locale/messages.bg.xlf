@@ -49,8 +49,8 @@
         <target>Контакти</target>
       </trans-unit>
       <trans-unit id="navbar.contactUs" datatype="html">
-        <source>Contact Us</source>
-        <target>Свържи се с нас</target>
+        <source>Book a Free Demo</source>
+        <target>Свържи се с нас </target>
       </trans-unit>
       <trans-unit id="navbar.copyright" datatype="html">
         <source>Copyright DenixLabs 2025</source>
@@ -79,6 +79,23 @@
       <trans-unit id="vapi.section.requestDemo" datatype="html">
         <source>Request Demo</source>
         <target>Поискай демо</target>
+      </trans-unit>
+
+      <trans-unit id="faq.title" datatype="html">
+        <source>FAQs</source>
+        <target>Често задавани въпроси</target>
+      </trans-unit>
+      <trans-unit id="faq.subtitle" datatype="html">
+        <source>Frequently Asked Questions</source>
+        <target>Често задавани въпроси</target>
+      </trans-unit>
+      <trans-unit id="faq.loading" datatype="html">
+        <source>Loading...</source>
+        <target>Зареждане...</target>
+      </trans-unit>
+      <trans-unit id="faq.error" datatype="html">
+        <source>Failed to load FAQ data</source>
+        <target>Неуспешно зареждане на данни за често задавани въпроси</target>
       </trans-unit>
 
       <!-- Why Use AI -->
@@ -662,6 +679,44 @@
         <source>Copyright © 2025</source>
         <target>Copyright © 2025</target>
       </trans-unit>
+      <trans-unit id="footer.blog" datatype="html">
+        <source>Blog</source>
+        <target>Блог</target>
+      </trans-unit>
+
+      <!-- Subscription Modal Component -->
+      <trans-unit id="subscriptionModal.title" datatype="html">
+        <source>Subscribe to Our Blog</source>
+        <target>Абонирай се за нашия блог</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.description" datatype="html">
+        <source>Stay updated with our latest insights on AI, automation, and intelligent business solutions.</source>
+        <target>Бъдете в течение с най-новите ни прозрения за изкуствен интелект, автоматизация и интелигентни бизнес решения.</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailLabel" datatype="html">
+        <source>Email Address</source>
+        <target>Имейл адрес</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.emailPlaceholder" datatype="html">
+        <source>Enter your email address</source>
+        <target>Въведете вашия имейл адрес</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribeButton" datatype="html">
+        <source>Subscribe</source>
+        <target>Абонирай се</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.subscribing" datatype="html">
+        <source>Subscribing...</source>
+        <target>Абониране...</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successTitle" datatype="html">
+        <source>Thank You!</source>
+        <target>Благодарим!</target>
+      </trans-unit>
+      <trans-unit id="subscriptionModal.successDescription" datatype="html">
+        <source>You've been successfully subscribed to our blog. We'll send you updates on the latest AI insights and automation trends.</source>
+        <target>Успешно се абонирахте за нашия блог. Ще ви изпращаме актуализации за най-новите прозрения за изкуствен интелект и тенденции в автоматизацията.</target>
+      </trans-unit>
 
       <!-- Blog Page -->
       <trans-unit id="blog.title" datatype="html">
@@ -701,6 +756,100 @@
       <trans-unit id="navbar.blog" datatype="html">
         <source>Blog</source>
         <target>Блог</target>
+      </trans-unit>
+
+      <!-- Services Page -->
+      <trans-unit id="services.title" datatype="html">
+        <source>Services</source>
+        <target>Услуги</target>
+      </trans-unit>
+      <trans-unit id="services.description" datatype="html">
+        <source>DenixLabs offers customized solutions for its clients' needs and helps them extract maximum value from their data and this new technology. Here we introduce you superficially to our work process and the services, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>that we offer.</source>
+        <target>DenixLabs предлага индивидуални решения за нуждите на клиентите си и им помага да извлекат максимална стойност от данните си и тази нова технология. Тук ви запознаваме повърхностно с процеса ни на работа и услугите, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>които предлагаме.</target>
+      </trans-unit>
+      <trans-unit id="services.workflow.title" datatype="html">
+        <source>Workflow</source>
+        <target>Ход на работа</target>
+      </trans-unit>
+      <trans-unit id="services.workflow.step1.title" datatype="html">
+        <source>Idea</source>
+        <target>Идея</target>
+      </trans-unit>
+      <trans-unit id="services.workflow.step1.description" datatype="html">
+        <source>Our experts and consultants listen to your ideas and requirements. We translate your business problem into an artificial intelligence task, after which we prepare a plan that we present to you and adjust with your feedback.</source>
+        <target>Нашите експерти и консултанти изслушват вашите идеи и изисквания. Превеждаме вашият бизнес проблем към задача от сферата на изкуствения интелект, след което изготвяме план, който ви представяме и коригираме с вашите отзиви.</target>
+      </trans-unit>
+      <trans-unit id="services.workflow.step2.title" datatype="html">
+        <source>Preparation and Prototype</source>
+        <target>Подготовка и прототип</target>
+      </trans-unit>
+      <trans-unit id="services.workflow.step2.description" datatype="html">
+        <source>In this step, we offer a prototype of your idea. We work closely with you to develop a project plan and unique strategy with a defined overall system architecture and technology stack. When the project plan is ready, a team of DenixLabs experts is formed.</source>
+        <target>В тази стъпка предлагаме прототип на вашата идея. Работим близо с вас, за да разработим план на проекта и уникална стратегия с дефинирана обща системна архитектура и технологичен стек. Когато планът на проекта е изготвен, се сформира екип от експерти на DenixLabs.</target>
+      </trans-unit>
+      <trans-unit id="services.workflow.step3.title" datatype="html">
+        <source>Development</source>
+        <target>Разработка</target>
+      </trans-unit>
+      <trans-unit id="services.workflow.step3.description" datatype="html">
+        <source>We start working to bring your vision to reality. We create the desired solution, integrating a number of functions and specific functionalities into it. Then detailed testing of system performance and functionality is performed before presentation.</source>
+        <target>Започваме работа по това да доведем визията ви до реалност. Създаваме желаното решение, интегрирайки редица функции и специфични функционалности в него. След това се извършва подробно тестване на системната производителност и функционалност преди представянето.</target>
+      </trans-unit>
+      <trans-unit id="services.workflow.step4.title" datatype="html">
+        <source>Delivery and Maintenance</source>
+        <target>Предаване и поддръжка</target>
+      </trans-unit>
+      <trans-unit id="services.workflow.step4.description" datatype="html">
+        <source>We integrate the created system into your existing IT infrastructure. After the system is ready, we move to its continuous monitoring and maintenance. Regular maintenance may include retraining the model with new data, adjusting parameters, or updating software as needed.</source>
+        <target>Интегрираме направената система в съществуващата ви ИТ инфраструктура. След като системата е готова, преминаваме към нейното непрекъснато наблюдение и поддръжка. Редовната поддръжка може да включва преобучаване на модела с нови данни, коригиране на параметрите или актуализиране на софтуера по необходимост.</target>
+      </trans-unit>
+      <trans-unit id="services.consulting.title" datatype="html">
+        <source>Artificial Intelligence and Machine Learning Consulting</source>
+        <target>Консултации за изкуствен интелект и машинно обучение</target>
+      </trans-unit>
+      <trans-unit id="services.consulting.description" datatype="html">
+        <source>The long-term experience of our team and work on various projects allows us to offer consultations for AI applications in various fields and for every step of the process. We offer consultations for choosing appropriate algorithms, data processing, building models and testing them.</source>
+        <target>Дългогодишният опит на нашия екип и работата по различни проекти ни позволява да предложим консултации за приложенията на AI в редица сфери и за всяка стъпка от процеса. Предлагаме консултации за избор на подходящи алгоритми, обработка на данни, изграждане на модели и тяхното тестване.</target>
+      </trans-unit>
+      <trans-unit id="services.webdev.title" datatype="html">
+        <source>Web Application Development</source>
+        <target>Разработка на уеб приложения</target>
+      </trans-unit>
+      <trans-unit id="services.webdev.description" datatype="html">
+        <source>Machine learning and artificial intelligence algorithms should be not only accurate but also accessible. In case your business does not have third-party IT infrastructure, we can also take on the development of web applications as a means of interacting with your models in an intuitive way, as well as visualizing key indicators and statistics.</source>
+        <target>Алгоритмите за машинно обучение и изкуствен интелект трябва освен точни да са и достъпни. В случай, че бизнесът ви няма странична IT инфраструктура, можем да поемем и разработката на уеб приложения като средство за интеракция с вашите модели по интуитивен начин, както и визуализация на ключови показатели и статистики.</target>
+      </trans-unit>
+
+      <!-- Our Expertise Component -->
+      <trans-unit id="expertise.title" datatype="html">
+        <source>Our Expertise</source>
+        <target>Нашата експертиза</target>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.title" datatype="html">
+        <source>Concepts</source>
+        <target>Концепции</target>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description1" datatype="html">
+        <source>Data analysis and visualization, working with (un)structured data and images, hypothesis testing, statistical tests</source>
+        <target>Анализ и визуализация на данни, работа с (не)структурирани данни и изображения, тестване на хипотези, статистически тестове</target>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description2" datatype="html">
+        <source>Supervised and unsupervised machine learning, optimization, working with time series</source>
+        <target>Надзиравано и ненадзиравано машинно обучение, оптимизация, работа с времеви редове</target>
+      </trans-unit>
+      <trans-unit id="expertise.concepts.description3" datatype="html">
+        <source>Deep neural networks, convolutional neural networks, generative models, siamese neural networks, Bayesian networks</source>
+        <target>Дълбоки невронни мрежи, конволюционни невронни мрежи, генеративни модели, сиамски невронни мрежи, бейсови мрежи</target>
+      </trans-unit>
+      <trans-unit id="expertise.technologies.title" datatype="html">
+        <source>Technologies</source>
+        <target>Технологии</target>
+      </trans-unit>
+
+      <!-- Contact Invite Component -->
+      <trans-unit id="contactInvite.button" datatype="html">
+        <source>Contact Us</source>
+        <target>Свържи се с нас</target>
       </trans-unit>
     </body>
   </file>

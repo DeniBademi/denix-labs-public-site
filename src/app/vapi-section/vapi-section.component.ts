@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, LOCALE_ID } from '@angular/core';
 import { VapiDemoComponent } from '../vapi-demo/vapi-demo.component';
 @Component({
   selector: 'app-vapi-section',
@@ -7,5 +7,5 @@ import { VapiDemoComponent } from '../vapi-demo/vapi-demo.component';
   styleUrl: './vapi-section.component.css'
 })
 export class VapiSectionComponent {
-
+  public locale = inject(LOCALE_ID);
 }

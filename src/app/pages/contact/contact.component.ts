@@ -21,23 +21,23 @@ export class ContactComponent {
         name: ['', Validators.required],
         companyName: ['', Validators.required],
         email: ['', [Validators.required, Validators.email]],
-        phone: [''],
-        message: ['', Validators.required],
-        budgetLow: [3000, Validators.required],
-        budgetHigh: [50000, Validators.required]
+        phone: ['', Validators.pattern(/^\+359\d{9}$/)],
+        message: [''],
+        // budgetLow: [3000],
+        // budgetHigh: [50000]
       });
 
-      this.contactForm.get('budgetLow')!.valueChanges.subscribe(value => {
-        if (value > this.contactForm.get('budgetHigh')!.value) {
-          this.contactForm.get('budgetHigh')!.setValue(value);
-        }
-      });
+      // this.contactForm.get('budgetLow')!.valueChanges.subscribe(value => {
+      //   if (value > this.contactForm.get('budgetHigh')!.value) {
+      //     this.contactForm.get('budgetHigh')!.setValue(value);
+      //   }
+      // });
 
-      this.contactForm.get('budgetHigh')!.valueChanges.subscribe(value => {
-        if (value < this.contactForm.get('budgetLow')!.value) {
-          this.contactForm.get('budgetLow')!.setValue(value);
-        }
-      });
+      // this.contactForm.get('budgetHigh')!.valueChanges.subscribe(value => {
+      //   if (value < this.contactForm.get('budgetLow')!.value) {
+      //     this.contactForm.get('budgetLow')!.setValue(value);
+      //   }
+      // });
 
     }
 

@@ -1,0 +1,67 @@
+{
+  "title": "FAQs",
+  "subtitle": "Frequently Asked Questions",
+  "faqs": [
+      {
+        "id": "what-is-denixlabs",
+        "question": "What exactly does DenixLabs do?",
+        "answer": "We design, build, and deploy custom AI solutions—everything from computer-vision quality inspection to predictive analytics dashboards—so you can automate routine work and make decisions faster.",
+        "order": 1
+      },
+      {
+        "id": "is-ai-right-for-my-company",
+        "question": "How do I know if AI is right for my company?",
+        "answer": "If you have repeatable processes, large data sets, or tasks you wish were faster or more accurate, AI can usually pay for itself quickly. In fact, 75% of executives expect AI to create a competitive edge in their industry.",
+        "order": 2
+      },
+      {
+        "id": "what-data-is-needed",
+        "question": "What data do we need to get started?",
+        "answer": "High-quality, well-structured data—such as ERP exports, sensor logs, or CRM records—accelerates results, but imperfect data is normal. Part of our kickoff is a data audit where we clean, label, or integrate sources as needed.",
+        "order": 3
+      },
+      {
+        "id": "project-timeline",
+        "question": "How long does an AI project take?",
+        "answer": "A proof of concept typically takes 6–12 weeks. Full production roll-outs range from 3–12 months, depending on scope and integration complexity.",
+        "order": 4
+      },
+      {
+        "id": "cost-range",
+        "question": "What’s the cost range?",
+        "answer": "Budgets vary with complexity, but small pilots often cost no more than a professional website build, while enterprise-scale deployments are priced like other major software initiatives. We always provide a fixed-price proposal after the discovery phase.",
+        "order": 5
+      },
+      {
+        "id": "expected-roi",
+        "question": "What ROI can we expect?",
+        "answer": "Clients typically see 10–50% cost reductions, 15–30% revenue lifts, or process speeds up to 50% faster within the first year. We quantify ROI up front and track it after go-live.",
+        "order": 6
+      },
+      {
+        "id": "will-ai-replace-jobs",
+        "question": "Will AI replace my team’s jobs?",
+        "answer": "AI automates repetitive tasks so people can focus on higher-value work. We include change-management and upskilling to ensure your staff benefits from the technology, not competes with it.",
+        "order": 7
+      },
+      {
+        "id": "data-security-compliance",
+        "question": "How do you keep our data secure and compliant (GDPR, etc.)?",
+        "answer": "Your data stays yours. We use encryption in transit and at rest, follow least-privilege access, and design every solution to meet GDPR and other relevant regulations.",
+        "order": 8
+      },
+      {
+        "id": "in-house-ai-talent",
+        "question": "Do we need in-house AI talent to maintain the solution?",
+        "answer": "Not necessarily. Many clients rely on our managed service, but we also train your team and document everything so you can own the system long-term.",
+        "order": 9
+      },
+      {
+        "id": "engagement-process",
+        "question": "What does the engagement process look like?",
+        "answer": "Check out our <a href='/en/services'>services</a> page for more details.",
+        "order": 10
+      }
+    ]
+    
+} 
