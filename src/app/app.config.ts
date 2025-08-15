@@ -39,7 +39,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     allow: "Приемам всички",
     deny: "Откажи",
     link: "Политика за бисквитки",
-    href: "/en/cookies",
+    href: "/bg/cookies",
     policy: "Cookie Policy",
     close: '&#x274c;'
   }
