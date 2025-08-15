@@ -1,0 +1,4 @@
+/* Hide ng cookies consent revoke button */
+::ng-deep  .cc-revoke {
+    display: none;
+}
