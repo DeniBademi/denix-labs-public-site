@@ -130,3 +130,15 @@
     text-decoration: none;
     font-size: 1.1rem;
 }
+
+/* Bottom-only gradient border for the navbar */
+header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #6366F1 0%, #22D3EE 100%);
+    pointer-events: none;
+}

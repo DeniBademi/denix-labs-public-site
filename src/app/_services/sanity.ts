@@ -110,7 +110,4 @@ export class SanityService {
     );
     return posts[0];
   }
-
-
-
 }
