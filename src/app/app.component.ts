@@ -63,6 +63,9 @@ export class AppComponent implements OnInit, OnDestroy {
       this.ccService.getConfig().content!.deny = 'Reject';
       this.ccService.getConfig().content!.href = '/bg/cookies';
       this.ccService.getConfig().content!.policy = 'Cookie Policy';
+
+      this.ccService.destroy(); // remove previous cookie bar (with default messages)
+      this.ccService.init(this.ccService.getConfig());
     }
     this.meta.updateMetaTags();
 
@@ -97,6 +100,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.statusChangeSubscription = this.ccService.statusChange$.subscribe(
       (event: NgcStatusChangeEvent) => {
         // Status changed
+        this.ccService.close(false);
       }
     );
 
