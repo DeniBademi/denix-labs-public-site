@@ -1,4 +1,4 @@
-import { Component, inject, PLATFORM_ID } from '@angular/core';
+import { Component, inject, PLATFORM_ID, LOCALE_ID } from '@angular/core';
 import { Router, RouterOutlet, Event, NavigationEnd, ActivatedRoute } from '@angular/router';
 import {FooterComponent} from './footer/footer.component';
 import { NavbarComponent } from "./navbar/navbar.component";
@@ -18,7 +18,6 @@ declare global {
     HSStaticMethods: IStaticMethods;
   }
 }
-
 
 @Component({
   selector: 'app-root',
@@ -42,13 +41,12 @@ export class AppComponent implements OnInit, OnDestroy {
     private noCookieLawSubscription!: Subscription;
     private routerSubscription!: Subscription;
     private readonly platform_id = inject(PLATFORM_ID);
+    private readonly locale = inject(LOCALE_ID);
 
     constructor(private ccService: NgcCookieConsentService,
                 private router: Router,
                 private meta: MetatagService) {
                   // particlesJS.load('particles-js', '/particlesjs-config.json', null);
-
-
     }
 
   ngOnInit(): void {
@@ -56,6 +54,16 @@ export class AppComponent implements OnInit, OnDestroy {
       return;
     }
 
+    if (this.locale === 'en') {
+      this.ccService.getConfig().content = this.ccService.getConfig().content || {} ;
+      // Override default messages with the translated ones
+      this.ccService.getConfig().content!.message = 'We use cookies to improve your experience. By continuing to use our site, you agree to our Cookie Policy.';
+      this.ccService.getConfig().content!.dismiss = 'Accept all';
+      this.ccService.getConfig().content!.allow = 'Accept all';
+      this.ccService.getConfig().content!.deny = 'Reject';
+      this.ccService.getConfig().content!.href = '/bg/cookies';
+      this.ccService.getConfig().content!.policy = 'Cookie Policy';
+    }
     this.meta.updateMetaTags();
 
     // Subscribe to cookieconsent observables on the browser only

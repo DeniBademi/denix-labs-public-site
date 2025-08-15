@@ -35,11 +35,11 @@ const cookieConfig: NgcCookieConsentConfig = {
 
   content: {
     message: 'Ние използваме "бисквитки", за да подобрим интеракциите ви с нашия сайт. За повече информация, моля прочетете нашата политика за бисквитките.',
-    dismiss: "Приемам всички бисквитки",
+    dismiss: "Приемам всички",
     allow: "Приемам всички",
     deny: "Откажи",
     link: "Политика за бисквитки",
-    href: "/en/cookie-policy",
+    href: "/en/cookies",
     policy: "Cookie Policy",
     close: '&#x274c;'
   }
