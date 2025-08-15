@@ -53,7 +53,7 @@ export class AppComponent implements OnInit, OnDestroy {
     if (!isPlatformBrowser(this.platform_id)) {
       return;
     }
-
+    console.log(this.locale);
     if (this.locale === 'en') {
       this.ccService.getConfig().content = this.ccService.getConfig().content || {} ;
       // Override default messages with the translated ones
