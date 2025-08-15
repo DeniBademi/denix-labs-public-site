@@ -13,5 +13,4 @@ export class BlogGridComponent {
   @Input() posts: BlogPost[] = [];
   @Input() loading: boolean = false;
 
-  private locale = inject(LOCALE_ID);
 }
