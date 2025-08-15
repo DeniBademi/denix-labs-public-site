@@ -11,4 +11,5 @@ import { BlogCardComponent } from '../blog-card/blog-card.component';
 })
 export class BlogGridComponent {
   @Input() posts: BlogPost[] = [];
+  @Input() loading: boolean = false;
 }

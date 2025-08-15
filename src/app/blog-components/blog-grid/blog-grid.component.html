@@ -1,12 +1,19 @@
 <section class="bg-gray-900 py-16">
   <div class="container mx-auto max-w-6xl px-4 md:px-0">
     <h2 class="text-3xl md:text-4xl font-bold text-black mb-12" i18n="@@blog.articlesSection">Articles</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <app-blog-card
-        *ngFor="let post of posts"
-        [post]="post"
-        [featured]="false"
-      ></app-blog-card>
-    </div>
+    <ng-container *ngIf="!loading; else postsLoading">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <app-blog-card
+          *ngFor="let post of posts"
+          [post]="post"
+          [featured]="false"
+        ></app-blog-card>
+      </div>
+    </ng-container>
+    <ng-template #postsLoading>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div *ngFor="let i of [1,2,3,4,5,6]" class="rounded-xl bg-gray-800 animate-pulse p-6 h-64"></div>
+      </div>
+    </ng-template>
   </div>
 </section>

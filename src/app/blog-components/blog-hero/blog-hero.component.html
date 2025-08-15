@@ -32,17 +32,26 @@
             </div>
 
             <!-- Category Filters -->
-            <div class="flex flex-wrap justify-center gap-3 animate__animated animate__fadeInUp">
-                <ng-container *ngFor="let category of categories$ | async">
-                    <button
-                        (click)="onCategorySelect(category)"
-                        [class]="selectedCategory === category ? 'bg-teal-500 text-white' : 'bg-gray-800 text-white hover:bg-gray-700'"
-                        class="px-4 py-2 rounded-full text-sm font-medium transition-colors"
-                    >
-                        {{ category }}
-                    </button>
-                </ng-container>
-            </div>
+            <ng-container *ngIf="categories$ | async as categories; else categoriesLoading">
+                <div class="flex flex-wrap justify-center gap-3 animate__animated animate__fadeInUp">
+                    <ng-container *ngFor="let category of categories">
+                        <button
+                            (click)="onCategorySelect(category)"
+                            [class]="selectedCategory === category ? 'bg-teal-500 text-white' : 'bg-gray-800 text-white hover:bg-gray-700'"
+                            class="px-4 py-2 rounded-full text-sm font-medium transition-colors"
+                        >
+                            {{ category }}
+                        </button>
+                    </ng-container>
+                </div>
+            </ng-container>
+            <ng-template #categoriesLoading>
+                <div class="flex flex-wrap justify-center gap-3 animate__animated animate__fadeInUp">
+                    <div *ngFor="let i of [1,2,3,4,5]" class="px-6 py-2 rounded-full bg-gray-800 text-transparent animate-pulse">
+                        Loading
+                    </div>
+                </div>
+            </ng-template>
         </div>
     </div>
 </header>

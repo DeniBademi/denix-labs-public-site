@@ -11,4 +11,5 @@ import { RouterModule } from '@angular/router';
 export class BlogCardComponent {
   @Input() post!: BlogPost;
   @Input() featured: boolean = false;
+
 }

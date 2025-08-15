@@ -1,3 +1,4 @@
+<ng-container *ngIf="!loadingArticle; else articleLoading">
 <div class="min-h-screen bg-white" *ngIf="articleData">
   <!-- Article Header -->
   <header class="py-16">
@@ -9,7 +10,7 @@
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
             </svg>
-            {{ articleData.publishDate }}
+            {{ articleData.date }}
           </div>
           <div class="flex items-center">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,7 +35,7 @@
   </header>
 
   <!-- Article Content -->
-  <app-markdown-wrapper [markdown]="articleData.content"></app-markdown-wrapper>
+  <app-markdown-wrapper [markdown]="articleData.content || ''"></app-markdown-wrapper>
 
 
   <!-- Back to Blog Button -->
@@ -52,3 +53,29 @@
     </div>
   </div>
 </div>
+</ng-container>
+
+<ng-template #articleLoading>
+  <div class="min-h-screen bg-white">
+    <header class="py-16">
+      <div class="mx-auto px-4 md:px-8 lg:px-12" style="max-width: 100ch;">
+        <div class="space-y-4 animate-pulse">
+          <div class="h-10 bg-gray-200 rounded w-3/4"></div>
+          <div class="flex space-x-4">
+            <div class="h-4 bg-gray-200 rounded w-24"></div>
+            <div class="h-4 bg-gray-200 rounded w-20"></div>
+            <div class="h-4 bg-gray-200 rounded w-28"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mx-auto px-4 md:px-8 lg:px-12 space-y-4" style="max-width: 100ch;">
+      <div class="h-5 bg-gray-200 rounded"></div>
+      <div class="h-5 bg-gray-200 rounded w-5/6"></div>
+      <div class="h-5 bg-gray-200 rounded w-2/3"></div>
+      <div class="h-5 bg-gray-200 rounded"></div>
+      <div class="h-5 bg-gray-200 rounded w-4/6"></div>
+      <div class="h-5 bg-gray-200 rounded w-2/3"></div>
+    </div>
+  </div>
+</ng-template>
