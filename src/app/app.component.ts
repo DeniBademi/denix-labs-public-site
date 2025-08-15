@@ -61,8 +61,10 @@ export class AppComponent implements OnInit, OnDestroy {
       this.ccService.getConfig().content!.dismiss = 'Accept all';
       this.ccService.getConfig().content!.allow = 'Accept all';
       this.ccService.getConfig().content!.deny = 'Reject';
-      this.ccService.getConfig().content!.href = '/bg/cookies';
+      this.ccService.getConfig().content!.link = 'Cookie Policy';
+      this.ccService.getConfig().content!.href = '/en/cookies';
       this.ccService.getConfig().content!.policy = 'Cookie Policy';
+
 
       this.ccService.destroy(); // remove previous cookie bar (with default messages)
       this.ccService.init(this.ccService.getConfig());
