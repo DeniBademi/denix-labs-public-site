@@ -308,6 +308,8 @@
       <trans-unit id="legal.privacyPolicy.whoWeAre.companyName" datatype="html">
         <source>Company name</source>
         <target>Име на фирмата</target>
+        <source>DENIX LABS Ltd.</source>
+        <target>ДЕНИКС ЛАБС ЕООД</target>
       </trans-unit>
       <trans-unit id="legal.privacyPolicy.whoWeAre.managementAddress" datatype="html">
         <source>Management address</source>

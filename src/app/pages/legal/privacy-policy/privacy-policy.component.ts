@@ -12,9 +12,9 @@ markdown = `# Privacy Policy
 
 ### Who are we?
 
-**Company name**: DENIX LABS Ltd.  
-**UIC**: 207614145  
-**Contact phone**: +359 878 426 545  
+**Company name**: DENIX LABS Ltd.
+**UIC**: 208227895
+**Contact phone**: +359 878 426 545
 **Email**: info@denixlabs.com
 
 We know that when we collect and process information about an individual, we must do so responsibly, with due care for personal privacy, complying with data protection laws and privacy principles. This privacy policy ("Policy") describes the main types of personal information we collect within the company, how this information is processed and disclosed, as well as our obligations to the persons whose data we process. The Policy explains in principle how we strive to comply with privacy and data protection laws and regulations, including but not limited to Regulation (EU) 2016/679 (General Data Protection Regulation/GDPR).

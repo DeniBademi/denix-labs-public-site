@@ -20,13 +20,13 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/logos/mini_black_rgb.svg">
   <!-- Safari pinned tab -->
   <link rel="mask-icon" href="/logos/mini_black_rgb.svg" color="#000000">
-  
+
   <!-- Font preloads for better performance -->
   <link rel="preload" href="/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
-  
+
   <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SLDX8VXE3"></script>
   <script>
@@ -84,9 +84,21 @@
     }
 
   </script> -->
+        <!-- <style>
+            /* ensure the wrapper sits above Angular overlays */
+            #lk-embed-wrapper {
+              position: fixed;
+              inset: 0;
+              z-index: 2147483647;
+            }
+            #lk-embed-wrapper * {
 
+            }
+          </style> -->
 </head>
 <body>
+  <!-- <script src="/js/embed-popup.js"></script> -->
+
   <app-root></app-root>
 
 <!-- scripts -->
@@ -98,6 +110,13 @@
     script.defer = true;
     document.head.appendChild(script);
   });
+
+    /*window.addEventListener('load', function() {
+    const script = document.createElement('script');
+    script.src = '/js/embed-popup.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  });*/
 </script>
 <form name="contact" method="POST" netlify hidden>
   <input type="hidden" name="form-name" value="contact" />
