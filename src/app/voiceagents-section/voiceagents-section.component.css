@@ -1,0 +1,45 @@
+.card-gradient {
+  background: linear-gradient(180deg, rgba(99,102,241,0.06) 0%, rgba(255,255,255,0.9) 100%);
+}
+
+/* Glassmorphism hover effects */
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 300ms ease, box-shadow 300ms ease, background 300ms ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.18);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+/* Animated gradient blobs (decorative) */
+.orb {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.35;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+/* .orb--indigo { background: radial-gradient(circle at 30% 30%, rgba(99,102,241,0.7), rgba(99,102,241,0)); }
+.orb--green { background: radial-gradient(circle at 70% 70%, rgba(74,222,128,0.6), rgba(74,222,128,0)); } */
+
+@keyframes floaty {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-16px) translateX(8px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+.orb--animate {
+  animation: floaty 8s ease-in-out infinite;
+}
+

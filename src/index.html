@@ -98,7 +98,16 @@
 </head>
 <body>
   <!-- <script src="/js/embed-popup.js"></script> -->
-
+<script>
+  window.agentPopupConfig = {
+  "logo": "denixlabs-logo.svg",
+  "logoDark": "denixlabs-logo-dark.svg",
+  "accent": "#000000FF",
+  "accentDark": "#ffffffFF",
+  "agentId": "041d4b1d-c0a2-42af-bd86-bff35da165b0",
+};
+</script>
+  <script src="/js/embed-popup.js"></script>
   <app-root></app-root>
 
 <!-- scripts -->
@@ -118,6 +127,7 @@
     document.head.appendChild(script);
   });*/
 </script>
+
 <form name="contact" method="POST" netlify hidden>
   <input type="hidden" name="form-name" value="contact" />
   <input type="hidden" id="name" name="name" />

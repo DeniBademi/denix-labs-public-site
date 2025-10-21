@@ -58,25 +58,169 @@
       </trans-unit>
 
       <!-- VAPI Demo -->
-      <trans-unit id="vapi.demo.tryFree" datatype="html">
-        <source>Try <x id="LINE_BREAK" equiv-text="&lt;br/&gt;"/> for free</source>
-        <target>Опитай <x id="LINE_BREAK" equiv-text="&lt;br/&gt;"/> безплатно</target>
+      <trans-unit id="voiceagents.demo.tryFree" datatype="html">
+        <source>Try for free</source>
+        <target>Опитай безплатно</target>
       </trans-unit>
-      <trans-unit id="vapi.demo.buttonTitle" datatype="html">
+      <trans-unit id="voiceagents.demo.buttonTitle" datatype="html">
         <source>Start/Stop</source>
         <target>Старт/Стоп</target>
       </trans-unit>
 
       <!-- VAPI Section -->
-      <trans-unit id="vapi.section.title" datatype="html">
-        <source>Introducing our first voice agent, Phillips</source>
-        <target>Представяме първият ни гласов агент, Филипс</target>
+      <trans-unit id="voiceagents.section.title" datatype="html">
+        <source>Introducing our Voice Agent Platform</source>
+        <target>Представяме нашата платформа за гласови агенти</target>
       </trans-unit>
-      <trans-unit id="vapi.section.description" datatype="html">
+      <trans-unit id="voiceagents.section.subtitle" datatype="html">
+        <source>Immediate impact, real business outcomes, and a frictionless path to launch.</source>
+        <target>Незабавен ефект, реални бизнес резултати и безпрепятствен път към стартиране.</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.benefitsTitle" datatype="html">
+        <source>Immediate Benefits</source>
+        <target>Незабавни ползи</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.benefit1" datatype="html">
+        <source>Reduce call wait times and improve first-contact resolution</source>
+        <target>Намалява времето на изчакване и подобрява решаването при първи контакт</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.benefit2" datatype="html">
+        <source>Extend availability to 24/7 without additional staffing</source>
+        <target>Осигурява 24/7 наличност без допълнителен персонал</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.benefit3" datatype="html">
+        <source>Automate repetitive tasks and free up your team</source>
+        <target>Автоматизира повтарящи се задачи и освобождава екипа ви</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.benefit4" datatype="html">
+        <source>Consistent brand experience across all touchpoints</source>
+        <target>Последователно бранд изживяване във всички канали</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.useCasesTitle" datatype="html">
+        <source>Business Use Cases</source>
+        <target>Бизнес приложения</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.useCase1" datatype="html">
+        <source>Appointment scheduling and reminders</source>
+        <target>Насрочване на срещи и напомняния</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.useCase2" datatype="html">
+        <source>Lead capture and qualification</source>
+        <target>Улавяне и квалификация на лидове</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.useCase3" datatype="html">
+        <source>Order status and FAQs</source>
+        <target>Статус на поръчки и често задавани въпроси</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.useCase4" datatype="html">
+        <source>Intake and triage for support</source>
+        <target>Прием и триаж за поддръжка</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.useCasesVerticalsTitle" datatype="html">
+        <source>Industry Fit</source>
+        <target>Подходящо за индустрии</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.vertical1" datatype="html">
+        <source>Healthcare and dental practices</source>
+        <target>Здравеопазване и дентални практики</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.vertical2" datatype="html">
+        <source>E-commerce and logistics</source>
+        <target>Електронна търговия и логистика</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.vertical3" datatype="html">
+        <source>Professional services</source>
+        <target>Професионални услуги</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.vertical4" datatype="html">
+        <source>Hospitality and travel</source>
+        <target>Хотелиерство и пътувания</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.metricsTitle" datatype="html">
+        <source>Features & Benefits</source>
+        <target>Възможности и предимства</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.metric1" datatype="html">
+        <source>We build, operate, and support your agents end‑to‑end</source>
+        <target>Ние изграждаме, оперираме и поддържаме вашите агенти от край до край</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.metric2" datatype="html">
+        <source>No vendor API keys or complex setup required</source>
+        <target>Без API ключове от доставчици и без сложна настройка</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.metric3" datatype="html">
+        <source>Transparent pricing with real‑time usage and spend caps</source>
+        <target>Прозрачно ценообразуване с наблюдение в реално време и лимити на разходи</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.metric4" datatype="html">
+        <source>Automated call analytics that surface actionable insights</source>
+        <target>Автоматизирана аналитика на разговори, която извежда приложими прозрения</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.stepsTitle" datatype="html">
+        <source>Deploy in 4 Simple Steps</source>
+        <target>Стартиране в 4 лесни стъпки</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.stepsSubtitle" datatype="html">
+        <source>From idea to live voice agent in days, not months.</source>
+        <target>От идея до работещ гласов агент за дни, не месеци.</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step1" datatype="html">
+        <source>Step 1</source>
+        <target>Стъпка 1</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step1Title" datatype="html">
+        <source>Choose a Template or Define Your Use Case</source>
+        <target>Изберете шаблон или дефинирайте вашия казус</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step1Desc" datatype="html">
+        <source>Start with a prebuilt template or collaborate with DenixLabs to design a custom voice agent aligned to your goals.</source>
+        <target>Започнете с готов шаблон или работете с DenixLabs за изготвяне на персонализиран гласов агент според целите ви.</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step2" datatype="html">
+        <source>Step 2</source>
+        <target>Стъпка 2</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step2Title" datatype="html">
+        <source>Prompting</source>
+        <target>Промптиране</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step2Desc" datatype="html">
+        <source>Define your agent’s role, tone, knowledge and guardrails. We’ll help you craft prompts that deliver consistent, on-brand conversations.</source>
+        <target>Дефинирайте ролята, тона, знанията и правилата на агента. Ние ще помогнем за промптове, които осигуряват разговори в духа на бранда.</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step3" datatype="html">
+        <source>Step 3</source>
+        <target>Стъпка 3</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step3Title" datatype="html">
+        <source>Availability</source>
+        <target>Наличност</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step3Desc" datatype="html">
+        <source>Set working hours, locations and escalation rules. Your agent is available when your business is—and hands off to humans when needed.</source>
+        <target>Задайте работно време, локации и правила за ескалация. Агенът е наличен, когато и бизнесът ви е — и предава към човек при нужда.</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step4" datatype="html">
+        <source>Step 4</source>
+        <target>Стъпка 4</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step4Title" datatype="html">
+        <source>Access Channels</source>
+        <target>Канали за достъп</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.step4Desc" datatype="html">
+        <source>Choose where customers engage: QR codes, website widget, or PBX integration. Launch everywhere at once or start with one channel.</source>
+        <target>Изберете къде да се свързват клиентите: QR кодове, уиджет за сайт или PBX интеграция. Стартирайте навсякъде или започнете с един канал.</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.goToPlatform" datatype="html">
+        <source>Go to Voice Agent Platform</source>
+        <target>Към платформата за гласови агенти</target>
+      </trans-unit>
+      <trans-unit id="voiceagents.section.description" datatype="html">
         <source>Voice agents can help your staff be more efficient and productive, and your customers to be served faster and more efficiently.</source>
         <target>Гласовите агенти могат да помагат на персоналът ви да бъде по-ефективен и продуктивен, а на клиентите - да бъдат обслужени по-бързо и ефективно.</target>
       </trans-unit>
-      <trans-unit id="vapi.section.requestDemo" datatype="html">
+      <trans-unit id="voiceagents.section.requestDemo" datatype="html">
         <source>Request Demo</source>
         <target>Поискай демо</target>
       </trans-unit>

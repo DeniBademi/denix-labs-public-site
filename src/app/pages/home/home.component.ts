@@ -4,11 +4,11 @@ import { FaqComponent } from '../../faq/faq.component';
 import { WhyUseAiComponent } from '../../why-use-ai/why-use-ai.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { MetatagService } from '../../_services/metatag.service';
-import { VapiSectionComponent } from '../../vapi-section/vapi-section.component';
+import { VoiceagentsSectionComponent } from '../../voiceagents-section/voiceagents-section.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent, FaqComponent, WhyUseAiComponent, VapiSectionComponent],
+  imports: [HeroComponent, FaqComponent, WhyUseAiComponent, VoiceagentsSectionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

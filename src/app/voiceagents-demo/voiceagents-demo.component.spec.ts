@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VapiSectionComponent } from './vapi-section.component';
+import { VoiceagentsDemoComponent } from './voiceagents-demo.component';
 
-describe('VapiSectionComponent', () => {
-  let component: VapiSectionComponent;
-  let fixture: ComponentFixture<VapiSectionComponent>;
+describe('VoiceagentsDemoComponent', () => {
+  let component: VoiceagentsDemoComponent;
+  let fixture: ComponentFixture<VoiceagentsDemoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [VapiSectionComponent]
+      imports: [VoiceagentsDemoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(VapiSectionComponent);
+    fixture = TestBed.createComponent(VoiceagentsDemoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

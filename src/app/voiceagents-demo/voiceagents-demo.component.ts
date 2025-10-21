@@ -3,14 +3,14 @@ import Vapi from "@vapi-ai/web";
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-vapi-demo',
+  selector: 'app-voiceagents-demo',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './vapi-demo.component.html',
-  styleUrl: './vapi-demo.component.css'
+  templateUrl: './voiceagents-demo.component.html',
+  styleUrl: './voiceagents-demo.component.css'
 })
-export class VapiDemoComponent implements OnInit, OnDestroy {
-  vapi: Vapi | undefined;
+export class VoiceagentsDemoComponent implements OnInit, OnDestroy {
+  voiceagents: Vapi | undefined;
   isSpeaking = false;
   isInCall = false;
   volumeLevel = 0;
@@ -24,17 +24,17 @@ export class VapiDemoComponent implements OnInit, OnDestroy {
   }
 
   // useful methods
-  // vapi.on("speech-start", () => {
+  // voiceagents.on("speech-start", () => {
   //   console.log("Assistant speech has started.");
   // });
-  // vapi.on("speech-end", () => {
+  // voiceagents.on("speech-end", () => {
   //   console.log("Assistant speech has ended.");
   // });
-  // vapi.on("volume-level", (volume) => {
+  // voiceagents.on("volume-level", (volume) => {
   //   console.log(`Assistant volume level: ${volume}`);
   // });
 
-  async startVapi() {
+  async startVoiceagents() {
     this.isLoading = true;
     this.errorMessage = null;
     this.loadingTimeout = setTimeout(() => {
@@ -42,8 +42,8 @@ export class VapiDemoComponent implements OnInit, OnDestroy {
         this.isLoading = false;
         this.errorMessage = 'Нещо се обърка. Опитайте отново.';
 
-        if (this.vapi) {
-          this.vapi.stop();
+        if (this.voiceagents) {
+          this.voiceagents.stop();
           return;
         }
       }
@@ -51,19 +51,19 @@ export class VapiDemoComponent implements OnInit, OnDestroy {
 
     // await new Promise(resolve => setTimeout(resolve, 30000));
 
-    this.vapi = new Vapi('823d2036-344d-4d97-a147-f3c85209cbf9');
+    this.voiceagents = new Vapi('823d2036-344d-4d97-a147-f3c85209cbf9');
 
-    this.vapi.on("speech-start", () => {
+    this.voiceagents.on("speech-start", () => {
       this.isSpeaking = true;
     });
 
-    this.vapi.on("speech-end", () => {
+    this.voiceagents.on("speech-end", () => {
       this.isSpeaking = false;
       this.volumeLevel = 0;
       this.pitchLevels = [0, 0, 0, 0, 0];
     });
 
-    this.vapi.on("volume-level", (volume) => {
+    this.voiceagents.on("volume-level", (volume) => {
       this.volumeLevel = volume;
       // Simulate different pitch levels based on the volume
       this.pitchLevels = [
@@ -75,21 +75,21 @@ export class VapiDemoComponent implements OnInit, OnDestroy {
       ];
     });
 
-    this.vapi.on("call-end", () => {
+    this.voiceagents.on("call-end", () => {
       this.isInCall = false;
       this.isLoading = false;
       this.errorMessage = null;
     });
 
-    this.vapi.on("call-start", () => {
+    this.voiceagents.on("call-start", () => {
       this.isInCall = true;
       this.isLoading = false;
       this.errorMessage = null;
     });
 
-    const call = await this.vapi.start('f20a0461-4a8e-4f9c-aa7f-abb06ebcdf0c');
+    const call = await this.voiceagents.start('f20a0461-4a8e-4f9c-aa7f-abb06ebcdf0c');
 
-    this.vapi.on("error", () => {
+    this.voiceagents.on("error", () => {
       this.errorMessage = 'Нещо се обърка. Опитайте отново.';
       this.isLoading = false;
       this.isInCall = false;
@@ -101,7 +101,7 @@ export class VapiDemoComponent implements OnInit, OnDestroy {
 
     // let callDuration = 1; // minutes
     // setTimeout(() => {
-    //   this.vapi?.send({
+    //   this.voiceagents?.send({
     //     type: "add-message",
     //     message: {
     //       role: "system",
@@ -117,8 +117,8 @@ export class VapiDemoComponent implements OnInit, OnDestroy {
     this.errorMessage = null;
   }
 
-  async stopVapi() {
-    this.vapi?.stop();
+  async stopVoiceagents() {
+    this.voiceagents?.stop();
     this.isSpeaking = false;
     this.isInCall = false;
     this.volumeLevel = 0;
